@@ -10,6 +10,7 @@ var gulp = require('gulp'),
     jsonminify = require('gulp-jsonminify'),
     imagemin = require('gulp-imagemin'),
     pngquant = require('imagemin-pngquant'),
+    autoprefixer = require('gulp-autoprefixer'),
     concat = require('gulp-concat');
 
 var env,
@@ -32,11 +33,8 @@ if (env === 'development') {
     sassStyle = 'compressed';
 }
 
-
 coffeeSources = ['components/coffee/tagline.coffee'];
 jsSources = [
-    'components/scripts/rclick.js',
-    'components/scripts/pixgrid.js',
     'components/scripts/tagline.js',
     'components/scripts/template.js'
 ];
@@ -66,8 +64,12 @@ gulp.task('compass', function () {
             sass: 'components/sass',
             image: outputDir + 'images',
             style: sassStyle
-        })
-            .on('error', gutil.log))
+            //project: __dirname,
+            //import_path: 'node_modules/foundation-sites/scss'
+        }).on('error', gutil.log))
+        .pipe(autoprefixer({
+            browsers: ['last 2 versions', 'ie >= 9', 'and_chr >= 2.3']
+        }).on('error', gutil.log))
         .pipe(gulp.dest(outputDir + 'css'))
         .pipe(connect.reload())
 });

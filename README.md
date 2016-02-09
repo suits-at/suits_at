@@ -1,3 +1,3 @@
-# Workflows Course
+# SUITS.at
 
-This project is an example of workflow management.
+My portfolio website www.suits.at
