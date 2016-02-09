@@ -36,7 +36,11 @@ if (env === 'development') {
 coffeeSources = ['components/coffee/tagline.coffee'];
 jsSources = [
     'components/scripts/tagline.js',
-    'components/scripts/template.js'
+    'components/scripts/template.js',
+    'components/scripts/typed.js',
+    'components/scripts/call_typed.js',
+    'components/scripts/modernizr-custom.js',
+    'components/scripts/menu.js'
 ];
 sassSources = ['components/sass/style.scss'];
 htmlSources = [outputDir + '*.html'];

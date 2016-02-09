@@ -55,7 +55,6 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 }
 
 body {
-  background: #eddbba;
   font-family: "Work Sans", sans-serif;
   font-size: 1.1em;
 }
@@ -111,120 +110,52 @@ section {
   clear: both;
 }
 
-.featuredartists {
-  background: #8D8862;
-  border-top: 20px solid #E3C691;
-  border-bottom: 50px solid #507356;
-}
-.featuredartists h1 {
+.typed {
+  font-weight: 700;
   font-size: 3em;
-  color: #263729;
-}
-@media (max-width: 700px) {
-  .featuredartists h1 {
-    font-size: 2em;
-  }
-}
-.featuredartists h2 {
-  margin-top: 20px;
-  font-size: 1.8em;
-  color: #dbb570;
-}
-@media (max-width: 700px) {
-  .featuredartists h2 {
-    display: none;
-  }
-}
-.featuredartists p {
-  color: #314634;
-}
-.featuredartists .artistlist {
-  padding-bottom: 20px;
-}
-.featuredartists .artistlist h2 {
-  margin-top: 5px;
-  font-size: 1.2em;
-  color: #ebd7b2;
-}
-.featuredartists .artistlist .item {
-  min-width: 95px;
-  color: #6f6b4d;
-  width: 18%;
-  float: left;
-  padding: 1%;
-  text-align: center;
-  position: relative;
-}
-.featuredartists .artistlist .item > img {
-  max-width: 130px;
-  margin: 0 auto;
-  display: block;
-  -moz-border-radius: 50%;
-  -webkit-border-radius: 50%;
-  border-radius: 50%;
-  width: 100%;
 }
 
-.potterypix {
-  background: url("../images/backgrounds/pottery_workshop.jpg") no-repeat 50% 20%;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  -webkit-transition: all 0.3s ease-out;
-  -moz-transition: all 0.3s ease-out;
-  -o-transition: all 0.3s ease-out;
-  transition: all 0.3s ease-out;
-  border-bottom: 50px solid #8D8862;
-}
-@media (min-width: 801px) {
-  .potterypix {
-    height: 350px;
-  }
-}
-@media (max-width: 800px) {
-  .potterypix {
-    height: 150px;
-  }
-}
-@media (max-width: 300px) {
-  .potterypix {
-    height: 100px;
-  }
+.typed-cursor {
+  font-size: 3em;
+  opacity: 1;
+  -webkit-animation: blink 0.7s infinite;
+  -moz-animation: blink 0.7s infinite;
+  animation: blink 0.7s infinite;
 }
 
-.aboutvenue img {
-  float: right;
-}
-
-.workshoppix {
-  background: url("../images/backgrounds/woodworking_workshop.jpg") no-repeat 50% 20%;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  -webkit-transition: all 0.3s ease-out;
-  -moz-transition: all 0.3s ease-out;
-  -o-transition: all 0.3s ease-out;
-  transition: all 0.3s ease-out;
-  border-bottom: 50px solid #8D8862;
-}
-@media (min-width: 801px) {
-  .workshoppix {
-    height: 350px;
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
   }
 }
-@media (max-width: 800px) {
-  .workshoppix {
-    height: 150px;
+@-webkit-keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
   }
 }
-@media (max-width: 300px) {
-  .workshoppix {
-    height: 100px;
+@-moz-keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
   }
 }
-
 .ontour h1 {
   color: #4d354c;
   font-size: 3em;
@@ -251,4 +182,120 @@ section {
   width: 20%;
   min-width: 120px;
   max-width: 160px;
+}
+
+/* Overlay style */
+.overlay {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.97);
+}
+
+/* Overlay closing cross */
+.overlay .overlay-close {
+  width: 80px;
+  height: 80px;
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  overflow: hidden;
+  border: none;
+  background: url(../img/cross.png) no-repeat center center;
+  text-indent: 200%;
+  color: transparent;
+  outline: none;
+  z-index: 100;
+}
+
+/* Menu style */
+.overlay nav {
+  text-align: center;
+  position: relative;
+  top: 50%;
+  height: 60%;
+  font-size: 54px;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+.overlay ul {
+  list-style: none;
+  padding: 0;
+  margin: 0 auto;
+  display: inline-block;
+  height: 100%;
+  position: relative;
+}
+
+.overlay ul li {
+  display: block;
+  height: 20%;
+  height: calc(100% / 5);
+  min-height: 54px;
+}
+
+.overlay ul li a {
+  font-weight: 300;
+  display: block;
+  color: #fff;
+  -webkit-transition: color 0.2s;
+  transition: color 0.2s;
+}
+
+.overlay ul li a:hover,
+.overlay ul li a:focus {
+  color: #e3fcb1;
+}
+
+/* Effects */
+.overlay-hugeinc {
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: opacity 0.5s, visibility 0s 0.5s;
+  transition: opacity 0.5s, visibility 0s 0.5s;
+}
+
+.overlay-hugeinc.open {
+  opacity: 1;
+  visibility: visible;
+  -webkit-transition: opacity 0.5s;
+  transition: opacity 0.5s;
+}
+
+.overlay-hugeinc nav {
+  -webkit-perspective: 1200px;
+  perspective: 1200px;
+}
+
+.overlay-hugeinc nav ul {
+  opacity: 0.4;
+  -webkit-transform: translateY(-25%) rotateX(35deg);
+  transform: translateY(-25%) rotateX(35deg);
+  -webkit-transition: -webkit-transform 0.5s, opacity 0.5s;
+  transition: transform 0.5s, opacity 0.5s;
+}
+
+.overlay-hugeinc.open nav ul {
+  opacity: 1;
+  -webkit-transform: rotateX(0deg);
+  transform: rotateX(0deg);
+}
+
+.overlay-hugeinc.close nav ul {
+  -webkit-transform: translateY(25%) rotateX(-35deg);
+  transform: translateY(25%) rotateX(-35deg);
+}
+
+@media screen and (max-height: 30.5em) {
+  .overlay nav {
+    height: 70%;
+    font-size: 34px;
+  }
+
+  .overlay ul li {
+    min-height: 34px;
+  }
 }

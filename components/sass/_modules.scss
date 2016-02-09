@@ -1,78 +1,35 @@
 // _modules.scss
 // ============
-.city {
-} //city
 
-.featuredartists {
-  background: $darkGreenGold;
-  border-top: 20px solid $beige;
-  border-bottom: 50px solid $green;
-
-  h1 {
-    font-size: 3em;
-    color: darken($green, 20%);
-    @media (max-width: 700px) {
-      font-size: 2em;
-    }
-  } //h1
-
-  h2 {
-    margin-top: 20px;
-    font-size: 1.8em;
-    color: darken($beige, 8%);
-    @media (max-width: 700px) {
-      display: none;
-    }
-  } //h1
-
-  p {
-    color: darken($green, 15%);
-  }
-
-  .artistlist {
-    padding-bottom: 20px;
-
-    h2 {
-      margin-top: 5px;
-      font-size: 1.2em;
-      color: lighten($beige, 8%);
-    } //h2
-
-    .item {
-      min-width: 95px;
-      color: darken($darkGreenGold, 10%);
-      width: 18%;
-      float: left;
-      padding: 1%;
-      text-align: center;
-      position: relative;
-
-      >img {
-        max-width: 130px;
-        margin: 0 auto;
-        display: block;
-        @include border-radius(50%);
-        width: 100%;
-      } //img
-    } //item
-  } //artistlist
-} //featured artists
-
-.potterypix {
-  @include backImage('../images/backgrounds/pottery_workshop.jpg');
-  border-bottom: 50px solid $darkGreenGold;
-} //venue
-
-.aboutvenue {
-  img {
-    float: right;
-  }
+//typed.js
+.typed{
+  font-weight: 700;
+  font-size: 3em;
 }
+.typed-cursor{
+  font-size:3em;
+  opacity: 1;
+  -webkit-animation: blink 0.7s infinite;
+  -moz-animation: blink 0.7s infinite;
+  animation: blink 0.7s infinite;
+}
+@keyframes blink{
+  0% { opacity:1; }
+  50% { opacity:0; }
+  100% { opacity:1; }
+}
+@-webkit-keyframes blink{
+  0% { opacity:1; }
+  50% { opacity:0; }
+  100% { opacity:1; }
+}
+@-moz-keyframes blink{
+  0% { opacity:1; }
+  50% { opacity:0; }
+  100% { opacity:1; }
+}
+//end of typed.js
 
-.workshoppix {
-  @include backImage('../images/backgrounds/woodworking_workshop.jpg');
-  border-bottom: 50px solid $darkGreenGold;
-} //workshops
 
 .ontour {
   h1 {
