@@ -1,5 +1,5 @@
 (function() {
-    var triggerBttn = document.getElementById( 'trigger-overlay' ),
+    var triggerBttn = document.getElementById( 'nav-icon3' ),
         overlay = document.querySelector( 'div.overlay' ),
         closeBttn = overlay.querySelector( 'button.overlay-close' );
     transEndEventNames = {
@@ -39,3 +39,10 @@
     triggerBttn.addEventListener( 'click', toggleOverlay );
     closeBttn.addEventListener( 'click', toggleOverlay );
 })();
+
+
+$(document).ready(function(){
+    $('#nav-icon1,#nav-icon2,#nav-icon3,#nav-icon4').click(function(){
+        $(this).toggleClass('open');
+    });
+});
