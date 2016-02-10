@@ -1,4 +1,4 @@
-to install at a new location:
+//to install at a new location:
 npm install
 
 install git, node, ruby
