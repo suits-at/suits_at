@@ -28,6 +28,7 @@
     "mustache": "^2.2.1"
   },
   "dependencies": {
+    "foundation-sites": "^6.1.2",
     "jquery": "^2.2.0"
   }
 }

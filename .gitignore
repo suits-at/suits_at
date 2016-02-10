@@ -4,3 +4,5 @@ node_modules
 .tmp
 .sass-cache
 builds/**/images/*
+
+//add images again

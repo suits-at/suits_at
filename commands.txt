@@ -1,4 +1,4 @@
-to install at a new location:
+//to install at a new location:
 npm install
 
 install git, node, ruby
@@ -56,3 +56,5 @@ npm install --save-dev gulp-htmlmin
 npm install --save-dev gulp-jsonminify
 npm install --save-dev gulp-imagemin
 npm install --save-dev imagemin-pngquant
+
+npm install --save foundation-sites
