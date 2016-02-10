@@ -6,14 +6,32 @@ body {
   //font-size: 1.1em;
 }
 
+.img-responsive{
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+//fullpage
+.page
+{
+  min-height: 100vh;
+  //width: 100vw;
+}
+//end fullpage
+
 *:focus {
   outline: none;
 }
 
 .more{
-  @include css-triangle(50px, $blue, 'down');
+  @include css-triangle(3rem, $blue, 'down');
+  bottom: 2%;
+  position: absolute;
+  @include horizontal-center;
 }
 .logo{
+
 }
 
 h1{

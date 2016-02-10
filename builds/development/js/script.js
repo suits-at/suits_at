@@ -13,9 +13,9 @@ $(function() {
     var Mustache = require('mustache');
 
     $.getJSON('js/data.json', function(data) {
-        var template = $('#speakerstpl').html();
+        var template = $('#portfolio-template').html();
         var html = Mustache.to_html(template, data);
-        $('#speakers').html(html);
+        $('#portfolio').html(html);
     }); //getJSON
 
 }); //function
@@ -460,7 +460,7 @@ $(function() {
     }(window.jQuery);
 $(function(){
     $(".typed").typed({
-        strings: ["WEB DEVELOPER^3000", "WEB DESIGNER^3000", "SEO SPEZIALIST^3000"],
+        strings: ["WEB DEVELOPER^3000", "FRONTEND DEVELOPER^3000", "JS DEVELOPER^3000", "PHP DEVELOPER^3000", "WORDPRESS DEVELOPER^3000", "TYPO3 DEVELOPER^3000", "METEOR DEVELOPER^3000", "WEB DESIGNER^3000", "HTML PROFI^3000", "CSS PROFI^3000", "SEO SPEZIALIST^3000"],
         typeSpeed: 100,
         loop: true,
         showCursor: true
@@ -2593,6 +2593,71 @@ $(document).ready(function(){
         $(this).toggleClass('open');
     });
 });
+var pages = 2;
+var currentpage = 1;
+if (document.location.hash) { currentpage = parseInt(document.location.hash.replace('#', '')); }
+
+var nextpage = currentpage + 1; if (nextpage > pages) { nextpage = pages; }
+var prevpage = currentpage - 1; if (prevpage < 1) { prevpage = 1; }
+
+var animatingup = false;
+var animatingdown = false;
+
+$(document).ready(function() {
+    resizeDiv();
+});
+
+window.onresize = function(event) {
+    resizeDiv();
+    scrolltocurrent();
+}
+
+$(window).scroll(function(event) {
+
+    if (animatingup==true) { return; }
+    if (animatingdown==true) { return; }
+
+    nextpage = currentpage + 1; if (nextpage > pages) { nextpage = pages; }
+    prevpage = currentpage - 1; if (prevpage < 1) { prevpage = 1; }
+
+    if (animatingup == false) {
+        if ($(window).scrollTop()+$(window).height()>=$("#page"+(nextpage)).offset().top+50) {
+            if (nextpage > currentpage) {
+                var p2 = $( "#page"+(nextpage) );
+                var pageheight = p2.position().top;
+                animatingdown = true;
+                $('html, body').animate({ scrollTop: pageheight }, 500, function() { currentpage = nextpage; animatingdown = false; document.location.hash = currentpage;});
+                return;
+            }
+        }
+    }
+
+    if (animatingdown == false) {
+        if ($(window).scrollTop()<=$("#page"+(currentpage)).offset().top-50) {
+            if (prevpage < currentpage) {
+                var p2 = $( "#page"+(currentpage) );
+                var pageheight = p2.position().top-$(window).height();
+                animatingup = true;
+                $('html, body').animate({ scrollTop: pageheight }, 500, function() { currentpage = prevpage; animatingup = false; document.location.hash = currentpage;});
+                return;
+            }
+        }
+    }
+});
+
+
+function scrolltocurrent() {
+    var p2 = $( "#page"+(currentpage) );
+    var pageheight = p2.position().top;
+    $('html, body').animate({ scrollTop: pageheight }, 200);
+}
+
+function resizeDiv() {
+    vpw = $(window).width();
+    vph = $(window).height();
+    $('.page').css({'min-height': vph + 'px'});
+}
+
 },{"jquery":2,"mustache":3}],2:[function(require,module,exports){
 /*!
  * jQuery JavaScript Library v2.2.0

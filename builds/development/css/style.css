@@ -3910,6 +3910,16 @@ body {
   font-family: "Work Sans", sans-serif;
 }
 
+.img-responsive {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.page {
+  min-height: 100vh;
+}
+
 *:focus {
   outline: none;
 }
@@ -3919,10 +3929,17 @@ body {
   display: block;
   width: 0;
   height: 0;
-  border: inset 50px;
+  border: inset 3rem;
   border-color: #49a3df transparent transparent;
   border-top-style: solid;
   border-bottom-width: 0;
+  bottom: 2%;
+  position: absolute;
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+          transform: translateX(-50%);
 }
 
 h1 {
@@ -4135,4 +4152,10 @@ h1, h2, h3, h4, h5, h6 {
   top: 18px;
   width: 0%;
   left: 50%;
+}
+
+@media all and (min-width: 1920px) {
+  .centered {
+    margin-top: 5%;
+  }
 }
