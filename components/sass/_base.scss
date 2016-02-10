@@ -3,7 +3,7 @@
 body {
   //background: lighten($beige, 10%);
   font-family: $bodyFont;
-  font-size: 1.1em;
+  //font-size: 1.1em;
 }
 
 *:focus {
@@ -21,17 +21,10 @@ h1{
   font-weight: 700;
 }
 
-#content {
-  color: $pink;
-  font-size: 2em;
-}
-
-//.container {
-//  width: 90%;
-//  max-width: 1000px;
-//  margin: 0 auto;
-//  position: relative;
+//#content {
+//  font-size: 2em;
 //}
+
 
 #{headings()} {
   font-family: $headFont;

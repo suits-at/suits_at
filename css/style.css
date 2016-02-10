@@ -3702,7 +3702,6 @@ table.hover tr:nth-of-type(even):hover {
 
 body {
   font-family: "Work Sans", sans-serif;
-  font-size: 1.1em;
 }
 
 *:focus {
@@ -3723,11 +3722,6 @@ body {
 h1 {
   text-transform: uppercase;
   font-weight: 700;
-}
-
-#content {
-  color: #CC8E94;
-  font-size: 2em;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -3786,34 +3780,6 @@ h1, h2, h3, h4, h5, h6 {
     opacity: 1;
   }
 }
-.ontour h1 {
-  color: #4d354c;
-  font-size: 3em;
-  bottom: 10px;
-  right: 10%;
-}
-.ontour h2 {
-  font-size: 1.8em;
-  color: #8D8862;
-  border-top: 1px solid #8D8862;
-  padding-top: 5px;
-}
-.ontour h3 {
-  font-size: 1.3em;
-  color: #6b4a69;
-  padding-bottom: 5px;
-}
-.ontour img {
-  float: right;
-  -moz-border-radius: 50%;
-  -webkit-border-radius: 50%;
-  border-radius: 50%;
-  padding-left: 20px;
-  width: 20%;
-  min-width: 120px;
-  max-width: 160px;
-}
-
 /* Overlay style */
 .overlay {
   position: fixed;
