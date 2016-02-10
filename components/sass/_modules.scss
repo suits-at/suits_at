@@ -2,12 +2,20 @@
 // ============
 
 //typed.js
+.typed-spacing{
+  margin: 2%;
+}
+
 .typed{
   font-weight: 700;
-  font-size: 3em;
+  font-size: 4em;
+  color: $grey;
+  //@include horizontal-center;
 }
+
 .typed-cursor{
-  font-size:3em;
+  color: $grey;
+  font-size:4em;
   opacity: 1;
   -webkit-animation: blink 0.7s infinite;
   -moz-animation: blink 0.7s infinite;

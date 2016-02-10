@@ -67,9 +67,9 @@ gulp.task('compass', function () {
         .pipe(compass({
             sass: 'components/sass',
             image: outputDir + 'images',
-            style: sassStyle
-            //project: __dirname,
-            //import_path: 'node_modules/foundation-sites/scss'
+            style: sassStyle,
+            project: __dirname,
+            import_path: 'node_modules/foundation-sites/scss'
         }).on('error', gutil.log))
         .pipe(autoprefixer({
             browsers: ['last 2 versions', 'ie >= 9', 'and_chr >= 2.3']

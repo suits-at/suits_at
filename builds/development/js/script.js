@@ -2546,7 +2546,7 @@ $(function(){
 
 })(window, document);
 (function() {
-    var triggerBttn = document.getElementById( 'nav-icon3' ),
+    var triggerBttn = document.getElementById( 'menu' ),
         overlay = document.querySelector( 'div.overlay' ),
         closeBttn = overlay.querySelector( 'button.overlay-close' );
     transEndEventNames = {
@@ -2589,7 +2589,7 @@ $(function(){
 
 
 $(document).ready(function(){
-    $('#nav-icon1,#nav-icon2,#nav-icon3,#nav-icon4').click(function(){
+    $('#menu').click(function(){
         $(this).toggleClass('open');
     });
 });
