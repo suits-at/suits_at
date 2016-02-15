@@ -2548,7 +2548,7 @@ $(function(){
 (function() {
     var triggerBttn = document.getElementById( 'menu' ),
         overlay = document.querySelector( 'div.overlay' ),
-        closeBttn = overlay.querySelector( 'button.overlay-close' );
+        close = overlay.querySelector( '.overlay-close' );
     transEndEventNames = {
         'WebkitTransition': 'webkitTransitionEnd',
         'MozTransition': 'transitionend',
@@ -2584,13 +2584,17 @@ $(function(){
     }
 
     triggerBttn.addEventListener( 'click', toggleOverlay );
-    closeBttn.addEventListener( 'click', toggleOverlay );
+    close.addEventListener( 'click', toggleOverlay );
 })();
 
-
+//Burger Menu
 $(document).ready(function(){
-    $('#menu').click(function(){
+    $burger = $('#menu');
+    $burger.click(function(){
         $(this).toggleClass('open');
+    });
+    $('.overlay-close').click(function(){
+        $burger.toggleClass('open');
     });
 });
 var pages = 2;
@@ -2657,7 +2661,6 @@ function resizeDiv() {
     vph = $(window).height();
     $('.page').css({'min-height': vph + 'px'});
 }
-
 },{"jquery":2,"mustache":3}],2:[function(require,module,exports){
 /*!
  * jQuery JavaScript Library v2.2.0

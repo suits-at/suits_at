@@ -3942,9 +3942,22 @@ body {
           transform: translateX(-50%);
 }
 
+.logo {
+  margin-top: 10%;
+}
+
 h1 {
   text-transform: uppercase;
   font-weight: 700;
+  color: #5a5a5a;
+}
+
+.footer {
+  background-color: #2e2e2e;
+  color: #ffffff;
+}
+.footer a {
+  color: #ffffff;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -3958,7 +3971,7 @@ h1, h2, h3, h4, h5, h6 {
 .typed {
   font-weight: 700;
   font-size: 4em;
-  color: #646464;
+  color: #5a5a5a;
 }
 
 .typed-cursor {
@@ -3998,7 +4011,7 @@ h1, h2, h3, h4, h5, h6 {
   height: 100%;
   top: 0;
   left: 0;
-  background: rgba(0, 0, 0, 0.96);
+  background: rgba(0, 0, 0, 0.9);
 }
 
 /* Menu style */
@@ -4155,7 +4168,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 @media all and (min-width: 1920px) {
-  .centered {
-    margin-top: 5%;
+  .logo {
+    margin-top: 15%;
   }
 }

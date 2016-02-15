@@ -10,8 +10,22 @@
 </head>
 <body>
 <div id="page1" class='page1 page'><a name="1"></a>
+    <div class="row align-center">
+        <img class="logo" src="images/suits_logo.png" alt="SUITS Logo">
+    </div>
+    <div class="row align-center">
+    <span class="typed-spacing">
+        <span class="typed"></span>
+    </span>
+    </div>
+    <!--see more link triangle-->
+    <div class="row align-center">
+        <a href="#2" class="more"></a>
+    </div>
+</div>
+<div id="page2" class="page2 page"><a name="2"></a>
     <div class="row">
-        <div class="small-12 columns">
+        <div class="small-12 column">
             <nav>
                 <button id="menu" type="button" class="float-right">
                     <span></span>
@@ -22,32 +36,28 @@
             </nav>
         </div>
     </div>
-    <div class="row align-center centered">
-        <img class="logo" src="images/suits_logo.png" alt="SUITS Logo">
-    </div>
-    <div class="row align-center">
-    <span class="typed-spacing">
-        <span class="typed"></span>
-    </span>
-    </div>
-    <!--see more link triangle-->
-    <div class="row align-center">
-        <div class="more"></div>
-    </div>
-</div>
-<div id="page2" class="page2 page"><a name="2"></a>
     <div class="row">
         <h1>//Portfolio</h1>
         <article id="portfolio"></article>
     </div>
 </div>
+<footer class="footer">
+    <div class="row">
+        <div class="small-12 medium-6 column">
+            E-Mail: <a href="mailto:office@suits.at">office@suits.at</a>
+        </div>
+        <div class="small-12 medium-6 column">
+            <a href="impressum.html">Impressum</a>
+        </div>
+    </div>
+</footer>
 
 <div class="overlay">
-    <button type="button" class="overlay-close">Close</button>
-    <nav>
+    <!--<button type="button" class="overlay-close">Close</button>-->
+    <nav class="overlay-close">
         <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Portfolio</a></li>
+            <li><a href="#1">Home</a></li>
+            <li><a href="#2">Portfolio</a></li>
             <li><a href="#">Leistungen</a></li>
             <li><a href="#">Über mich</a></li>
             <li><a href="#">Kontakt</a></li>
@@ -79,8 +89,10 @@
 <script id="portfolio-template" type="text/template">
     <div class="row">
         {{#speakers}}
-        <div class="small-12 medium-4 large-3 columns">
-            <img src="images/artists/{{shortname}}_tn.jpg" alt="Photo of {{name}}"/>
+        <div class="small-12 medium-4 large-3 column">
+            Kunde: {{kunde}}
+            <!--Datum: {{datum}}-->
+            <img src="images/portfolio/{{pfad}}.png" alt="Screenshot von {{url}}"/>
         </div>
         {{/speakers}}
     </div>

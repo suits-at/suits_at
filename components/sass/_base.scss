@@ -31,14 +31,22 @@ body {
   @include horizontal-center;
 }
 .logo{
-
+  margin-top:10%;
 }
 
 h1{
   text-transform: uppercase;
   font-weight: 700;
+  color: $headings;
 }
 
+.footer{
+  background-color: $footer;
+  color: $white;
+  a{
+    color: $white;
+  }
+}
 //#content {
 //  font-size: 2em;
 //}
