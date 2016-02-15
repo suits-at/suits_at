@@ -1,6 +1,28 @@
+
+
+@media all and (min-width: 768px) {
+  .logo{
+    height: 12rem;
+  }
+  .typed{
+    font-size: 4rem;
+  }
+}
+
+//center overlay from menu on big screens
+@media all and (min-width: 1200px) {
+  .overlay nav{
+    padding-left: 20%;
+  }
+  .logo{
+    height: 18rem;
+  }
+}
+
 //center landing page logo on HD screens
-@media all and (min-width: 1920px) {
+@media all and (min-width: 1900px) {
   .logo{
     margin-top:15%;
+    height: 20rem;
   }
 }

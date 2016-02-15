@@ -1,30 +1,66 @@
-{ "speakers" : [
+{ "projekte" : [
   {
-    "kunde":"Doris Mayer",
-    "url":"www.dorismayer.at",
-    "datum":"2007",
-    "pfad":"dorismayer",
-    "beschreibung":"Barot has just finished his final year at The Royal Academy of Painting and Sculpture, where he excelled in glass etching paintings and portraiture. Hailed as one of the most diverse artists of his generation, Barot is equally as skilled with watercolors as he is with oils, and is just as well-balanced in different subject areas. Barot's collection entitled \"The Un-Collection\" will adorn the walls of Gilbert Hall, depicting his range of skills and sensibilities - all of them, uniquely Barot, yet undeniably different"
+    "titel":"Praxis Arsenal",
+    "kunde":"Mag. Michael Stockert",
+    "url":"http://www.praxisarsenal.at/",
+    "datum":"2015",
+    "logo":"logo/praxis_arsenal",
+    "beschreibung":"Website"
   },
   {
+    "titel":"Ziviltechniker Pech",
+    "kunde":"Dr. PECH Ziviltechniker GmbH",
+    "url":"http://www.zt-pech.at/",
+    "datum":"2015",
+    "logo":"logo/ztpech",
+    "beschreibung":"Website"
+  },
+  {
+    "titel":"IAAA",
+    "kunde":"Arbeitsgruppe IAAA",
+    "url":"http://iaaa.fh-hagenberg.at/",
+    "datum":"2015",
+    "logo":"logo/iaaa",
+    "beschreibung":"Website"
+  },
+  {
+    "titel":"Schwertberger Bräu",
+    "kunde":" Dipl.-Ing. Karl Kiesenhofer",
+    "url":"http://www.schwertberger-braeu.at/",
+    "datum":"2007",
+    "logo":"logo/schwertberger_braeu",
+    "beschreibung":"Website"
+  },
+  {
+    "titel":"Windhorse",
+    "kunde":"Windhorse - Gesellschaft",
+    "url":"www.windhorse.at",
+    "datum":"2007",
+    "logo":"screenshots/windhorse",
+    "beschreibung":"Website"
+  },
+  {
+    "titel":"Mag. Judith Stockert-Giesinger | Praxis für Psychotherapie",
+    "kunde":"Mag. Judith Stockert-Giesinger",
+    "url":"http://www.judithstockert-giesinger.at/",
+    "datum":"2007",
+    "logo":"screenshots/judithstockertgiesinger",
+    "beschreibung":"Website"
+  },
+  {
+    "titel":"Michael Stockert - Psychotherapie, Supervision, Coaching",
     "kunde":"Mag. Michael Stockert",
     "url":"www.michaelstockert.at",
     "datum":"2010",
-    "pfad":"michaelstockert",
-    "beschreibung":"Barot has just finished his final year at The Royal Academy of Painting and Sculpture, where he excelled in glass etching paintings and portraiture. Hailed as one of the most diverse artists of his generation, Barot is equally as skilled with watercolors as he is with oils, and is just as well-balanced in different subject areas. Barot's collection entitled \"The Un-Collection\" will adorn the walls of Gilbert Hall, depicting his range of skills and sensibilities - all of them, uniquely Barot, yet undeniably different"
+    "logo":"screenshots/michaelstockert",
+    "beschreibung":"Visitenkarte, Website, Folder"
   },
   {
-    "kunde":"Windhorse",
-    "url":"www.windhorse.at",
+    "titel":"Doris Mayer - Bildende Künstlerin",
+    "kunde":"Doris Mayer",
+    "url":"www.dorismayer.at",
     "datum":"2007",
-    "pfad":"windhorse",
-    "beschreibung":"Barot has just finished his final year at The Royal Academy of Painting and Sculpture, where he excelled in glass etching paintings and portraiture. Hailed as one of the most diverse artists of his generation, Barot is equally as skilled with watercolors as he is with oils, and is just as well-balanced in different subject areas. Barot's collection entitled \"The Un-Collection\" will adorn the walls of Gilbert Hall, depicting his range of skills and sensibilities - all of them, uniquely Barot, yet undeniably different"
-  },
-  {
-    "kunde":"Judith Stockert-Giesinger",
-    "url":"www.judithstockertgiesinger.at",
-    "datum":"2007",
-    "pfad":"judithstockertgiesinger",
-    "beschreibung":"Barot has just finished his final year at The Royal Academy of Painting and Sculpture, where he excelled in glass etching paintings and portraiture. Hailed as one of the most diverse artists of his generation, Barot is equally as skilled with watercolors as he is with oils, and is just as well-balanced in different subject areas. Barot's collection entitled \"The Un-Collection\" will adorn the walls of Gilbert Hall, depicting his range of skills and sensibilities - all of them, uniquely Barot, yet undeniably different"
+    "logo":"screenshots/dorismayer",
+    "beschreibung":"Website"
   }
 ]}
