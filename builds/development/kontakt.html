@@ -29,41 +29,29 @@
 </header>
 <div class="row">
     <div class="column">
-        <h1>//Leistungen</h1>
+        <h1>//Kontakt</h1>
     </div>
 </div>
 <section class="row align-center leistungen">
     <div class="small-12 medium-4 column">
-        <i class="fi-checkbox"></i>
-        <h2>Strategy</h2>
-        <p>Lorem Ipsum</p>
+        <i class="fi-torso-business"></i>
+        <p>Sebastian Ulbel</p>
     </div>
     <div class="small-12 medium-4 column">
-        <i class="fi-lightbulb"></i>
-        <h2>Consulting</h2>
-        <p>Lorem Ipsum</p>
+        <i class="fi-map"></i>
+        <p>Schüttaustraße 72-78/1/21<br/>
+            1220 Wien</p>
     </div>
     <div class="small-12 medium-4 column">
-        <i class="fi-web"></i>
-        <h2>Webdevelopment</h2>
-        <p>Lorem Ipsum</p>
-    </div>
-    <div class="small-12 medium-4 column">
-        <i class="fi-checkbox"></i>
-        <h2>Strategy</h2>
-        <p>Lorem Ipsum</p>
-    </div>
-    <div class="small-12 medium-4 column">
-        <i class="fi-lightbulb"></i>
-        <h2>Consulting</h2>
-        <p>Lorem Ipsum</p>
-    </div>
-    <div class="small-12 medium-4 column">
-        <i class="fi-web"></i>
-        <h2>Webdevelopment</h2>
-        <p>Lorem Ipsum</p>
+        <i class="fi-mail"></i>
+        <p><a href="mailto:office@suits.at">office@suits.at</a></p>
     </div>
 </section>
+<div class="row">
+    <div class="column">
+        <div id="map">map</div>
+    </div>
+</div>
 <footer class="footer">
     <div class="row">
         <div class="small-6 column">
@@ -82,9 +70,9 @@
         <ul>
             <li><a href="index.html#1">Home</a></li>
             <li><a href="index.html#2">Portfolio</a></li>
-            <li><a href="#">Leistungen</a></li>
+            <li><a href="leistungen.html">Leistungen</a></li>
             <li><a href="ueber_mich.html">Über mich</a></li>
-            <li><a href="kontakt.html">Kontakt</a></li>
+            <li><a href="#">Kontakt</a></li>
         </ul>
     </nav>
 </div>
@@ -93,6 +81,36 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
 <script src="https://cdn.jsdelivr.net/foundation/6.1.2/foundation.min.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.5.18/webfont.js"></script>
+<script type="text/javascript">
+    var marker;
+    function initMap() {
+        var myLatLng = {lat: 48.224753, lng: 16.425090};
+
+        var map = new google.maps.Map(document.getElementById('map'), {
+            zoom: 14,
+            center: myLatLng
+        });
+
+        marker = new google.maps.Marker({
+            position: myLatLng,
+            map: map,
+            icon: 'images/suits_marker.png'
+        });
+        marker.addListener('click', toggleBounce);
+    }
+
+    function toggleBounce() {
+        if (marker.getAnimation() !== null) {
+            marker.setAnimation(null);
+        } else {
+            marker.setAnimation(google.maps.Animation.BOUNCE);
+            window.setTimeout(function() {
+                marker.setAnimation(null);
+            }, 1400);
+        }
+    }
+</script>
+<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDaDYEXiTLtPbesdmgFq50XN6_MbWnRl8w&callback=initMap"></script>
 <script type="text/javascript">
     WebFontConfig = {
         google: {families: ['Work+Sans:400,700:latin']}

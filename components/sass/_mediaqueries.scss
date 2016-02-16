@@ -1,7 +1,5 @@
-
-
 @media all and (min-width: 768px) {
-  .logo{
+  .teaser-logo{
     height: 12rem;
   }
   .typed{
@@ -14,14 +12,14 @@
   .overlay nav{
     padding-left: 20%;
   }
-  .logo{
+  .teaser-logo{
     height: 18rem;
   }
 }
 
 //center landing page logo on HD screens
 @media all and (min-width: 1900px) {
-  .logo{
+  .teaser-logo{
     margin-top:15%;
     height: 20rem;
   }

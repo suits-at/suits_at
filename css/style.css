@@ -3732,7 +3732,7 @@ body {
   transform: translateX(-50%);
 }
 
-.logo {
+.teaser-logo {
   height: 6rem;
   margin-top: 10%;
 }
@@ -3767,6 +3767,10 @@ footer a {
 }
 footer .right {
   text-align: right;
+}
+
+#map {
+  height: 400px;
 }
 
 /*sticky footer */
@@ -4020,7 +4024,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 @media all and (min-width: 768px) {
-  .logo {
+  .teaser-logo {
     height: 12rem;
   }
 
@@ -4033,12 +4037,12 @@ h1, h2, h3, h4, h5, h6 {
     padding-left: 20%;
   }
 
-  .logo {
+  .teaser-logo {
     height: 18rem;
   }
 }
 @media all and (min-width: 1900px) {
-  .logo {
+  .teaser-logo {
     margin-top: 15%;
     height: 20rem;
   }
