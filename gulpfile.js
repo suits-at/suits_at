@@ -41,7 +41,8 @@ jsSources = [
     'components/scripts/call_typed.js',
     'components/scripts/modernizr-custom.js',
     'components/scripts/menu.js',
-    'components/scripts/fullPageScrolling.js',
+    'components/scripts/fullPageScrolling.js'
+
 ];
 sassSources = ['components/sass/style.scss'];
 htmlSources = [outputDir + '*.html'];
@@ -56,7 +57,7 @@ gulp.task('coffee', function () {
 
 gulp.task('js', function () {
     gulp.src(jsSources)
-        .pipe(concat('script.js'))
+        //.pipe(concat('script.js'))
         .pipe(browserify())
         .pipe(gulpif(env === 'production', uglify()))
         .pipe(gulp.dest(outputDir + 'js'))
@@ -66,7 +67,9 @@ gulp.task('js', function () {
 gulp.task('compass', function () {
     gulp.src(sassSources)
         .pipe(compass({
+            sourcemap: true,
             sass: 'components/sass',
+            css: 'components/css',
             image: outputDir + 'images',
             style: sassStyle,
             project: __dirname,
