@@ -122,26 +122,26 @@ footer .icon{
 }
 
 .icon-twitter:hover{
-  fill: #55ACEE;
+  fill: $twitter;
 }
 
 .icon-github:hover{
-  fill: $white;
+  fill: $github;
 }
 
 .icon-facebook:hover{
-  fill: #3b5998;
+  fill: $facebook;
 }
 
 .icon-stackoverflow:hover{
-  fill: #F67A00;
+  fill: $stackoverflow;
+}
+.xing:hover .xing1{
+  fill: $xing1;
 }
 
 .xing:hover .xing2{
-  fill: #D3D500;
-}
-.xing:hover .xing1{
-  fill: #005A5F;
+  fill: $xing2;
 }
 
 #{headings()} {

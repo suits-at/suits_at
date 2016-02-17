@@ -4036,19 +4036,19 @@ footer .icon {
 }
 
 .icon-facebook:hover {
-  fill: #3b5998;
+  fill: #6d84b4;
 }
 
 .icon-stackoverflow:hover {
   fill: #F67A00;
 }
 
-.xing:hover .xing2 {
-  fill: #D3D500;
-}
-
 .xing:hover .xing1 {
   fill: #005A5F;
+}
+
+.xing:hover .xing2 {
+  fill: #D3D500;
 }
 
 h1, h2, h3, h4, h5, h6 {
