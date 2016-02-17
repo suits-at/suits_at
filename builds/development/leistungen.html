@@ -16,14 +16,16 @@
             <a href="index.html#1"><img class="logo" src="images/suits_logo.png" width="239" alt="SUITS Logo"></a>
         </div>
         <div class="small-2 column">
-            <nav>
-                <button id="menu" type="button" class="float-right">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </button>
-            </nav>
+            <span class="menu-toggle" aria-controls="secondary" aria-expanded="false"><span>Menu</span></span>
+
+            <!--<nav>-->
+                <!--<button id="menu" type="button" class="float-right">-->
+                    <!--<span></span>-->
+                    <!--<span></span>-->
+                    <!--<span></span>-->
+                    <!--<span></span>-->
+                <!--</button>-->
+            <!--</nav>-->
         </div>
     </div>
 </header>
@@ -89,8 +91,31 @@
     </nav>
 </div>
 
-<script src="js/script.js"></script>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+
+<div class="le-menu">
+    <div class="le-menu-wrapper">
+        <nav id="site-navigation" class="main-navigation" role="navigation" aria-expanded="false">
+            <ul class="h3 list-unstyled">
+                <li><a href="http://mokaine.com/">Beetle Go</a></li>
+                <li><a href="http://mokaine.com/beetle-pro-wordpress-theme/">Beetle Pro</a></li>
+                <li><a href="http://mokaine.com/beetle-go-vs-beetle-pro-feature-lists-compared/">Feature Lists</a></li>
+                <li><a href="http://mokaine.com/terms-of-use/">Terms of Use</a></li>
+                <li><a href="http://mokaine.com/help/">Contact &amp; Help</a></li>
+                <li><a href="http://mokaine.com/credits/">Credits</a></li>
+            </ul><!-- /.list-unstyled -->
+        </nav><!-- #site-navigation -->
+    </div><!-- /.le-menu-wrapper -->
+</div><!-- /.le-menu -->
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.js"></script>
+<script src="//cdn.jsdelivr.net/velocity/1.2.3/velocity.min.js"></script>
+
+<!--statt script.js-->
+<script src="js/menu.js"></script>
+<script src="js/modernizr-custom.js"></script>
+
+
+<!--<script src="js/script.js"></script>-->
 <script src="https://cdn.jsdelivr.net/foundation/6.1.2/foundation.min.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.5.18/webfont.js"></script>
 <script type="text/javascript">
