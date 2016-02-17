@@ -64,6 +64,8 @@ gulp.task('js', function () {
         .pipe(connect.reload())
 });
 
+//sourcemap = (environment == :production) ? false : true
+
 gulp.task('compass', function () {
     gulp.src(sassSources)
         .pipe(compass({
