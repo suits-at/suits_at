@@ -3968,13 +3968,19 @@ h1 {
 
 footer {
   background-color: #2e2e2e;
-  color: #ffffff;
+  color: #646464;
 }
 footer a {
+  color: #646464;
+}
+footer a:hover {
   color: #ffffff;
 }
 footer .right {
   text-align: right;
+}
+footer .center {
+  text-align: center;
 }
 
 #map {
@@ -4003,8 +4009,8 @@ body {
 
 /*sticky footer end */
 footer .icon {
-  width: 2rem;
-  height: 2rem;
+  width: 1.6rem;
+  height: 1.6rem;
 }
 
 .icon {

@@ -59,12 +59,18 @@ h1{
 
 footer{
   background-color: $footer;
-  color: $white;
+  color: $grey;
   a{
+    color: $grey;
+  }
+  a:hover{
     color: $white;
   }
   .right{
     text-align: right;
+  }
+  .center{
+    text-align: center;
   }
 }
 
@@ -102,8 +108,8 @@ body {
 
 
 footer .icon{
-  width: 2rem;
-  height: 2rem;
+  width: 1.6rem;
+  height: 1.6rem;
 }
 
 .icon{
