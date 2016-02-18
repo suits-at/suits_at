@@ -4005,7 +4005,7 @@ html {
 }
 
 body {
-  margin: 0 0 3rem;
+  margin: 0 0 3.5rem;
   /* bottom = footer height */
 }
 
@@ -4015,7 +4015,7 @@ body {
   bottom: 0;
   width: 100%;
   padding: 1rem;
-  height: 3rem;
+  height: 3.5rem;
 }
 
 /*sticky footer end */
