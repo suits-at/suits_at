@@ -11,6 +11,7 @@ var gulp = require('gulp'),
     imagemin = require('gulp-imagemin'),
     pngquant = require('imagemin-pngquant'),
     autoprefixer = require('gulp-autoprefixer'),
+    nunjucksRender = require('gulp-nunjucks-render'),
     concat = require('gulp-concat');
 
 var env,
@@ -105,6 +106,15 @@ gulp.task('html', function () {
         .pipe(gulpif(env === 'production', htmlmin({collapseWhitespace: true})))
         .pipe(gulpif(env === 'production', gulp.dest(outputDir)))
         .pipe(connect.reload())
+});
+
+gulp.task('nunjucks', function() {
+    // Gets .html and .nunjucks files in pages
+    return gulp.src('components/pages/**/*.+(html|nunj)')
+        .pipe(nunjucksRender({
+            path: ['components/templates/']
+        }).on('error', gutil.log))
+        .pipe(gulp.dest(outputDir + 'app'))
 });
 
 gulp.task('images', function () {

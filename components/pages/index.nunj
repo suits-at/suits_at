@@ -1,0 +1,13 @@
+<!-- index.nunj -->
+{% extends "layout.nunj" %}
+
+{% block content %}
+    <h1>This is the index page</h1>
+    <!-- Adds the navigation partial -->
+    {#{% include "partials/nav.nunj" %}#}
+
+    {% import 'macros/nav-macro.nunj' as nav %}
+    <!-- Creating the navigation with activePage = 'home' -->
+    {{nav.active('contact')}}
+
+{% endblock %}
