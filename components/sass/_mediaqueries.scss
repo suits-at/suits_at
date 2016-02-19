@@ -1,3 +1,12 @@
+@media all and (min-width: 650px) {
+  footer{
+    padding-top:1.8rem;
+    .center{
+      margin-top: 0;
+    }
+  }
+}
+
 @media all and (min-width: 768px) {
   .teaser-logo{
     height: 12rem;
