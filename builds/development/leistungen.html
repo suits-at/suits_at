@@ -75,6 +75,9 @@
             <a href="index.html#1"><img class="logo" src="images/suits_logo.png" width="239" alt="SUITS Logo"></a>
         </div>
         <div class="small-2 column">
+            <!--<span class="menu-toggle" aria-controls="secondary" aria-expanded="false">-->
+                <!--<span>Menu</span>-->
+            <!--</span>-->
             <nav>
                 <button id="menu" type="button" class="float-right">
                     <span></span>
@@ -176,48 +179,42 @@
         <ul>
             <li><a href="index.html#1">Home</a></li>
             <li><a href="index.html#2">Portfolio</a></li>
-            <li><a href="leistungen.html">Leistungen</a></li>
+            <li><a href="#">Leistungen</a></li>
             <li><a href="ueber_mich.html">Über mich</a></li>
-            <li><a href="#">Kontakt</a></li>
+            <li><a href="kontakt.html">Kontakt</a></li>
         </ul>
     </nav>
 </div>
 
-<script src="js/script.js"></script>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+
+<!--<div class="le-menu">-->
+    <!--<div class="le-menu-wrapper">-->
+        <!--<nav id="site-navigation" class="main-navigation" role="navigation" aria-expanded="false">-->
+            <!--<ul class="h3 list-unstyled">-->
+                <!--<li><a href="http://mokaine.com/">Beetle Go</a></li>-->
+                <!--<li><a href="http://mokaine.com/beetle-pro-wordpress-theme/">Beetle Pro</a></li>-->
+                <!--<li><a href="http://mokaine.com/beetle-go-vs-beetle-pro-feature-lists-compared/">Feature Lists</a></li>-->
+                <!--<li><a href="http://mokaine.com/terms-of-use/">Terms of Use</a></li>-->
+                <!--<li><a href="http://mokaine.com/help/">Contact &amp; Help</a></li>-->
+                <!--<li><a href="http://mokaine.com/credits/">Credits</a></li>-->
+            <!--</ul>&lt;!&ndash; /.list-unstyled &ndash;&gt;-->
+        <!--</nav>&lt;!&ndash; #site-navigation &ndash;&gt;-->
+    <!--</div>&lt;!&ndash; /.le-menu-wrapper &ndash;&gt;-->
+<!--</div>&lt;!&ndash; /.le-menu &ndash;&gt;-->
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.js"></script>
+<script src="//cdn.jsdelivr.net/velocity/1.2.3/velocity.min.js"></script>
+
+<!--statt script.js-->
+<script src="js/modernizr-custom.js"></script>
+<script src="js/menu.js"></script>
+
+
+<!--<script src="js/script.js"></script>-->
 <script src="https://cdn.jsdelivr.net/foundation/6.1.2/foundation.min.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.5.18/webfont.js"></script>
-<script type="text/javascript">
-    var marker;
-    function initMap() {
-        var myLatLng = {lat: 48.224753, lng: 16.425090};
 
-        var map = new google.maps.Map(document.getElementById('map'), {
-            zoom: 14,
-            center: myLatLng
-        });
-
-        marker = new google.maps.Marker({
-            position: myLatLng,
-            map: map,
-            icon: 'images/suits_marker.png'
-        });
-        marker.addListener('click', toggleBounce);
-    }
-
-    function toggleBounce() {
-        if (marker.getAnimation() !== null) {
-            marker.setAnimation(null);
-        } else {
-            marker.setAnimation(google.maps.Animation.BOUNCE);
-            window.setTimeout(function () {
-                marker.setAnimation(null);
-            }, 1400);
-        }
-    }
-</script>
-<script async defer
-        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDaDYEXiTLtPbesdmgFq50XN6_MbWnRl8w&callback=initMap"></script>
 <script type="text/javascript">
     WebFontConfig = {
         google: {families: ['Work+Sans:400,700:latin']}
