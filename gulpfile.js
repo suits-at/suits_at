@@ -41,7 +41,6 @@ jsSources = [
     'components/scripts/modernizr-custom.js',
     'components/scripts/menu.js',
     'components/scripts/fullPageScrolling.js'
-
 ];
 sassSources = ['components/sass/style.scss'];
 htmlSources = [outputDir + '*.html'];

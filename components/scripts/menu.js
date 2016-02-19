@@ -1,3 +1,5 @@
+var $ = require('jquery');
+
 (function() {
     var triggerBttn = document.getElementById( 'menu' ),
         overlay = document.querySelector( 'div.overlay' ),
