@@ -44,7 +44,8 @@ jsSources = [
 ];
 sassSources = ['components/sass/style.scss'];
 htmlSources = [outputDir + '*.html'];
-jsonSources = [outputDir + 'js/*.json'];
+jsonSources = ['components/json/*.json'];
+imgSources = ['builds/development/images/**/*.*'];
 
 //coffeeSources = ['components/coffee/tagline.coffee'];
 //gulp.task('coffee', function () {
@@ -64,6 +65,7 @@ gulp.task('js', function () {
 });
 
 //sourcemap = (environment == :production) ? false : true
+//todo: testen ob autoprefixer funktioniert
 
 gulp.task('compass', function () {
     gulp.src(sassSources)
@@ -89,8 +91,8 @@ gulp.task('watch', function () {
     gulp.watch(jsSources, ['js']);
     gulp.watch('components/sass/*.scss', ['compass']);
     gulp.watch('builds/development/*.html', ['html']);
-    gulp.watch('builds/development/js/*.json', ['json']);
-    gulp.watch('builds/development/images/**/*.*', ['images']);
+    gulp.watch(jsonSources, ['json']);
+    gulp.watch(imgSources, ['images']);
 });
 
 gulp.task('connect', function () {
@@ -117,7 +119,7 @@ gulp.task('nunjucks', function() {
 });
 
 gulp.task('images', function () {
-    gulp.src('builds/development/images/**/*.*')
+    gulp.src(imgSources)
         .pipe(gulpif(env === 'production', imagemin({
             progressive: true,
             svgoPlugin: [{removeViewBox: false}],
@@ -128,9 +130,9 @@ gulp.task('images', function () {
 });
 
 gulp.task('json', function () {
-    gulp.src('builds/development/js/*.json')
+    gulp.src(jsonSources)
         .pipe(gulpif(env === 'production', jsonminify()))
-        .pipe(gulpif(env === 'production', gulp.dest('builds/production/js')))
+        .pipe(gulp.dest(outputDir + 'json'))
         .pipe(connect.reload())
 });
 

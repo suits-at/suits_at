@@ -1,0 +1,66 @@
+{ "projekte" : [
+  {
+    "titel":"Praxis Arsenal",
+    "kunde":"Mag. Michael Stockert",
+    "url":"http://www.praxisarsenal.at/",
+    "datum":"2015",
+    "logo":"logo/praxis_arsenal",
+    "beschreibung":"Website"
+  },
+  {
+    "titel":"Ziviltechniker Pech",
+    "kunde":"Dr. PECH Ziviltechniker GmbH",
+    "url":"http://www.zt-pech.at/",
+    "datum":"2015",
+    "logo":"logo/ztpech",
+    "beschreibung":"Website"
+  },
+  {
+    "titel":"IAAA",
+    "kunde":"Arbeitsgruppe IAAA",
+    "url":"http://iaaa.fh-hagenberg.at/",
+    "datum":"2015",
+    "logo":"logo/iaaa",
+    "beschreibung":"Website"
+  },
+  {
+    "titel":"Schwertberger Bräu",
+    "kunde":" Dipl.-Ing. Karl Kiesenhofer",
+    "url":"http://www.schwertberger-braeu.at/",
+    "datum":"2007",
+    "logo":"logo/schwertberger_braeu",
+    "beschreibung":"Website"
+  },
+  {
+    "titel":"Windhorse",
+    "kunde":"Windhorse - Gesellschaft",
+    "url":"www.windhorse.at",
+    "datum":"2007",
+    "logo":"screenshots/windhorse",
+    "beschreibung":"Website"
+  },
+  {
+    "titel":"Mag. Judith Stockert-Giesinger | Praxis für Psychotherapie",
+    "kunde":"Mag. Judith Stockert-Giesinger",
+    "url":"http://www.judithstockert-giesinger.at/",
+    "datum":"2007",
+    "logo":"screenshots/judithstockertgiesinger",
+    "beschreibung":"Website"
+  },
+  {
+    "titel":"Michael Stockert - Psychotherapie, Supervision, Coaching",
+    "kunde":"Mag. Michael Stockert",
+    "url":"www.michaelstockert.at",
+    "datum":"2010",
+    "logo":"screenshots/michaelstockert",
+    "beschreibung":"Visitenkarte, Website, Folder"
+  },
+  {
+    "titel":"Doris Mayer - Bildende Künstlerin",
+    "kunde":"Doris Mayer",
+    "url":"www.dorismayer.at",
+    "datum":"2007",
+    "logo":"screenshots/dorismayer",
+    "beschreibung":"Website"
+  }
+]}
