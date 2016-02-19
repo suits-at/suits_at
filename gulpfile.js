@@ -12,6 +12,7 @@ var gulp = require('gulp'),
     pngquant = require('imagemin-pngquant'),
     autoprefixer = require('gulp-autoprefixer'),
     nunjucksRender = require('gulp-nunjucks-render'),
+    data = require('gulp-data'),
     concat = require('gulp-concat');
 
 var env,
@@ -35,7 +36,7 @@ if (env === 'development') {
 }
 
 jsSources = [
-    'components/scripts/template.js',
+    'components/scripts/unused_template.js',
     'components/scripts/typed.js',
     'components/scripts/call_typed.js',
     'components/scripts/modernizr-custom.js',
@@ -113,6 +114,9 @@ gulp.task('connect', function () {
 
 gulp.task('nunjucks', function() {
     return gulp.src(nunjucksSources)
+        .pipe(data(function() {
+            return require('./components/json/data.json')
+        }))
         .pipe(nunjucksRender({
             path: ['components/templates/']
         }).on('error', gutil.log))
