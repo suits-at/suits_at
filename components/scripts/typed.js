@@ -30,8 +30,6 @@
 
         "use strict";
 
-        var $ = require('jquery');
-
         var Typed = function(el, options) {
 
             // chosen element to manipulate text
