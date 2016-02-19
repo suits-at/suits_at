@@ -1,0 +1,81 @@
+{% extends "layout.nunj" %}
+
+{% block content %}
+
+    <div class="row">
+        <div class="column">
+            <h1 class="header">//Kontakt</h1>
+        </div>
+    </div>
+    <section class="row align-center leistungen">
+        <div class="small-12 medium-4 column">
+        <span class="icon-user-tie wrapper">
+            <svg class="icon icon-user-tie">
+                <use xlink:href="#icon-user-tie"></use>
+            </svg>
+            <br/>Sebastian Ulbel
+        </span>
+        </div>
+        <div class="small-12 medium-4 column">
+        <span class="icon-location2 wrapper">
+            <svg class="icon icon-location2">
+                <use xlink:href="#icon-location2"></use>
+            </svg>
+            <br/>Schüttaustraße 72-78/1/21<br/>1220 Wien
+        </span>
+        </div>
+        <div class="small-12 medium-4 column">
+            <p>
+                <a href="mailto:office@suits.at">
+                <span class="icon-envelop wrapper">
+                    <svg class="icon icon-envelop">
+                        <use xlink:href="#icon-envelop"></use>
+                    </svg>
+                    <br/>office@suits.at
+                </span>
+                </a>
+            </p>
+        </div>
+    </section>
+    <div class="row">
+        <div class="column">
+            <div id="map">map</div>
+        </div>
+    </div>
+{% endblock %}
+
+{% block scripts %}
+    <script async defer
+            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDaDYEXiTLtPbesdmgFq50XN6_MbWnRl8w&callback=initMap"></script>
+
+    <script type="text/javascript">
+        var marker;
+        function initMap() {
+            var myLatLng = {lat: 48.224753, lng: 16.425090};
+
+            var map = new google.maps.Map(document.getElementById('map'), {
+                zoom: 14,
+                center: myLatLng
+            });
+
+            marker = new google.maps.Marker({
+                position: myLatLng,
+                map: map,
+                icon: 'images/suits_marker.png'
+            });
+            marker.addListener('click', toggleBounce);
+        }
+
+        function toggleBounce() {
+            if (marker.getAnimation() !== null) {
+                marker.setAnimation(null);
+            } else {
+                marker.setAnimation(google.maps.Animation.BOUNCE);
+                window.setTimeout(function () {
+                    marker.setAnimation(null);
+                }, 1400);
+            }
+        }
+    </script>
+
+{% endblock %}

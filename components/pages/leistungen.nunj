@@ -1,0 +1,58 @@
+{% extends "layout.nunj" %}
+
+{% block content %}
+
+<div class="row">
+    <div class="column">
+        <h1 class="header">//Leistungen</h1>
+    </div>
+</div>
+<section class="row align-center leistungen">
+    <div class="small-12 medium-4 column">
+        <i class="fi-checkbox"></i>
+        <h2>Strategy</h2>
+        <p>Lorem Ipsum</p>
+    </div>
+    <div class="small-12 medium-4 column">
+        <i class="fi-lightbulb"></i>
+        <h2>Consulting</h2>
+        <p>Lorem Ipsum</p>
+    </div>
+    <div class="small-12 medium-4 column">
+        <i class="fi-web"></i>
+        <h2>Webdevelopment</h2>
+        <p>Lorem Ipsum</p>
+    </div>
+    <div class="small-12 medium-4 column">
+        <i class="fi-checkbox"></i>
+        <h2>Strategy</h2>
+        <p>Lorem Ipsum</p>
+    </div>
+    <div class="small-12 medium-4 column">
+        <i class="fi-lightbulb"></i>
+        <h2>Consulting</h2>
+        <p>Lorem Ipsum</p>
+    </div>
+    <div class="small-12 medium-4 column">
+        <i class="fi-web"></i>
+        <h2>Webdevelopment</h2>
+        <p>Lorem Ipsum</p>
+    </div>
+</section>
+
+{% endblock %}
+
+<!--<div class="le-menu">-->
+    <!--<div class="le-menu-wrapper">-->
+        <!--<nav id="site-navigation" class="main-navigation" role="navigation" aria-expanded="false">-->
+            <!--<ul class="h3 list-unstyled">-->
+                <!--<li><a href="http://mokaine.com/">Beetle Go</a></li>-->
+                <!--<li><a href="http://mokaine.com/beetle-pro-wordpress-theme/">Beetle Pro</a></li>-->
+                <!--<li><a href="http://mokaine.com/beetle-go-vs-beetle-pro-feature-lists-compared/">Feature Lists</a></li>-->
+                <!--<li><a href="http://mokaine.com/terms-of-use/">Terms of Use</a></li>-->
+                <!--<li><a href="http://mokaine.com/help/">Contact &amp; Help</a></li>-->
+                <!--<li><a href="http://mokaine.com/credits/">Credits</a></li>-->
+            <!--</ul>&lt;!&ndash; /.list-unstyled &ndash;&gt;-->
+        <!--</nav>&lt;!&ndash; #site-navigation &ndash;&gt;-->
+    <!--</div>&lt;!&ndash; /.le-menu-wrapper &ndash;&gt;-->
+<!--</div>&lt;!&ndash; /.le-menu &ndash;&gt;-->

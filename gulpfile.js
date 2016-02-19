@@ -46,6 +46,7 @@ sassSources = ['components/sass/style.scss'];
 htmlSources = [outputDir + '*.html'];
 jsonSources = ['components/json/*.json'];
 imgSources = ['builds/development/images/**/*.*'];
+nunjucksSources = ['components/pages/*.+(html|nunj)'];
 
 //coffeeSources = ['components/coffee/tagline.coffee'];
 //gulp.task('coffee', function () {
@@ -90,7 +91,8 @@ gulp.task('watch', function () {
     //gulp.watch(coffeeSources, ['coffee']);
     gulp.watch(jsSources, ['js']);
     gulp.watch('components/sass/*.scss', ['compass']);
-    gulp.watch('builds/development/*.html', ['html']);
+    //gulp.watch('builds/development/*.html', ['html']);
+    gulp.watch(nunjucksSources, ['nunjucks']);
     gulp.watch(jsonSources, ['json']);
     gulp.watch(imgSources, ['images']);
 });
@@ -102,20 +104,20 @@ gulp.task('connect', function () {
     });
 });
 
-gulp.task('html', function () {
-    gulp.src('builds/development/*.html')
-        .pipe(gulpif(env === 'production', htmlmin({collapseWhitespace: true})))
-        .pipe(gulpif(env === 'production', gulp.dest(outputDir)))
-        .pipe(connect.reload())
-});
+//gulp.task('html', function () {
+//    gulp.src('builds/development/*.html')
+//        .pipe(gulpif(env === 'production', htmlmin({collapseWhitespace: true})))
+//        .pipe(gulpif(env === 'production', gulp.dest(outputDir)))
+//        .pipe(connect.reload())
+//});
 
 gulp.task('nunjucks', function() {
-    // Gets .html and .nunjucks files in pages
-    return gulp.src('components/pages/**/*.+(html|nunj)')
+    return gulp.src(nunjucksSources)
         .pipe(nunjucksRender({
             path: ['components/templates/']
         }).on('error', gutil.log))
-        .pipe(gulp.dest(outputDir + 'app'))
+        .pipe(gulp.dest(outputDir))
+        .pipe(connect.reload())
 });
 
 gulp.task('images', function () {
@@ -137,4 +139,4 @@ gulp.task('json', function () {
 });
 
 
-gulp.task('default', ['html', 'json', 'js', 'compass', 'images', 'connect', 'watch']);
+gulp.task('default', ['nunjucks', 'json', 'js', 'compass', 'images', 'connect', 'watch']);

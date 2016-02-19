@@ -1,0 +1,14 @@
+{% extends "layout.nunj" %}
+
+{% block content %}
+
+<div class="row">
+    <div class="column">
+        <h1 class="header">//Impressum</h1>
+    </div>
+</div>
+<section class="row">
+    Lorem Ipsum
+</section>
+
+{% endblock %}

@@ -1,4 +1,3 @@
-<!-- index.nunj -->
 {% extends "layout.nunj" %}
 
 {% block content %}
