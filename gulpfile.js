@@ -51,14 +51,14 @@ nunjucksSources = ['components/pages/*.+(html|nunj)'];
 
 //coffeeSources = ['components/coffee/tagline.coffee'];
 //gulp.task('coffee', function () {
-//    gulp.src(coffeeSources)
+//    return gulp.src(coffeeSources)
 //        .pipe(coffee({bare: true})
 //            .on('error', gutil.log))
 //        .pipe(gulp.dest('components/scripts'))
 //});
 
 gulp.task('js', function () {
-    gulp.src(jsSources)
+    return gulp.src(jsSources)
         //.pipe(concat('script.js'))
         .pipe(browserify())
         .pipe(gulpif(env === 'production', uglify()))
@@ -70,7 +70,7 @@ gulp.task('js', function () {
 //todo: testen ob autoprefixer funktioniert
 
 gulp.task('compass', function () {
-    gulp.src(sassSources)
+    return gulp.src(sassSources)
         .pipe(compass({
             //sourcemap: true,
             //debug: true,
@@ -93,7 +93,7 @@ gulp.task('watch', function () {
     gulp.watch(jsSources, ['js']);
     gulp.watch('components/sass/*.scss', ['compass']);
     //gulp.watch('builds/development/*.html', ['html']);
-    gulp.watch(nunjucksSources, ['nunjucks']);
+    gulp.watch(['components/pages/*.+(html|nunj)', 'components/templates/**/*.+(html|nunj)'], ['nunjucks']);
     gulp.watch(jsonSources, ['json']);
     gulp.watch(imgSources, ['images']);
 });
@@ -106,7 +106,7 @@ gulp.task('connect', function () {
 });
 
 //gulp.task('html', function () {
-//    gulp.src('builds/development/*.html')
+//    return gulp.src('builds/development/*.html')
 //        .pipe(gulpif(env === 'production', htmlmin({collapseWhitespace: true})))
 //        .pipe(gulpif(env === 'production', gulp.dest(outputDir)))
 //        .pipe(connect.reload())
@@ -125,7 +125,7 @@ gulp.task('nunjucks', function() {
 });
 
 gulp.task('images', function () {
-    gulp.src(imgSources)
+    return gulp.src(imgSources)
         .pipe(gulpif(env === 'production', imagemin({
             progressive: true,
             svgoPlugin: [{removeViewBox: false}],
@@ -136,7 +136,7 @@ gulp.task('images', function () {
 });
 
 gulp.task('json', function () {
-    gulp.src(jsonSources)
+    return gulp.src(jsonSources)
         .pipe(gulpif(env === 'production', jsonminify()))
         .pipe(gulp.dest(outputDir + 'json'))
         .pipe(connect.reload())
