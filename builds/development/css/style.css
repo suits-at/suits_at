@@ -4101,6 +4101,10 @@ h1, h2, h3, h4, h5, h6 {
   background: rgba(0, 0, 0, 0.9);
 }
 
+.overlay ul li a.active {
+  text-decoration: underline;
+}
+
 /* Menu style */
 .overlay nav {
   position: relative;

@@ -66,100 +66,11 @@
     </defs>
 </svg>
 
-<header>
-    <div class="row">
-        <div class="small-10 column">
-            <a href="index.html#1"><img class="logo" src="images/suits_logo.png" width="239" alt="SUITS Logo"></a>
-        </div>
-        <div class="small-2 column">
-            <nav>
-                <button id="menu" type="button" class="float-right">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </button>
-            </nav>
-        </div>
-    </div>
-</header>
+{% block content %} {% endblock %}
 
-    <h1>This is the index page</h1>
-    <!-- Adds the navigation partial -->
-    
+{% include "partials/footer.nunj" %}
 
-    
-    <!-- Creating the navigation with activePage = 'home' -->
-    
-    <nav>
-        <a href="#" class="">Home</a>
-        <a href="#" class="">About</a>
-        <a href="#" class=" active ">Contact</a>
-        <!-- Repeat for about and contact -->
-    </nav>
-
-
-
-
-<footer class="footer">
-    <div class="row">
-        <div class="small-6 medium-4 column">
-            <!--<i class="fi-mail"></i>-->
-            <a href="mailto:office@suits.at">
-                <span class="icon-envelop wrapper">
-                    <svg class="icon icon-envelop">
-                        <use xlink:href="#icon-envelop"></use>
-                    </svg>
-                        office@suits.at
-                </span>
-            </a>
-        </div>
-
-        <div class="small-12 medium-4 column small-order-3 medium-order-2 center">
-            <svg class="icon icon-twitter">
-                <use xlink:href="#icon-twitter"></use>
-            </svg>
-
-            <svg class="icon icon-xing2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024">
-                <g class="xing">
-                    <path class="xing1"
-                          d="M155.6 202.2c-8.8 0-16.4 3.2-20.2 9.2-3.8 6.4-3.2 14.4 0.8 22.6l99.8 172.8c0.2 0.4 0.2 0.6 0 0.8l-156.8 277.2c-4 8.2-3.8 16.4 0 22.6 3.8 6 10.4 10 19.2 10h147.6c22 0 32.8-15 40.2-28.6 0 0 153.4-271.4 159.4-282-0.6-1-101.6-177-101.6-177-7.4-13-18.4-27.6-41.2-27.6h-147.2z"></path>
-                    <path class="xing2"
-                          d="M776 0c-22 0-31.6 13.8-39.6 28.2 0 0-318.2 564.2-328.6 582.8 0.6 1 209.8 385 209.8 385 7.4 13 18.6 28.2 41.2 28.2h147.6c8.8 0 15.8-3.4 19.6-9.4 4-6.4 3.8-14.6-0.4-22.8l-208-380.6c-0.2-0.4-0.2-0.6 0-1l327-578.2c4-8.2 4.2-16.4 0.4-22.8-3.8-6-10.8-9.4-19.6-9.4h-149.4z"></path>
-                </g>
-            </svg>
-
-            <svg class="icon icon-github">
-                <use xlink:href="#icon-github"></use>
-            </svg>
-            <svg class="icon icon-facebook">
-                <use xlink:href="#icon-facebook"></use>
-            </svg>
-            <svg class="icon icon-stackoverflow">
-                <use xlink:href="#icon-stackoverflow"></use>
-            </svg>
-        </div>
-
-        <div class="small-6 medium-4 column small-order-2 medium-order-3 right">
-            <a href="impressum.html">Impressum</a>
-        </div>
-    </div>
-</footer>
-
-<div class="overlay">
-    <!--<button type="button" class="overlay-close">Close</button>-->
-    <nav class="overlay-close">
-        <ul>
-            <li><a href="index.html#1">Home</a></li>
-            <li><a href="index.html#2">Portfolio</a></li>
-            <li><a href="leistungen.html">Leistungen</a></li>
-            <li><a href="ueber_mich.html">Über mich</a></li>
-            <li><a href="kontakt.html">Kontakt</a></li>
-        </ul>
-    </nav>
-</div>
-
-
+{#<script src="//cdn.jsdelivr.net/velocity/1.2.3/velocity.min.js"></script>#}
 <!--statt script.js-->
 <script src="js/modernizr-custom.js"></script>
 <script src="js/menu.js"></script>
@@ -181,7 +92,7 @@
     })();
 </script>
 
- 
+{% block scripts %} {% endblock %}
 
 </body>
 </html>

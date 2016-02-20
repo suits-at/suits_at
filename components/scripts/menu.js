@@ -1,6 +1,6 @@
 var $ = require('jquery');
 
-(function() {
+$(function() {
     var triggerBttn = document.getElementById( 'menu' ),
         overlay = document.querySelector( 'div.overlay' ),
         close = overlay.querySelector( '.overlay-close' );
@@ -40,10 +40,10 @@ var $ = require('jquery');
 
     triggerBttn.addEventListener( 'click', toggleOverlay );
     close.addEventListener( 'click', toggleOverlay );
-})();
+});
 
 //Burger Menu
-$(document).ready(function(){
+$(function(){
     $burger = $('#menu');
     $burger.click(function(){
         $(this).toggleClass('open');

@@ -1,4 +1,4 @@
-{% extends "layout.nunj" %}
+{% extends "main_layout.nunj" %}
 
 {% block content %}
 
@@ -45,6 +45,10 @@
 {% endblock %}
 
 {% block scripts %}
+
+    {% import 'macros/nav-macro.nunj' as nav %}
+    {{nav.active('kontakt')}}
+
     <script async defer
             src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDaDYEXiTLtPbesdmgFq50XN6_MbWnRl8w&callback=initMap"></script>
 

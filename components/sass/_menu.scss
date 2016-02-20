@@ -8,6 +8,10 @@
   background: rgba(0,0,0,0.9);
 }
 
+.overlay ul li a.active{
+  text-decoration: underline;
+}
+
 /* Menu style */
 .overlay nav {
   //text-align: center;

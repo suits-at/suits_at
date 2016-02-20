@@ -1,4 +1,4 @@
-{% extends "layout.nunj" %}
+{% extends "main_layout.nunj" %}
 
 {% block content %}
 
@@ -39,6 +39,13 @@
         <p>Lorem Ipsum</p>
     </div>
 </section>
+
+{% endblock %}
+
+{% block scripts %}
+
+    {% import 'macros/nav-macro.nunj' as nav %}
+    {{nav.active('leistungen')}}
 
 {% endblock %}
 
