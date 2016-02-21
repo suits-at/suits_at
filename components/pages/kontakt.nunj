@@ -9,12 +9,12 @@
     </div>
     <section class="row align-center leistungen">
         <div class="small-12 medium-4 column">
-        <span class="icon-user-tie wrapper">
+        <a href="ueber_mich.html" class="icon-user-tie wrapper">
             <svg class="icon icon-user-tie">
                 <use xlink:href="#icon-user-tie"></use>
             </svg>
             <br/>Sebastian Ulbel
-        </span>
+        </a>
         </div>
         <div class="small-12 medium-4 column">
         <span class="icon-location2 wrapper">
@@ -26,13 +26,11 @@
         </div>
         <div class="small-12 medium-4 column">
             <p>
-                <a href="mailto:office@suits.at">
-                <span class="icon-envelop wrapper">
+                <a class="icon-envelop wrapper" href="mailto:office@suits.at">
                     <svg class="icon icon-envelop">
                         <use xlink:href="#icon-envelop"></use>
                     </svg>
                     <br/>office@suits.at
-                </span>
                 </a>
             </p>
         </div>
@@ -47,7 +45,7 @@
 {% block scripts %}
 
     {% import 'macros/nav-macro.nunj' as nav %}
-    {{nav.active('kontakt')}}
+    {{ nav.active('kontakt') }}
 
     <script async defer
             src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDaDYEXiTLtPbesdmgFq50XN6_MbWnRl8w&callback=initMap"></script>
