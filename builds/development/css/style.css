@@ -4034,6 +4034,10 @@ footer .icon-envelop.wrapper:hover a {
           transform: scale(1.3);
 }
 
+.icon-location2.wrapper:hover {
+  cursor: pointer;
+}
+
 .icon-location2.wrapper:hover .icon.icon-location2 {
   fill: #49a3df;
   -webkit-transform: scale(1.3);
@@ -4108,14 +4112,14 @@ h1, h2, h3, h4, h5, h6 {
 
 /* Menu style */
 .overlay nav {
+  text-align: center;
   position: relative;
   top: 50%;
   height: 60%;
-  font-size: 54px;
+  font-size: 4rem;
   -webkit-transform: translateY(-50%);
   -ms-transform: translateY(-50%);
       transform: translateY(-50%);
-  padding-left: 5%;
 }
 
 .overlay ul {
@@ -4129,9 +4133,8 @@ h1, h2, h3, h4, h5, h6 {
 
 .overlay ul li {
   display: block;
-  height: 20%;
-  height: calc(100% / 5);
-  min-height: 54px;
+  height: 5.5rem;
+  min-height: 4rem;
 }
 
 .overlay ul li a {
@@ -4185,16 +4188,6 @@ h1, h2, h3, h4, h5, h6 {
   transform: translateY(25%) rotateX(-35deg);
 }
 
-@media screen and (max-height: 30.5em) {
-  .overlay nav {
-    height: 70%;
-    font-size: 34px;
-  }
-
-  .overlay ul li {
-    min-height: 34px;
-  }
-}
 #menu {
   width: 60px;
   height: 45px;
@@ -4371,6 +4364,16 @@ span {
   pointer-events: auto;
 }
 
+@media screen and (max-height: 30.5em) {
+  .overlay nav {
+    height: 70%;
+    font-size: 34px;
+  }
+
+  .overlay ul li {
+    min-height: 34px;
+  }
+}
 @media all and (min-width: 650px) {
   footer {
     padding-top: 1.8rem;
@@ -4389,10 +4392,6 @@ span {
   }
 }
 @media all and (min-width: 1200px) {
-  .overlay nav {
-    padding-left: 20%;
-  }
-
   .teaser-logo {
     height: 18rem;
   }

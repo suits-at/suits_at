@@ -185,6 +185,10 @@ footer .icon-envelop.wrapper:hover a{
   transform: scale(1.3);
 }
 
+.icon-location2.wrapper:hover{
+  cursor: pointer;
+}
+
 .icon-location2.wrapper:hover .icon.icon-location2{
   fill: $blue;
   transform: scale(1.3);
@@ -216,3 +220,19 @@ footer .icon-envelop.wrapper:hover a{
 //.artgroup {
 //  @include clearfix;
 //} //artgroup
+
+//#wave {
+//  stroke-dasharray: 0 16 101 16;
+//  animation: moveTheWave 2400ms linear infinite;
+//}
+//
+//@keyframes moveTheWave {
+//  0% {
+//    stroke-dashoffset: 0;
+//    transform: translate3d(0, 0, 0);
+//  }
+//  100% {
+//    stroke-dashoffset: -133;
+//    transform: translate3d(-90px, 0, 0);
+//  }
+//}

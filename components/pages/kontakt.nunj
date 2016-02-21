@@ -9,12 +9,12 @@
     </div>
     <section class="row align-center leistungen">
         <div class="small-12 medium-4 column">
-        <a href="ueber_mich.html" class="icon-user-tie wrapper">
-            <svg class="icon icon-user-tie">
-                <use xlink:href="#icon-user-tie"></use>
-            </svg>
-            <br/>Sebastian Ulbel
-        </a>
+            <a href="ueber_mich.html" class="icon-user-tie wrapper">
+                <svg class="icon icon-user-tie">
+                    <use xlink:href="#icon-user-tie"></use>
+                </svg>
+                <br/>Sebastian Ulbel
+            </a>
         </div>
         <div class="small-12 medium-4 column">
         <span class="icon-location2 wrapper">
@@ -37,7 +37,20 @@
     </section>
     <div class="row">
         <div class="column">
-            <div id="map">map</div>
+            <div id="map">Google Map loading...
+                {#chillwave#}
+                {#<svg xmlns="http://www.w3.org/2000/svg"#}
+                {#width="80px" height="60px"#}
+                {#viewBox="5 0 80 60">#}
+                {#<path id="wave"#}
+                {#fill="none"#}
+                {#stroke="#262626"#}
+                {#stroke-width="4"#}
+                {#stroke-linecap="round">#}
+                {#</path>#}
+                {#</svg>#}
+
+            </div>
         </div>
     </div>
 {% endblock %}
@@ -47,17 +60,24 @@
     {% import 'macros/nav-macro.nunj' as nav %}
     {{ nav.active('kontakt') }}
 
+
+    <script src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
     <script async defer
             src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDaDYEXiTLtPbesdmgFq50XN6_MbWnRl8w&callback=initMap"></script>
 
     <script type="text/javascript">
         var marker;
+        var $first = true;
+
         function initMap() {
             var myLatLng = {lat: 48.224753, lng: 16.425090};
 
             var map = new google.maps.Map(document.getElementById('map'), {
                 zoom: 14,
-                center: myLatLng
+                center: myLatLng,
+                zoomControl: false,
+                mapTypeControl: false,
+                streetViewControl: false
             });
 
             marker = new google.maps.Marker({
@@ -65,8 +85,22 @@
                 map: map,
                 icon: 'images/suits_marker.png'
             });
+            if ($first) {
+                toggleBounce();
+                $first = false;
+            }
             marker.addListener('click', toggleBounce);
         }
+
+        $(function () {
+            $('.icon-location2.wrapper').click(function () {
+                if ($first) {
+                    toggleBounce();
+                    $first = false;
+                }
+                toggleBounce();
+            });
+        });
 
         function toggleBounce() {
             if (marker.getAnimation() !== null) {
@@ -78,6 +112,7 @@
                 }, 1400);
             }
         }
+
     </script>
 
 {% endblock %}
