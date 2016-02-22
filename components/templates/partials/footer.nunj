@@ -5,7 +5,7 @@
             <a href="mailto:office@suits.at">
                 <span class="icon-envelop wrapper">
                     <svg class="icon icon-envelop">
-                        <use xlink:href="#icon-envelop"></use>
+                        <use xlink:href="images/symbol-defs.svg#icon-envelop"></use>
                     </svg>
                         office@suits.at
                 </span>
@@ -15,7 +15,7 @@
         <div class="small-12 medium-4 column small-order-3 medium-order-2 center">
             <a href="https://twitter.com/suits_at">
                 <svg class="icon icon-twitter">
-                    <use xlink:href="#icon-twitter"></use>
+                    <use xlink:href="images/symbol-defs.svg#icon-twitter"></use>
                 </svg>
             </a>
             <a href="https://www.xing.com/profile/Sebastian_Ulbel">
@@ -31,19 +31,19 @@
 
             <a href="https://github.com/suits-at">
                 <svg class="icon icon-github">
-                    <use xlink:href="#icon-github"></use>
+                    <use xlink:href="images/symbol-defs.svg#icon-github"></use>
                 </svg>
             </a>
 
             <a href="https://www.facebook.com/suits.at">
                 <svg class="icon icon-facebook">
-                    <use xlink:href="#icon-facebook"></use>
+                    <use xlink:href="images/symbol-defs.svg#icon-facebook"></use>
                 </svg>
             </a>
 
             <a href="https://stackoverflow.com/users/4668758/suits-at?tab=profile">
                 <svg class="icon icon-stackoverflow">
-                    <use xlink:href="#icon-stackoverflow"></use>
+                    <use xlink:href="images/symbol-defs.svg#icon-stackoverflow"></use>
                 </svg>
             </a>
         </div>

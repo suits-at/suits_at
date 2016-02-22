@@ -2,64 +2,86 @@
 
 {% block content %}
 
-<div class="row">
-    <div class="column">
-        <h1 class="header">//Leistungen</h1>
+    <div class="row">
+        <div class="column">
+            <h1 class="header">//Leistungen</h1>
+        </div>
     </div>
-</div>
-<section class="row align-center leistungen">
-    <div class="small-12 medium-4 column">
-        <i class="fi-checkbox"></i>
-        <h2>Strategy</h2>
-        <p>Lorem Ipsum</p>
-    </div>
-    <div class="small-12 medium-4 column">
-        <i class="fi-lightbulb"></i>
-        <h2>Consulting</h2>
-        <p>Lorem Ipsum</p>
-    </div>
-    <div class="small-12 medium-4 column">
-        <i class="fi-web"></i>
-        <h2>Webdevelopment</h2>
-        <p>Lorem Ipsum</p>
-    </div>
-    <div class="small-12 medium-4 column">
-        <i class="fi-checkbox"></i>
-        <h2>Strategy</h2>
-        <p>Lorem Ipsum</p>
-    </div>
-    <div class="small-12 medium-4 column">
-        <i class="fi-lightbulb"></i>
-        <h2>Consulting</h2>
-        <p>Lorem Ipsum</p>
-    </div>
-    <div class="small-12 medium-4 column">
-        <i class="fi-web"></i>
-        <h2>Webdevelopment</h2>
-        <p>Lorem Ipsum</p>
-    </div>
-</section>
+    <section class="row align-center leistungen">
+        <div class="small-12 medium-4 column">
+            <svg class="icon icon-sphere">
+                <use xlink:href="images/symbol-defs.svg#icon-sphere"></use>
+            </svg>
+            <h2>Webdevelopment</h2>
+            <p>Die passende Website für jedermann, maßgeschneidert - weil nicht nur Anzüge passen müssen.</p>
+        </div>
+        <div class="small-12 medium-4 column">
+            <svg class="icon icon-database">
+                <use xlink:href="images/symbol-defs.svg#icon-database"></use>
+            </svg>
+            <h2>CMS</h2>
+            <p>Ihre Website soll einfach zu befüllen und warten sein? Dann empfehle ich Ihnen den Einsatz von einem CMS (Content Management System) wie zum Beispiel Wordpress oder Typo3.</p>
+        </div>
+        <div class="small-12 medium-4 column">
+            <svg class="icon icon-clipboard">
+                <use xlink:href="images/symbol-defs.svg#icon-clipboard"></use>
+            </svg>
+            <h2>Beratung</h2>
+            <p>Sie sind nicht sicher, ob was für eine Website Sie eigentlich brauchen? Ich berate Sie gerne Schritt für Schritt.</p>
+        </div>
+        <div class="small-12 medium-4 column">
+            <svg class="icon icon-wrench">
+                <use xlink:href="images/symbol-defs.svg#icon-wrench"></use>
+            </svg>
+            <h2>Websitewartung</h2>
+            <p>Sie haben bereits eine Website, möchten diese allerdings  etwas auf Vordermann bringen? Auch hierbei kann ich Ihnen helfen.</p>
+        </div>
+        <div class="small-12 medium-4 column">
+            <svg class="icon icon-equalizer">
+                <use xlink:href="images/symbol-defs.svg#icon-equalizer"></use>
+            </svg>
+            <h2>SEO</h2>
+            <p>Damit die neue Website von Google und co. auch gefunden wird, gilt es einiges einzustellen und zu berücksichtigen. Ich helfe Ihnen auch hierbei gerne.</p>
+        </div>
+        <div class="small-12 medium-4 column">
+            <svg class="icon icon-lock">
+                <use xlink:href="images/symbol-defs.svg#icon-lock"></use>
+            </svg>
+            <h2>Security</h2>
+            <p>Ihre alte Website wurde gehackt? Bei Ihrer neuen passiert Ihnen das bestimmt nicht, dafür sorge ich.</p>
+        </div>
+        <div class="small-12 medium-4 column">
+            <svg class="icon icon-stats-dots">
+                <use xlink:href="images/symbol-defs.svg#icon-stats-dots"></use>
+            </svg>
+            <h2>Google Analytics</h2>
+            <p>Sie möchten den Erfolg Ihrer neuen Website auch überprüfen? Mit Google Analytics ist dies ein leichtes. </p>
+        </div>
+
+    </section>
 
 {% endblock %}
 
 {% block scripts %}
 
     {% import 'macros/nav-macro.nunj' as nav %}
-    {{nav.active('leistungen')}}
+    {{ nav.active('leistungen') }}
+
+    <script src="js/svgxuse.js"></script>
 
 {% endblock %}
 
 <!--<div class="le-menu">-->
-    <!--<div class="le-menu-wrapper">-->
-        <!--<nav id="site-navigation" class="main-navigation" role="navigation" aria-expanded="false">-->
-            <!--<ul class="h3 list-unstyled">-->
-                <!--<li><a href="http://mokaine.com/">Beetle Go</a></li>-->
-                <!--<li><a href="http://mokaine.com/beetle-pro-wordpress-theme/">Beetle Pro</a></li>-->
-                <!--<li><a href="http://mokaine.com/beetle-go-vs-beetle-pro-feature-lists-compared/">Feature Lists</a></li>-->
-                <!--<li><a href="http://mokaine.com/terms-of-use/">Terms of Use</a></li>-->
-                <!--<li><a href="http://mokaine.com/help/">Contact &amp; Help</a></li>-->
-                <!--<li><a href="http://mokaine.com/credits/">Credits</a></li>-->
-            <!--</ul>&lt;!&ndash; /.list-unstyled &ndash;&gt;-->
-        <!--</nav>&lt;!&ndash; #site-navigation &ndash;&gt;-->
-    <!--</div>&lt;!&ndash; /.le-menu-wrapper &ndash;&gt;-->
+<!--<div class="le-menu-wrapper">-->
+<!--<nav id="site-navigation" class="main-navigation" role="navigation" aria-expanded="false">-->
+<!--<ul class="h3 list-unstyled">-->
+<!--<li><a href="http://mokaine.com/">Beetle Go</a></li>-->
+<!--<li><a href="http://mokaine.com/beetle-pro-wordpress-theme/">Beetle Pro</a></li>-->
+<!--<li><a href="http://mokaine.com/beetle-go-vs-beetle-pro-feature-lists-compared/">Feature Lists</a></li>-->
+<!--<li><a href="http://mokaine.com/terms-of-use/">Terms of Use</a></li>-->
+<!--<li><a href="http://mokaine.com/help/">Contact &amp; Help</a></li>-->
+<!--<li><a href="http://mokaine.com/credits/">Credits</a></li>-->
+<!--</ul>&lt;!&ndash; /.list-unstyled &ndash;&gt;-->
+<!--</nav>&lt;!&ndash; #site-navigation &ndash;&gt;-->
+<!--</div>&lt;!&ndash; /.le-menu-wrapper &ndash;&gt;-->
 <!--</div>&lt;!&ndash; /.le-menu &ndash;&gt;-->

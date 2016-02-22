@@ -2,35 +2,56 @@
 
 {% block content %}
 
-<div class="row">
-    <div class="column">
-        <h1 class="header">//Über mich</h1>
+    <div class="row">
+        <div class="column">
+            <h1 class="header">//Über mich</h1>
+        </div>
     </div>
-</div>
-<section class="row">
-    Lorem Ipsum
-</section>
+    <section class="row">
+        <div class="small-12 medium-4 column">
+            <figure>
+                <img src="images/sebastian_ulbel.png" alt="Sebastian Ulbel" title="Sebastian Ulbel">
+            </figure>
+        </div>
+        <div class="small-12 medium-8 column">
+            <h2>Sebastian Ulbel</h2>
+            <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore
+                et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea
+                rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum
+                dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore
+                magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet
+                clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit
+                amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna
+                aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita
+                kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
+            <p>Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore
+                eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent
+                luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Lorem ipsum dolor sit amet,
+                consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam
+                erat volutpat.</p>
+        </div>
+    </section>
 
 {% endblock %}
 
 {% block scripts %}
 
     {% import 'macros/nav-macro.nunj' as nav %}
-    {{nav.active('ueber_mich')}}
+    {{ nav.active('ueber_mich') }}
 
 {% endblock %}
 
 <!--<div class="le-menu">-->
-    <!--<div class="le-menu-wrapper">-->
-        <!--<nav id="site-navigation" class="main-navigation" role="navigation" aria-expanded="false">-->
-            <!--<ul class="h3 list-unstyled">-->
-                <!--<li><a href="http://mokaine.com/">Beetle Go</a></li>-->
-                <!--<li><a href="http://mokaine.com/beetle-pro-wordpress-theme/">Beetle Pro</a></li>-->
-                <!--<li><a href="http://mokaine.com/beetle-go-vs-beetle-pro-feature-lists-compared/">Feature Lists</a></li>-->
-                <!--<li><a href="http://mokaine.com/terms-of-use/">Terms of Use</a></li>-->
-                <!--<li><a href="http://mokaine.com/help/">Contact &amp; Help</a></li>-->
-                <!--<li><a href="http://mokaine.com/credits/">Credits</a></li>-->
-            <!--</ul>&lt;!&ndash; /.list-unstyled &ndash;&gt;-->
-        <!--</nav>&lt;!&ndash; #site-navigation &ndash;&gt;-->
-    <!--</div>&lt;!&ndash; /.le-menu-wrapper &ndash;&gt;-->
+<!--<div class="le-menu-wrapper">-->
+<!--<nav id="site-navigation" class="main-navigation" role="navigation" aria-expanded="false">-->
+<!--<ul class="h3 list-unstyled">-->
+<!--<li><a href="http://mokaine.com/">Beetle Go</a></li>-->
+<!--<li><a href="http://mokaine.com/beetle-pro-wordpress-theme/">Beetle Pro</a></li>-->
+<!--<li><a href="http://mokaine.com/beetle-go-vs-beetle-pro-feature-lists-compared/">Feature Lists</a></li>-->
+<!--<li><a href="http://mokaine.com/terms-of-use/">Terms of Use</a></li>-->
+<!--<li><a href="http://mokaine.com/help/">Contact &amp; Help</a></li>-->
+<!--<li><a href="http://mokaine.com/credits/">Credits</a></li>-->
+<!--</ul>&lt;!&ndash; /.list-unstyled &ndash;&gt;-->
+<!--</nav>&lt;!&ndash; #site-navigation &ndash;&gt;-->
+<!--</div>&lt;!&ndash; /.le-menu-wrapper &ndash;&gt;-->
 <!--</div>&lt;!&ndash; /.le-menu &ndash;&gt;-->

@@ -60,13 +60,14 @@ h1{
 
 .leistungen{
   text-align: center;
-  i{
-    font-size: 7rem;
-    color: $grey;
+  p{
+    //adjust for other screen sizes -> media queries
+    margin: 0 2rem 4rem 2rem;
   }
-  h2{
-    margin-top: -2rem;
-  }
+}
+
+figcaption{
+  text-align: center;
 }
 
 footer{

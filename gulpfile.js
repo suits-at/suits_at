@@ -41,6 +41,7 @@ jsSources = [
     'components/scripts/call_typed.js',
     'components/scripts/modernizr-custom.js',
     'components/scripts/menu.js',
+    'components/scripts/svgxuse.js',
     'components/scripts/fullPageScrolling.js'
 ];
 sassSources = ['components/sass/style.scss'];

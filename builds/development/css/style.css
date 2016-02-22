@@ -3915,12 +3915,12 @@ h1 {
 .leistungen {
   text-align: center;
 }
-.leistungen i {
-  font-size: 7rem;
-  color: #646464;
+.leistungen p {
+  margin: 0 2rem 4rem 2rem;
 }
-.leistungen h2 {
-  margin-top: -2rem;
+
+figcaption {
+  text-align: center;
 }
 
 footer {
