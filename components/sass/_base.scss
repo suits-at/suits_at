@@ -88,8 +88,12 @@ footer{
   }
 }
 
+.leistungen .icon{
+  margin-bottom: 1rem;
+}
+
+
 .portfolio-items{
-  margin-top: 2rem;
   border: 1px solid $grey;
 }
 
@@ -97,7 +101,7 @@ footer{
 
 #map {
   min-height: 400px;
-  margin-top: 2rem;
+  //margin-top: 2rem;
   margin-bottom: 2rem;
 }
 

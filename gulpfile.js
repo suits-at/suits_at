@@ -1,6 +1,5 @@
 var gulp = require('gulp'),
     gutil = require('gulp-util'),
-    coffee = require('gulp-coffee'),
     browserify = require('gulp-browserify'),
     compass = require('gulp-compass'),
     connect = require('gulp-connect'),
@@ -34,14 +33,17 @@ if (env === 'development') {
     sassStyle = 'compressed';
 }
 
+//using modernizr-custom2 instead of modernizr-custom now -> may have impacts on others sites
+
 jsSources = [
     'components/scripts/unused_template.js',
     'components/scripts/typed.js',
     'components/scripts/call_typed.js',
-    'components/scripts/modernizr-custom.js',
     'components/scripts/menu.js',
     'components/scripts/svgxuse.js',
-    'components/scripts/fullPageScrolling.js'
+    'components/scripts/fullPageScrolling.js',
+    'components/scripts/modernizr-custom2.js',
+    'components/scripts/portfolio.js'
 ];
 sassSources = ['components/sass/style.scss'];
 htmlSources = [outputDir + '*.html'];
@@ -139,7 +141,7 @@ gulp.task('json', function () {
     return gulp.src(jsonSources)
         .pipe(gulpif(env === 'production', jsonminify()))
         .pipe(gulp.dest(outputDir + 'json'))
-        //.pipe(connect.reload())
+        .pipe(connect.reload())
 });
 
 

@@ -9,6 +9,16 @@
 }
 
 @media all and (min-width: 650px) {
+  .overlay nav {
+    font-size: 4rem;
+  }
+
+  .overlay ul li {
+    display: block;
+    height: 5.5rem;
+    //height: calc(100% / 5);
+    min-height: 4rem;
+  }
   footer{
     padding-top:1.8rem;
     .center{

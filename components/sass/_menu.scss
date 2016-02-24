@@ -18,7 +18,7 @@
   position: relative;
   top: 50%;
   height: 60%;
-  font-size: 4rem;
+  font-size: 2rem;
   -webkit-transform: translateY(-50%);
   transform: translateY(-50%);
   //padding-left: 5%;
@@ -35,9 +35,9 @@
 
 .overlay ul li {
   display: block;
-  height: 5.5rem;
+  height: 4rem;
   //height: calc(100% / 5);
-  min-height: 4rem;
+  min-height: 2rem;
 }
 
 .overlay ul li a {
