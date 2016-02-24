@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>SUITS</title>
     <link rel="stylesheet" href="css/style.css">
+    <script src="js/modernizr-custom2.js"></script>
 </head>
 <body>
 
@@ -32,7 +33,6 @@
 
 {#<script src="//cdn.jsdelivr.net/velocity/1.2.3/velocity.min.js"></script>#}
 <!--statt script.js-->
-<script src="js/modernizr-custom.js"></script>
 <script src="js/menu.js"></script>
 
 <!--<script src="js/script.js"></script>-->
