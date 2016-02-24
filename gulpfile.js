@@ -16,7 +16,6 @@ var gulp = require('gulp'),
     concat = require('gulp-concat');
 
 var env,
-    coffeeSources,
     jsSources,
     sassSources,
     htmlSources,
@@ -94,7 +93,7 @@ gulp.task('watch', function () {
     gulp.watch(jsSources, ['js']);
     gulp.watch('components/sass/*.scss', ['compass']);
     //gulp.watch('builds/development/*.html', ['html']);
-    gulp.watch(['components/pages/*.+(html|nunj)', 'components/templates/**/*.+(html|nunj)'], ['nunjucks']);
+    gulp.watch(['components/pages/*.+(html|nunj)', 'components/templates/**/*.+(html|nunj)', outputDir + 'json/*.json'], ['nunjucks']);
     gulp.watch(jsonSources, ['json']);
     gulp.watch(imgSources, ['images']);
 });
@@ -116,7 +115,7 @@ gulp.task('connect', function () {
 gulp.task('nunjucks', function() {
     return gulp.src(nunjucksSources)
         .pipe(data(function() {
-            return require('./components/json/data.json')
+            return require('./' + outputDir + 'json/data.json')
         }))
         .pipe(nunjucksRender({
             path: ['components/templates/']
@@ -140,8 +139,8 @@ gulp.task('json', function () {
     return gulp.src(jsonSources)
         .pipe(gulpif(env === 'production', jsonminify()))
         .pipe(gulp.dest(outputDir + 'json'))
-        .pipe(connect.reload())
+        //.pipe(connect.reload())
 });
 
 
-gulp.task('default', ['nunjucks', 'json', 'js', 'compass', 'images', 'connect', 'watch']);
+gulp.task('default', ['json', 'js', 'compass', 'images', 'nunjucks', 'connect', 'watch']);

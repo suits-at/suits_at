@@ -5,6 +5,7 @@
     "url":"http://www.praxisarsenal.at/",
     "datum":"2015",
     "logo":"logo/praxis_arsenal",
+    "screenshot":"screenshots/neu/praxis_arsenal",
     "beschreibung":"Website"
   },
   {
@@ -13,6 +14,7 @@
     "url":"http://www.zt-pech.at/",
     "datum":"2015",
     "logo":"logo/ztpech",
+    "screenshot":"screenshots/neu/zt_pech",
     "beschreibung":"Website"
   },
   {
@@ -21,6 +23,7 @@
     "url":"http://iaaa.fh-hagenberg.at/",
     "datum":"2015",
     "logo":"logo/iaaa",
+    "screenshot":"screenshots/neu/iaaa",
     "beschreibung":"Website"
   },
   {
@@ -29,6 +32,7 @@
     "url":"http://www.schwertberger-braeu.at/",
     "datum":"2007",
     "logo":"logo/schwertberger_braeu",
+    "screenshot":"screenshots/neu/schwertberger_braeu",
     "beschreibung":"Website"
   },
   {
@@ -37,6 +41,7 @@
     "url":"www.windhorse.at",
     "datum":"2007",
     "logo":"screenshots/windhorse",
+    "screenshot":"screenshots/neu/windhorse",
     "beschreibung":"Website"
   },
   {
@@ -45,6 +50,7 @@
     "url":"http://www.judithstockert-giesinger.at/",
     "datum":"2007",
     "logo":"screenshots/judithstockertgiesinger",
+    "screenshot":"screenshots/neu/judith_stockert-giesinger",
     "beschreibung":"Website"
   },
   {
@@ -53,6 +59,7 @@
     "url":"www.michaelstockert.at",
     "datum":"2010",
     "logo":"screenshots/michaelstockert",
+    "screenshot":"screenshots/neu/michael_stockert",
     "beschreibung":"Visitenkarte, Website, Folder"
   },
   {
@@ -61,6 +68,7 @@
     "url":"www.dorismayer.at",
     "datum":"2007",
     "logo":"screenshots/dorismayer",
+    "screenshot":"screenshots/neu/doris_mayer",
     "beschreibung":"Website"
   }
 ]}

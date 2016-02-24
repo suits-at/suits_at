@@ -3806,8 +3806,8 @@ table.hover tr:nth-of-type(even):hover {
 }
 
 .column.align-top, .align-top.columns {
-  -webkit-align-self: flex-start;
-      -ms-flex-item-align: start;
+  -ms-flex-item-align: start;
+          -webkit-align-self: flex-start;
           align-self: flex-start;
 }
 
@@ -3819,8 +3819,8 @@ table.hover tr:nth-of-type(even):hover {
 }
 
 .column.align-bottom, .align-bottom.columns {
-  -webkit-align-self: flex-end;
-      -ms-flex-item-align: end;
+  -ms-flex-item-align: end;
+          -webkit-align-self: flex-end;
           align-self: flex-end;
 }
 
@@ -3832,8 +3832,8 @@ table.hover tr:nth-of-type(even):hover {
 }
 
 .column.align-middle, .align-middle.columns {
-  -webkit-align-self: center;
-      -ms-flex-item-align: center;
+  -ms-flex-item-align: center;
+          -webkit-align-self: center;
           align-self: center;
 }
 
@@ -3845,8 +3845,8 @@ table.hover tr:nth-of-type(even):hover {
 }
 
 .column.align-stretch, .align-stretch.columns {
-  -webkit-align-self: stretch;
-      -ms-flex-item-align: stretch;
+  -ms-flex-item-align: stretch;
+          -webkit-align-self: stretch;
           align-self: stretch;
 }
 
@@ -3939,6 +3939,11 @@ footer .right {
 footer .center {
   text-align: center;
   margin-top: 0.5rem;
+}
+
+.portfolio-items {
+  margin-top: 2rem;
+  border: 1px solid #646464;
 }
 
 #map {
