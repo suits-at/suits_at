@@ -302,23 +302,25 @@
   padding: 0;
   cursor: pointer;
   vertical-align: top;
-  color: #6bd68a;
+  color: $blue;
   border: none;
   background: none;
 }
 
 .action:hover,
 .action:focus {
-  color: #6bd68a;
+  color: $blue;
   outline: none;
 }
 
 .action--close {
+  font-size: 3rem;
+  font-weight: 700;
   position: fixed;
   z-index: 150;
-  top: 0;
-  right: 0;
-  padding: 1em;
+  top: 2rem;
+  right: 2rem;
+  //padding: 1em;
   opacity: 0;
   -webkit-transition: opacity 0.3s, -webkit-transform 0.3s;
   transition: opacity 0.3s, transform 0.3s;

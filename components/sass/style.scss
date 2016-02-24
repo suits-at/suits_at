@@ -52,12 +52,12 @@
 @include foundation-flex-grid;
 
 //Core partials
-@import "portfolio";
 @import "variables";
 @import "mixins";
 @import "base";
 @import "modules";
 @import "menu";
+@import "portfolio";
 @import "mediaqueries";
 
 // JS partials

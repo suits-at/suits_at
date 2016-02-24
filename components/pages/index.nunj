@@ -67,7 +67,7 @@
                                     <li>Datum: {{ projekt.datum }}</li>
                                 </ul>
                             </div>
-                            <p>{{ projekt.beschreibung }}</p>
+                            <p>Projekbeschreibung: {{ projekt.beschreibung }}</p>
                         </div>
                     </a>
                 </div>
