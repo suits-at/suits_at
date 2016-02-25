@@ -9,16 +9,6 @@
 }
 
 @media all and (min-width: 650px) {
-  .overlay nav {
-    font-size: 4rem;
-  }
-
-  .overlay ul li {
-    display: block;
-    height: 5.5rem;
-    //height: calc(100% / 5);
-    min-height: 4rem;
-  }
   footer{
     padding-top:1.8rem;
     .center{
@@ -38,16 +28,32 @@
 
 //center overlay from menu on big screens
 @media all and (min-width: 1200px) {
-  .overlay nav{
-   //padding-left: 20%;
+  .overlay nav {
+    font-size: 3rem;
+  }
+  .overlay ul li {
+    display: block;
+    height: 4.5rem;
+    //height: calc(100% / 5);
+    min-height: 3rem;
   }
   .teaser-logo{
-    height: 18rem;
+    height: 17rem;
   }
 }
 
 //center landing page logo on HD screens
 @media all and (min-width: 1900px) {
+  .overlay nav {
+    font-size: 4rem;
+  }
+
+  .overlay ul li {
+    display: block;
+    height: 5.5rem;
+    //height: calc(100% / 5);
+    min-height: 4rem;
+  }
   .teaser-logo{
     margin-top:15%;
     height: 20rem;
