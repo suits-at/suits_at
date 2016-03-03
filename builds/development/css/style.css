@@ -3806,8 +3806,8 @@ table.hover tr:nth-of-type(even):hover {
 }
 
 .column.align-top, .align-top.columns {
-  -ms-flex-item-align: start;
-      -webkit-align-self: flex-start;
+  -webkit-align-self: flex-start;
+      -ms-flex-item-align: start;
           align-self: flex-start;
 }
 
@@ -3819,8 +3819,8 @@ table.hover tr:nth-of-type(even):hover {
 }
 
 .column.align-bottom, .align-bottom.columns {
-  -ms-flex-item-align: end;
-      -webkit-align-self: flex-end;
+  -webkit-align-self: flex-end;
+      -ms-flex-item-align: end;
           align-self: flex-end;
 }
 
@@ -3832,8 +3832,8 @@ table.hover tr:nth-of-type(even):hover {
 }
 
 .column.align-middle, .align-middle.columns {
-  -ms-flex-item-align: center;
-      -webkit-align-self: center;
+  -webkit-align-self: center;
+      -ms-flex-item-align: center;
           align-self: center;
 }
 
@@ -3845,8 +3845,8 @@ table.hover tr:nth-of-type(even):hover {
 }
 
 .column.align-stretch, .align-stretch.columns {
-  -ms-flex-item-align: stretch;
-      -webkit-align-self: stretch;
+  -webkit-align-self: stretch;
+      -ms-flex-item-align: stretch;
           align-self: stretch;
 }
 
@@ -4385,7 +4385,6 @@ span {
   top: 0;
   left: 0;
   pointer-events: none;
-  background: #252323 url(../images/loading.svg) no-repeat 50% 75px;
   background-size: 60px auto;
   transition: opacity 0.3s;
 }
@@ -4430,7 +4429,7 @@ span {
   -webkit-justify-content: center;
   justify-content: center;
   -ms-flex-line-pack: center;
-          -webkit-align-content: center;
+  -webkit-align-content: center;
           align-content: center;
   -ms-flex-align: center;
   -webkit-align-items: center;
@@ -4727,6 +4726,11 @@ span {
 
   .overlay ul li {
     min-height: 34px;
+  }
+}
+@media screen and (min-width: 40em) {
+  h2 {
+    font-size: 2rem;
   }
 }
 @media all and (min-width: 650px) {
