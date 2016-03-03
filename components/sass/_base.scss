@@ -166,6 +166,11 @@ footer .icon-envelop.wrapper:hover a{
 //  fill: $blue;
 //}
 
+.leistungen .icon:hover{
+  fill: $blue;
+  transform: scale(1.3);
+}
+
 .icon-twitter:hover{
   fill: $twitter;
 }

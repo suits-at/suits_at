@@ -20,42 +20,48 @@
                 <use xlink:href="images/symbol-defs.svg#icon-database"></use>
             </svg>
             <h2>CMS</h2>
-            <p>Ihre Website soll einfach zu befüllen und warten sein? Dann empfehle ich Ihnen den Einsatz von einem CMS (Content Management System) wie zum Beispiel Wordpress oder Typo3.</p>
+            <p>Ihre Website soll einfach befüll- und wartbar sein? Dann empfehle ich Ihnen den Einsatz von einem CMS
+                (Content Management System) wie zum Beispiel <a href="https://de.wordpress.org/" title="Wordpress">Wordress</a>
+                oder <a href="https://typo3.org/" title="Typo3">Typo3</a>.</p>
         </div>
         <div class="small-12 medium-4 column">
             <svg class="icon icon-clipboard">
                 <use xlink:href="images/symbol-defs.svg#icon-clipboard"></use>
             </svg>
             <h2>Beratung</h2>
-            <p>Sie sind nicht sicher, ob was für eine Website Sie eigentlich brauchen? Ich berate Sie gerne Schritt für Schritt.</p>
+            <p>Sie sind nicht sicher, welche Art von Website für sie am besten passt? Ich berate Sie gerne Schritt für
+                Schritt.</p>
         </div>
         <div class="small-12 medium-4 column">
             <svg class="icon icon-wrench">
                 <use xlink:href="images/symbol-defs.svg#icon-wrench"></use>
             </svg>
             <h2>Websitewartung</h2>
-            <p>Sie haben bereits eine Website, möchten diese allerdings  etwas auf Vordermann bringen? Auch hierbei kann ich Ihnen helfen.</p>
+            <p>Sie haben bereits eine Website, möchten diese allerdings auf den neuesten Stand der Technik bringen? Auch hierbei kann
+                ich Ihnen helfen.</p>
         </div>
         <div class="small-12 medium-4 column">
             <svg class="icon icon-equalizer">
                 <use xlink:href="images/symbol-defs.svg#icon-equalizer"></use>
             </svg>
             <h2>SEO</h2>
-            <p>Damit die neue Website von Google und co. auch gefunden wird, gilt es einiges einzustellen und zu berücksichtigen. Ich helfe Ihnen auch hierbei gerne.</p>
+            <p>Damit die neue Website von Google und co. auch gefunden wird, gilt es einiges einzustellen und zu
+                berücksichtigen. Ich helfe Ihnen auch hierbei gerne.</p>
         </div>
         <div class="small-12 medium-4 column">
             <svg class="icon icon-lock">
                 <use xlink:href="images/symbol-defs.svg#icon-lock"></use>
             </svg>
             <h2>Security</h2>
-            <p>Ihre alte Website wurde gehackt? Bei Ihrer neuen passiert Ihnen das bestimmt nicht, dafür sorge ich.</p>
+            <p>Ihre alte Website wurde gehackt? Ich helfen Ihnen dabei, dass Ihnen das nicht wieder passiert.</p>
         </div>
         <div class="small-12 medium-4 column">
             <svg class="icon icon-stats-dots">
                 <use xlink:href="images/symbol-defs.svg#icon-stats-dots"></use>
             </svg>
             <h2>Google Analytics</h2>
-            <p>Sie möchten den Erfolg Ihrer neuen Website auch überprüfen? Mit Google Analytics ist dies ein leichtes. </p>
+            <p>Sie möchten den Erfolg Ihrer neuen Website auch überprüfen? Mit Google Analytics ist dies ein
+                leichtes. </p>
         </div>
 
     </section>
