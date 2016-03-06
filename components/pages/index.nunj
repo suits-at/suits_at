@@ -20,7 +20,8 @@
         <header>
             <div class="row">
                 <div class="small-10 column">
-                    <a href="index.html#1"><img class="logo" src="images/suits_logo.svg" width="150" alt="SUITS Logo"></a>
+                    <a href="index.html#1"><img class="logo" src="images/suits_logo.svg" width="150"
+                                                alt="SUITS Logo"></a>
                 </div>
                 <div class="small-2 column">
                    <span class="menu-toggle float-right" aria-controls="secondary" aria-expanded="false">
@@ -49,21 +50,22 @@
             <div class="grid">
                 {% for projekt in projekte %}
                     <div class="grid__item" data-size="1280x1280">
-                        <a href="images/portfolio/{{ projekt.screenshot }}.png" alt="Screenshot von {{ projekt.url }}"
-                           class="img-wrap portfolio-items"><img src="images/portfolio/{{ projekt.screenshot }}.png"
-                                                                 alt="Screenshot von {{ projekt.url }}"/>
+                        <span data-link="images/portfolio/{{ projekt.screenshot }}.png" title="Screenshot von {{ projekt.url }}"
+                           class="img-wrap portfolio-items">
+                            <img src="images/portfolio/{{ projekt.screenshot }}.png"
+                                 alt="Screenshot von {{ projekt.url }}"/>
                             <div class="description description--grid">
-                                <h3>{{ projekt.titel }}</h3>
+                                <h2>{{ projekt.titel }}</h2>
                                 <div class="details">
                                     <ul>
-                                        <li>Kunde: {{ projekt.kunde }}</li>
-                                        <li>URL: {{ projekt.url }}</li>
-                                        <li>Datum: {{ projekt.datum }}</li>
+                                        <li><strong>Kunde:</strong> {{ projekt.kunde }}</li>
+                                        <li><strong>Website:</strong> <a href="http://{{ projekt.url }}">{{ projekt.url }}</a></li>
+                                        <li><strong>Datum:</strong> {{ projekt.datum }}</li>
                                     </ul>
+                                    <p class="beschreibung"><strong>Projekbeschreibung:</strong> {{ projekt.beschreibung }}</p>
                                 </div>
-                                <p>Projekbeschreibung: {{ projekt.beschreibung }}</p>
                             </div>
-                        </a>
+                        </span>
                     </div>
                 {% endfor %}
             </div>
@@ -82,5 +84,14 @@
 
     {% import 'macros/nav-macro.nunj' as nav %}
     {{ nav.active('portfolio') }}
+
+    <script>
+        $(function () {
+            $("#test").click(function () {
+                console.log('test');
+                console.log(this.getAttribute('data-link'));
+            });
+        });
+    </script>
 
 {% endblock %}

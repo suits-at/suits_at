@@ -3935,7 +3935,7 @@ footer {
 footer a {
   color: #646464;
 }
-footer a:hover {
+footer a:hover, footer a:active, footer a:focus {
   color: #ffffff;
 }
 footer .right {
@@ -3948,10 +3948,6 @@ footer .center {
 
 .leistungen .icon {
   margin-bottom: 1rem;
-}
-
-.portfolio-items {
-  border: 1px solid #646464;
 }
 
 #map {
@@ -3993,7 +3989,7 @@ footer .icon {
 footer .icon.icon-envelop {
   width: 1rem;
   height: 1rem;
-  margin-bottom: 0.3rem;
+  margin-bottom: -0.1rem;
 }
 
 footer .icon-envelop.wrapper:hover .icon.icon-envelop {
@@ -4259,6 +4255,21 @@ span {
   list-style: none;
 }
 
+.beschreibung {
+  margin-top: 1rem;
+}
+
+.portfolio-items {
+  border: 1px solid #646464;
+  cursor: pointer;
+}
+
+.preview .link {
+  cursor: pointer;
+  pointer-events: auto;
+  z-index: 10000;
+}
+
 .grid {
   position: relative;
   margin: 0 auto;
@@ -4334,7 +4345,7 @@ span {
   width: 100%;
   height: 100%;
   opacity: 0;
-  background: #1f1d1d;
+  background: #2e2e2e;
   transition: opacity 0.6s;
 }
 
@@ -4378,23 +4389,19 @@ span {
   transition: transform 0.3s, opacity 0.2s, -webkit-transform 0.3s;
 }
 
-.description {
-  color: #fff;
-}
-
 .js .description--grid {
   display: none;
 }
 
 .description--preview {
-  font-size: 2em;
+  color: #b1b1b1;
   position: absolute;
   z-index: 140;
   width: 100%;
   left: 100%;
   top: 0;
   height: 100%;
-  padding: 0 1em;
+  padding: 0 3rem;
   display: -ms-flex;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -4417,6 +4424,14 @@ span {
   transform: translate3d(0, 30px, 0);
 }
 
+.description--preview a {
+  color: #b1b1b1;
+}
+
+.description--preview a:hover {
+  color: #fdfdfd;
+}
+
 .preview--open .description--preview {
   opacity: 1;
   transition-delay: 0.2s;
@@ -4427,17 +4442,6 @@ span {
 .description--preview h3 {
   font-weight: normal;
   margin: 0;
-}
-
-.description--preview p {
-  font-size: 0.65em;
-  max-width: 100%;
-}
-
-.description--preview p em {
-  color: #5D5D5D;
-  display: block;
-  padding: 0.4em 0 0 0;
 }
 
 /* Details */
@@ -4455,14 +4459,12 @@ span {
 }
 
 .details ul li {
-  font-size: 0.5em;
   position: relative;
   display: inline-block;
   margin: 0 1em 0 0;
   padding: 0.15em 0;
   white-space: nowrap;
   opacity: 0;
-  color: #9d9d9d;
   transition: opacity 1s, -webkit-transform 1s;
   transition: transform 1s, opacity 1s;
   transition: transform 1s, opacity 1s, -webkit-transform 1s;
@@ -4495,56 +4497,6 @@ span {
 
 .preview--open .details ul li:nth-child(5) {
   transition-delay: 0.6s;
-}
-
-.details ul li:first-child {
-  font-weight: bold;
-  color: #909090;
-}
-
-.icon {
-  font-family: 'camera-icons';
-  font-weight: normal;
-  font-style: normal;
-  font-variant: normal;
-  line-height: 1;
-  display: inline-block;
-  vertical-align: middle;
-  text-transform: none;
-  /* Better Font Rendering =========== */
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  speak: none;
-}
-
-.icon + span {
-  margin-left: 5px;
-  vertical-align: middle;
-}
-
-.icon-focal_length:before {
-  content: '\e600';
-}
-
-.icon-exposure_time:before {
-  content: '\e601';
-}
-
-.icon-iso:before {
-  content: '\e602';
-}
-
-.icon-camera:before {
-  content: '\e603';
-}
-
-.icon-aperture:before {
-  content: '\e604';
-}
-
-.details .icon {
-  margin-right: 5px;
-  color: #77d45b;
 }
 
 /* Close button */
@@ -4598,11 +4550,6 @@ span {
 @media screen and (max-width: 40em) {
   .description--preview h3 {
     font-size: 0.5em;
-  }
-
-  .description--preview p,
-  .details {
-    display: none;
   }
 }
 @media screen and (max-height: 30.5em) {

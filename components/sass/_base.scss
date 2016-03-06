@@ -80,7 +80,7 @@ footer{
   a{
     color: $grey;
   }
-  a:hover{
+  a:hover, a:active, a:focus{
     color: $white;
   }
   .right{
@@ -94,11 +94,6 @@ footer{
 
 .leistungen .icon{
   margin-bottom: 1rem;
-}
-
-
-.portfolio-items{
-  border: 1px solid $grey;
 }
 
 //html, body { height: 100%; margin: 0; padding: 0; }
@@ -147,7 +142,7 @@ footer .icon{
 footer .icon.icon-envelop{
   width: 1rem;
   height: 1rem;
-  margin-bottom: 0.3rem;
+  margin-bottom: -0.1rem;
 }
 
 footer .icon-envelop.wrapper:hover .icon.icon-envelop{
