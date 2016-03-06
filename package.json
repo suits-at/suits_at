@@ -31,6 +31,7 @@
     "imagesloaded": "^4.1.0",
     "jquery": "^2.2.0",
     "masonry-layout": "^4.0.0",
-    "mustache": "^2.2.1"
+    "mustache": "^2.2.1",
+    "velocity-animate": "^1.2.3"
   }
 }

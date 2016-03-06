@@ -13,25 +13,23 @@
 <header>
     <div class="row">
         <div class="small-10 column">
-            <a href="index.html#1"><img class="logo" src="images/suits_logo.svg" width="200" alt="SUITS Logo"></a>
+            <a href="index.html#1"><img class="logo" src="images/suits_logo.svg" width="150" alt="SUITS Logo"></a>
         </div>
         <div class="small-2 column">
-            <nav>
-                <button id="menu" type="button" class="float-right">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </button>
-            </nav>
+            <span class="menu-toggle float-right" aria-controls="secondary" aria-expanded="false">
+                <span>Menu</span>
+            </span>
         </div>
     </div>
 </header>
 {% block content %} {% endblock %}
 
+<script src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
+{#<script type="text/javascript" src="http://code.jquery.com/ui/1.11.3/jquery-ui.js"></script>#}
+{#<script src="//cdn.jsdelivr.net/velocity/1.2.3/velocity.min.js"></script>#}
+
 {% include "partials/footer.nunj" %}
 
-{#<script src="//cdn.jsdelivr.net/velocity/1.2.3/velocity.min.js"></script>#}
 <!--statt script.js-->
 <script src="js/menu.js"></script>
 <script src="js/svgxuse.js"></script>

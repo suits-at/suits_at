@@ -14,8 +14,17 @@ a:hover{
   color: $grey;
 }
 
-.header{
-  margin-bottom: 3rem;
+header{
+  opacity: 0.95;
+  background: #fefefe;
+  position: fixed;
+  z-index: 9999;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
 }
 
 .img-responsive{
@@ -47,11 +56,6 @@ a:hover{
   margin-top:10%;
 }
 
-header{
-  .logo{
-    margin-top: 2%;
-  }
-}
 h1{
   text-transform: uppercase;
   font-weight: 700;
@@ -131,6 +135,9 @@ footer {
 //  font-size: 2em;
 //}
 
+.content{
+  padding-top: 100px;
+}
 
 footer .icon{
   width: 1.6rem;

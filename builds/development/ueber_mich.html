@@ -13,23 +13,18 @@
 <header>
     <div class="row">
         <div class="small-10 column">
-            <a href="index.html#1"><img class="logo" src="images/suits_logo.svg" width="200" alt="SUITS Logo"></a>
+            <a href="index.html#1"><img class="logo" src="images/suits_logo.svg" width="150" alt="SUITS Logo"></a>
         </div>
         <div class="small-2 column">
-            <nav>
-                <button id="menu" type="button" class="float-right">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </button>
-            </nav>
+            <span class="menu-toggle float-right" aria-controls="secondary" aria-expanded="false">
+                <span>Menu</span>
+            </span>
         </div>
     </div>
 </header>
 
 
-    <div class="row">
+    <div class="row content">
         <div class="column">
             <h1 class="header">//Über mich</h1>
         </div>
@@ -58,6 +53,10 @@
                 erat volutpat.</p>
         </div>
     </section>
+
+
+
+<script src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
 
 
 
@@ -117,7 +116,6 @@
     </div>
 </footer>
 
-
 <!--statt script.js-->
 <script src="js/menu.js"></script>
 <script src="js/svgxuse.js"></script>
@@ -143,19 +141,35 @@
 
     
     
-    <div class="overlay">
-        <!--<button type="button" class="overlay-close">Close</button>-->
-        <nav class="overlay-close">
-            <ul>
-                <li><a href="index.html#1" class="">Home</a></li>
-                <li><a href="index.html#2" class="">Portfolio</a></li>
-                <li><a href="ueber_mich.html" class=" active ">Über mich</a></li>
-                <li><a href="leistungen.html" class="">Leistungen</a></li>
-                <li><a href="kontakt.html" class="">Kontakt</a></li>
-                <li><a href="impressum.html" class="">Impressum</a></li>
-            </ul>
-        </nav>
-    </div>
+
+    <div class="le-menu">
+        <div class="le-menu-wrapper">
+            <nav id="site-navigation" class="main-navigation" role="navigation" aria-expanded="false">
+                <ul class="h3 list-unstyled">
+                    <li><a href="index.html#2" class="">Portfolio</a></li>
+                    <li><a href="ueber_mich.html" class="active">Über mich</a></li>
+                    <li><a href="leistungen.html" class="">Leistungen</a></li>
+                    <li><a href="kontakt.html" class="">Kontakt</a></li>
+                    <li><a href="impressum.html" class="">Impressum</a></li>
+                </ul><!-- /.list-unstyled -->
+            </nav><!-- #site-navigation -->
+        </div><!-- /.le-menu-wrapper -->
+    </div><!-- /.le-menu -->
+
+
+    
+        
+        
+            
+                
+                
+                
+                
+                
+                
+            
+        
+    
 
 
 

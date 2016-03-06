@@ -2,7 +2,7 @@
 
 {% block content %}
 
-    <div class="row">
+    <div class="row content">
         <div class="column">
             <h1 class="header">//Leistungen</h1>
         </div>
@@ -88,21 +88,6 @@
     {% import 'macros/nav-macro.nunj' as nav %}
     {{ nav.active('leistungen') }}
 
-    <script src="js/svgxuse.js"></script>
+    {#<script src="js/svgxuse.js"></script>#}
 
 {% endblock %}
-
-<!--<div class="le-menu">-->
-<!--<div class="le-menu-wrapper">-->
-<!--<nav id="site-navigation" class="main-navigation" role="navigation" aria-expanded="false">-->
-<!--<ul class="h3 list-unstyled">-->
-<!--<li><a href="http://mokaine.com/">Beetle Go</a></li>-->
-<!--<li><a href="http://mokaine.com/beetle-pro-wordpress-theme/">Beetle Pro</a></li>-->
-<!--<li><a href="http://mokaine.com/beetle-go-vs-beetle-pro-feature-lists-compared/">Feature Lists</a></li>-->
-<!--<li><a href="http://mokaine.com/terms-of-use/">Terms of Use</a></li>-->
-<!--<li><a href="http://mokaine.com/help/">Contact &amp; Help</a></li>-->
-<!--<li><a href="http://mokaine.com/credits/">Credits</a></li>-->
-<!--</ul>&lt;!&ndash; /.list-unstyled &ndash;&gt;-->
-<!--</nav>&lt;!&ndash; #site-navigation &ndash;&gt;-->
-<!--</div>&lt;!&ndash; /.le-menu-wrapper &ndash;&gt;-->
-<!--</div>&lt;!&ndash; /.le-menu &ndash;&gt;-->

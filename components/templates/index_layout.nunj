@@ -17,6 +17,7 @@
 {#<script src="//cdn.jsdelivr.net/velocity/1.2.3/velocity.min.js"></script>#}
 <!--statt script.js-->
 {#<script src="js/modernizr-custom.js"></script>#}
+<script src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
 <script src="js/menu.js"></script>
 <script src="js/svgxuse.js"></script>
 
@@ -37,7 +38,6 @@
     })();
 </script>
 
-<script src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
 <!--<script src="//cdn.jsdelivr.net/velocity/1.2.3/velocity.min.js"></script>-->
 
 <!--<script src="js/script.js"></script>-->
