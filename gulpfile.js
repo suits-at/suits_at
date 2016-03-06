@@ -51,14 +51,6 @@ jsonSources = ['components/json/*.json'];
 imgSources = ['builds/development/images/**/*.*'];
 nunjucksSources = ['components/pages/*.+(html|nunj)'];
 
-//coffeeSources = ['components/coffee/tagline.coffee'];
-//gulp.task('coffee', function () {
-//    return gulp.src(coffeeSources)
-//        .pipe(coffee({bare: true})
-//            .on('error', gutil.log))
-//        .pipe(gulp.dest('components/scripts'))
-//});
-
 gulp.task('js', function () {
     return gulp.src(jsSources)
         //.pipe(concat('script.js'))
@@ -107,12 +99,12 @@ gulp.task('connect', function () {
     });
 });
 
-//gulp.task('html', function () {
-//    return gulp.src('builds/development/*.html')
-//        .pipe(gulpif(env === 'production', htmlmin({collapseWhitespace: true})))
-//        .pipe(gulpif(env === 'production', gulp.dest(outputDir)))
-//        .pipe(connect.reload())
-//});
+gulp.task('html', function () {
+    return gulp.src(outputDir +'*.html')
+        .pipe(gulpif(env === 'production', htmlmin({collapseWhitespace: true})))
+        .pipe(gulpif(env === 'production', gulp.dest(outputDir)))
+        .pipe(connect.reload())
+});
 
 gulp.task('nunjucks', function() {
     return gulp.src(nunjucksSources)
@@ -145,4 +137,4 @@ gulp.task('json', function () {
 });
 
 
-gulp.task('default', ['json', 'js', 'compass', 'images', 'nunjucks', 'connect', 'watch']);
+gulp.task('default', ['json', 'js', 'compass', 'images', 'nunjucks', 'html', 'connect', 'watch']);
