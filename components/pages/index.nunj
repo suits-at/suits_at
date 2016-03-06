@@ -34,23 +34,12 @@
             <div class="column">
                 <h1 class="header">//Portfolio</h1>
             </div>
-
-            {#<div class="row">#}
-            {#{% for projekt in projekte %}#}
-            {#<div class="small-12 medium-4 large-3 column">#}
-            {#{{ projekt.titel }}#}
-            {#<img src="images/portfolio/{{ projekt.screenshot }}.png" alt="Screenshot von {{ projekt.url }}"#}
-            {#class="portfolio-items"/>#}
-            {#</div>#}
-            {#{% endfor %}#}
-            {#</div>#}
-
         </div>
         <div class="row">
             <div class="grid">
                 {% for projekt in projekte %}
                     <div class="grid__item" data-size="1280x1280">
-                        <span data-link="images/portfolio/{{ projekt.screenshot }}.png" title="Screenshot von {{ projekt.url }}"
+                        <div data-link="images/portfolio/{{ projekt.screenshot }}.png" title="Screenshot von {{ projekt.url }}"
                            class="img-wrap portfolio-items">
                             <img src="images/portfolio/{{ projekt.screenshot }}.png"
                                  alt="Screenshot von {{ projekt.url }}"/>
@@ -65,7 +54,7 @@
                                     <p class="beschreibung"><strong>Projekbeschreibung:</strong> {{ projekt.beschreibung }}</p>
                                 </div>
                             </div>
-                        </span>
+                        </div>
                     </div>
                 {% endfor %}
             </div>
@@ -84,14 +73,5 @@
 
     {% import 'macros/nav-macro.nunj' as nav %}
     {{ nav.active('portfolio') }}
-
-    <script>
-        $(function () {
-            $("#test").click(function () {
-                console.log('test');
-                console.log(this.getAttribute('data-link'));
-            });
-        });
-    </script>
 
 {% endblock %}

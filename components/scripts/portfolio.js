@@ -184,7 +184,7 @@ var imagesLoaded = require('imagesloaded');
         this.current = this.items.indexOf(item);
 
         // set the src of the original image element (large image)
-        this._setOriginal(item.querySelector('span').getAttribute('data-link'));
+        this._setOriginal(item.querySelector('.portfolio-items').getAttribute('data-link'));
 
         // callback
         this.options.onOpenItem(this, item);
