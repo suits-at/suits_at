@@ -1,3 +1,16 @@
+//scrolling from "more" triangle
+//var velocity = require('velocity-animate');
+$(function() {
+    $(".more").on('click',function() {
+        //maybe try changing animate to velocity
+        $('html, body').animate({
+            scrollTop: $('#page2').offset().top
+        }, 500);
+        return false;
+    });
+});
+
+//fullPageScrolling
 var pages = 2;
 var currentpage = 1;
 if (document.location.hash) { currentpage = parseInt(document.location.hash.replace('#', '')); }

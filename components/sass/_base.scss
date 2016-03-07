@@ -54,6 +54,7 @@ header{
   //bottom: 2rem;
   //position: absolute;
   @include horizontal-center;
+  cursor: pointer;
 }
 .teaser-logo{
   height: 6rem;
