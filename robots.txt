@@ -1,4 +1,0 @@
-User-agent: *
-Allow: /production/
-Allow: /production/sitemap.htm
-Sitemap: http://www.suits.at/production/sitemap.xml
