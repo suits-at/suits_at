@@ -53,13 +53,14 @@ header{
 }
 .teaser-logo{
   height: 6rem;
-  margin-top:10%;
+  margin-top:30%;
 }
 
 h1{
+  font-size:2.5rem;
   text-transform: uppercase;
   font-weight: 700;
-  color: $headings;
+  color: $grey;
 }
 
 .leistungen{
@@ -195,6 +196,10 @@ footer .icon-envelop.wrapper:hover a{
 
 .xing:hover .xing2{
   fill: $xing2;
+}
+
+.icon-lock{
+  margin-left: 1.2rem;
 }
 
 

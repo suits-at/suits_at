@@ -3,21 +3,16 @@
 }
 
 .menu-toggle span, .menu-toggle span:after, .menu-toggle span:before {
-  background-color: #ACACAC;
+  background-color: $grey;
   width: 48px;
   height: 6px;
   border-radius: 6px;
   display: block;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
   user-select: none;
-  -webkit-transition: top .2s .1s ease, bottom .2s .1s ease, background-color .2s ease, -webkit-transform .2s ease;
   transition: top .2s .1s ease, bottom .2s .1s ease, background-color .2s ease, transform .2s ease
 }
 
 .menu-is-open .menu-toggle span, .menu-is-open .menu-toggle span:after, .menu-is-open .menu-toggle span:before {
-  -webkit-transition: top .2s ease, bottom .2s ease, background-color .2s ease, -webkit-transform .2s .1s ease;
   transition: top .2s ease, bottom .2s ease, background-color .2s ease, transform .2s .1s ease
 }
 
@@ -27,8 +22,7 @@
   left: 0
 }
 
-.menu-toggle
-span {
+.menu-toggle span {
   position: relative;
   top: 16px;
   color: transparent
@@ -48,11 +42,10 @@ span {
 }
 
 .menu-toggle:hover span, .menu-toggle:hover span:after, .menu-toggle:hover span:before {
-  background-color: #303030
+  background-color: $blue;
 }
 
-.menu-is-open .menu-toggle
-span {
+.menu-is-open .menu-toggle span {
   background-color: transparent
 }
 
@@ -64,6 +57,60 @@ span {
 }
 
 .menu-is-open .menu-toggle span:after {
+  bottom: 0;
+  -webkit-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  transform: rotate(-45deg)
+}
+
+//adding X for portfolio
+.action--close span, .action--close span:after, .action--close span:before {
+  background-color: $blue;
+  width: 48px;
+  height: 6px;
+  border-radius: 6px;
+  display: block;
+  user-select: none;
+}
+
+.action--close span:after, .action--close span:before {
+  content: '';
+  position: absolute;
+  left: 0
+}
+
+.action--close span {
+  position: relative;
+  top: 16px;
+  color: transparent
+}
+
+.action--close span:before {
+  top: -14px
+}
+
+.action--close span:after {
+  bottom: -14px
+}
+
+.action--close {
+  cursor: pointer;
+  width: 48px;
+  height: 40px
+}
+
+.action--close span {
+  background-color: transparent
+}
+
+.action--close span:before {
+  top: 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg)
+}
+
+.action--close span:after {
   bottom: 0;
   -webkit-transform: rotate(-45deg);
   -ms-transform: rotate(-45deg);

@@ -281,8 +281,7 @@
   position: fixed;
   z-index: 150;
   top: 2rem;
-  right: 2rem;
-  //padding: 1em;
+  right: 3rem;
   opacity: 0;
   -webkit-transition: opacity 0.3s, -webkit-transform 0.3s;
   transition: opacity 0.3s, transform 0.3s;
@@ -306,11 +305,11 @@
 }
 
 @media screen and (max-width: 40em) {
-  .description--preview h3 {
-    font-size: 0.5em;
+  .description--preview h2 {
+    font-size: 1rem;
   }
   .description--preview p,
   .details {
-    //display: none;
+    display: none;
   }
 }
