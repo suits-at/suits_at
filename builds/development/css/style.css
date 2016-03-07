@@ -3877,7 +3877,7 @@ header {
 }
 
 .header {
-  margin-bottom: 3rem;
+  margin-bottom: 2rem;
 }
 
 .img-responsive {
@@ -4654,7 +4654,7 @@ h1, h2, h3, h4, h5, h6 {
   }
 
   .contact-text {
-    margin: 30% 0 0 0;
+    margin-bottom: 3rem;
   }
 }
 @media all and (min-width: 1200px) {

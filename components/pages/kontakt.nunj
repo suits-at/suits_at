@@ -7,6 +7,15 @@
             <h1 class="header">//Kontakt</h1>
         </div>
     </div>
+    <div class="row align-center contact-text">
+        <div class="small-12 medium-7 column text-center">
+            <p>
+                Gerne können Sie mich unter der angeführen E-Mailadresse kontaktieren.<br>
+                Ich freue mich sowohl über Jobangebote oder interessante Projekte als auch über Feedback oder nur ein
+                kurzes "Hallo".
+            </p>
+        </div>
+    </div>
     <section class="row leistungen">
         <div class="small-12 medium-4 column">
             <a href="ueber_mich.html" class="icon-user-tie wrapper">
@@ -36,13 +45,7 @@
         </div>
     </section>
     <div class="row">
-        <div class="small-12 medium-4 column">
-            <p class="contact-text">Gerne können Sie mich unter der angeführen E-Mailadresse kontaktieren.<br>
-                Ich freue mich sowohl über Jobangebote oder interessante Projekte als auch über Feedback oder nur ein
-                kurzes "Hallo".
-            </p>
-        </div>
-        <div class="small-12 medium-8 column">
+        <div class="small-12 column">
             <div id="map">Google Map loading...
                 {#chillwave#}
                 {#<svg xmlns="http://www.w3.org/2000/svg"#}
