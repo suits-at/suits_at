@@ -22,8 +22,8 @@ var env,
     outputDir,
     sassStyle;
 
-//env = 'production';
-env = process.env.NODE_ENV || 'development';
+env = 'production';
+//env = process.env.NODE_ENV || 'development';
 
 if (env === 'development') {
     outputDir = 'builds/development/';
@@ -83,10 +83,9 @@ gulp.task('compass', function () {
 });
 
 gulp.task('watch', function () {
-    //gulp.watch(coffeeSources, ['coffee']);
     gulp.watch(jsSources, ['js']);
     gulp.watch('components/sass/*.scss', ['compass']);
-    //gulp.watch('builds/development/*.html', ['html']);
+    gulp.watch('builds/development/*.html', ['html']);
     gulp.watch(['components/pages/*.+(html|nunj)', 'components/templates/**/*.+(html|nunj)', outputDir + 'json/*.json'], ['nunjucks']);
     gulp.watch(jsonSources, ['json']);
     gulp.watch(imgSources, ['images']);
@@ -99,9 +98,16 @@ gulp.task('connect', function () {
     });
 });
 
-gulp.task('html', function () {
+//call html after nunjucks finished
+gulp.task('html', ['nunjucks'], function () {
     return gulp.src(outputDir +'*.html')
-        .pipe(gulpif(env === 'production', htmlmin({collapseWhitespace: true})))
+        .pipe(gulpif(env === 'production', htmlmin(
+            {
+                collapseWhitespace: true,
+                minifyJS: true,
+                minifyCSS: true
+            }
+        )))
         .pipe(gulpif(env === 'production', gulp.dest(outputDir)))
         .pipe(connect.reload())
 });
@@ -109,7 +115,7 @@ gulp.task('html', function () {
 gulp.task('nunjucks', function() {
     return gulp.src(nunjucksSources)
         .pipe(data(function() {
-            return require('./' + outputDir + 'json/data.json')
+            return require('./components/json/data.json')
         }))
         .pipe(nunjucksRender({
             path: ['components/templates/']
