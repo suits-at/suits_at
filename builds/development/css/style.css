@@ -4670,6 +4670,7 @@ h1, h2, h3, h4, h5, h6 {
 
   .teaser-logo {
     height: 17rem;
+    margin-top: 10%;
   }
 }
 @media all and (min-width: 1900px) {
