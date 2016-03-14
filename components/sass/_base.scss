@@ -83,10 +83,10 @@ figcaption{
 footer{
   background-color: $footer;
   color: $grey;
-  a{
+  a, a:active, a:focus{
     color: $grey;
   }
-  a:hover, a:active, a:focus{
+  a:hover{
     color: $white;
   }
   .right{
