@@ -7,6 +7,10 @@ body {
   color: $grey;
 }
 
+section:last-of-type{
+  padding-bottom: 3rem;
+}
+
 a{
   color: $grey;
 }
@@ -42,6 +46,9 @@ header{
 {
   min-height: 100vh;
   //width: 100vw;
+}
+.page.portfolio{
+  min-height: 90vh;
 }
 //end fullpage
 

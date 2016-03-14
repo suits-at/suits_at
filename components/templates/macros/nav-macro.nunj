@@ -4,7 +4,7 @@
         <div class="le-menu-wrapper">
             <nav id="site-navigation" class="main-navigation" aria-expanded="false">
                 <ul class="h3 list-unstyled">
-                    <li><a href="index.html#2" class="{%if activePage == 'portfolio' %}active{% endif %}">Portfolio</a></li>
+                    <li><a href="index.html#portfolio" class="{%if activePage == 'portfolio' %}active{% endif %}">Portfolio</a></li>
                     <li><a href="ueber_mich.html" class="{%if activePage == 'ueber_mich' %}active{% endif %}">Über mich</a></li>
                     <li><a href="leistungen.html" class="{%if activePage == 'leistungen' %}active{% endif %}">Leistungen</a></li>
                     <li><a href="kontakt.html" class="{%if activePage == 'kontakt' %}active{% endif %}">Kontakt</a></li>

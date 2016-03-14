@@ -3806,8 +3806,8 @@ table.hover tr:nth-of-type(even):hover {
 }
 
 .column.align-top, .align-top.columns {
-  -webkit-align-self: flex-start;
-      -ms-flex-item-align: start;
+  -ms-flex-item-align: start;
+          -webkit-align-self: flex-start;
           align-self: flex-start;
 }
 
@@ -3819,8 +3819,8 @@ table.hover tr:nth-of-type(even):hover {
 }
 
 .column.align-bottom, .align-bottom.columns {
-  -webkit-align-self: flex-end;
-      -ms-flex-item-align: end;
+  -ms-flex-item-align: end;
+          -webkit-align-self: flex-end;
           align-self: flex-end;
 }
 
@@ -3832,8 +3832,8 @@ table.hover tr:nth-of-type(even):hover {
 }
 
 .column.align-middle, .align-middle.columns {
-  -webkit-align-self: center;
-      -ms-flex-item-align: center;
+  -ms-flex-item-align: center;
+          -webkit-align-self: center;
           align-self: center;
 }
 
@@ -3845,14 +3845,18 @@ table.hover tr:nth-of-type(even):hover {
 }
 
 .column.align-stretch, .align-stretch.columns {
-  -webkit-align-self: stretch;
-      -ms-flex-item-align: stretch;
+  -ms-flex-item-align: stretch;
+          -webkit-align-self: stretch;
           align-self: stretch;
 }
 
 body {
   font-family: "Work Sans", sans-serif;
   color: #646464;
+}
+
+section:last-of-type {
+  padding-bottom: 3rem;
 }
 
 a {
@@ -3888,6 +3892,10 @@ header {
 
 .page {
   min-height: 100vh;
+}
+
+.page.portfolio {
+  min-height: 90vh;
 }
 
 *:focus {
@@ -4391,7 +4399,7 @@ h1, h2, h3, h4, h5, h6 {
   -webkit-justify-content: center;
   justify-content: center;
   -ms-flex-line-pack: center;
-  -webkit-align-content: center;
+          -webkit-align-content: center;
           align-content: center;
   -ms-flex-align: center;
   -webkit-align-items: center;
@@ -4670,7 +4678,7 @@ h1, h2, h3, h4, h5, h6 {
 
   .teaser-logo {
     height: 17rem;
-    margin-top: 10%;
+    margin-top: 5rem;
   }
 }
 @media all and (min-width: 1900px) {
@@ -4685,7 +4693,7 @@ h1, h2, h3, h4, h5, h6 {
   }
 
   .teaser-logo {
-    margin-top: 15%;
+    margin-top: 10rem;
     height: 20rem;
   }
 }

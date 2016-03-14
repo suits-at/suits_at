@@ -44,7 +44,7 @@
             </p>
         </div>
     </section>
-    <div class="row">
+    <section class="row">
         <div class="small-12 column">
             <div id="map">Google Map loading...
                 {#chillwave#}
@@ -60,7 +60,7 @@
                 {#</svg>#}
             </div>
         </div>
-    </div>
+    </section>
 {% endblock %}
 
 {% block scripts %}
