@@ -32,21 +32,21 @@
             <p>
                 Durch den Schwerpunkt, der in der Masterklasse gesetzt wird, kann ich sowohl meine bereits vorhandenen
                 Skills im Webdevelopment erweitern, als
-                auch viel Neues dazu lernen. Native Appentwicklung unter Android, IOS und Windows Phone sowohl für
-                Smartphones als auch für Smartwatches stehen hier an der Tagesordnung.
+                auch viel Neues dazu lernen. Native Appentwicklung unter Android, IOS und Windows Phone, sowohl für
+                Smartphones, als auch für Smartwatches stehen hier an der Tagesordnung.
             </p>
             <p>Mehr über mich und meine bisherige Laufbahn finden Sie in meinem <a href="files/UlbelSebastian_Lebenslauf.pdf"
                                                                        title="Lebenslauf"><strong>Lebenslauf</strong></a>.
             </p>
             <p>
-                Falls Sie noch mehr über mich wissen wollen, an einer Zusammenarbeit interessiert sind, oder ich Ihnen behilflich sein kann, freue ich mich, wenn Sie mit mir unter
+                Falls Sie noch mehr über mich wissen wollen, an einer Zusammenarbeit interessiert sind oder ich Ihnen behilflich sein kann, freue ich mich, wenn Sie mit mir unter
                 <a href="mailto:office@suits.at"><strong>office@suits.at</strong></a> Kontakt aufnehmen.
             </p>
         </div>
     </section>
 
 {% endblock %}
-
+symbol-defs.svg
 {% block scripts %}
 
     {% import 'macros/nav-macro.nunj' as nav %}
