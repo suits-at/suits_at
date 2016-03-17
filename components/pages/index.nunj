@@ -21,7 +21,7 @@
             <div class="row">
                 <div class="small-10 column">
                     <a href="index.html"><img class="logo" src="images/suits_logo.svg" width="105"
-                                                alt="SUITS Logo"></a>
+                                              alt="SUITS Logo"></a>
                 </div>
                 <div class="small-2 column">
                    <span class="menu-toggle float-right" aria-controls="site-navigation" aria-expanded="false" role="navigation">
@@ -35,12 +35,12 @@
                 <h1 class="header">//Portfolio</h1>
             </div>
         </div>
-        <div class="row">
+        <section class="row">
             <div class="grid">
                 {% for projekt in projekte %}
-                    <div class="grid__item" data-size="1280x1280">
+                    <div class="grid__item" data-size="{{ projekt.size }}">
                         <div data-link="images/portfolio/{{ projekt.screenshot }}.png" title="Screenshot von {{ projekt.url }}"
-                           class="img-wrap portfolio-items">
+                             class="img-wrap portfolio-items">
                             <img src="images/portfolio/{{ projekt.screenshot }}.png"
                                  alt="Screenshot von {{ projekt.url }}"/>
                             <div class="description description--grid">
@@ -64,7 +64,7 @@
                 <div class="description description--preview"></div>
             </div>
             <!-- /preview -->
-        </div>
+        </section>
     </div>
 
 {% endblock %}

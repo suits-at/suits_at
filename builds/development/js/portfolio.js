@@ -163,6 +163,12 @@ var imagesLoaded = require('imagesloaded');
             self._closeItem();
         });
 
+        $(document).keyup(function(e) {
+            if (e.keyCode == 27) { // escape key
+                self._closeItem();
+            }
+        });
+
         window.addEventListener('resize', throttle(function(ev) {
             // callback
             self.options.onResize(self);
