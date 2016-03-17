@@ -16,26 +16,31 @@
             <figure>
                 <img src="images/sebastian_ulbel.png" alt="Sebastian Ulbel" title="Sebastian Ulbel">
             </figure>
-            <p class="text-center">Leidenschaftlicher<br>Webdeveloper & Fußballspieler.<br>Gadget- & Musikliebhaber.<br>Kickstarterkampagnen-Unterstützer.
-            </p>
+
         </div>
         <div class="small-12 medium-8 column">
             <h2>Sebastian Ulbel</h2>
             <p>
-                Ich bin 25 Jahre alt und befinde mich derzeit im zweiten Semester des Masterstudiums an der FH St.Pölten. Ich absolviere dort den
-                Studiengang digitale Medientechnologie, genauer gesagt die Masterklasse mobiles Internet. Diese
-                ergänzt sich perfekt mit meinen Interessen und meiner Begeisterung fürs Webdevelopment.
+                Leidenschaftlicher Webdeveloper & Fußballspieler.<br>Gadget- & Musikliebhaber.<br>Kickstarterkampagnen-Unterstützer.
             </p>
             <p>
-                In der Masterklasse kann ich sowohl meine bereits vorhandenen Skills im Webdevelopment erweitern, als
-                auch viel Neues dazu lernen. So bin ich im Rahmen des Studiums erstmals mit der nativen Appentwicklung
-                unter
-                Android als auch IOS in Berührung gekommen. Mein Steckenpferd ist und bleibt jedoch weiterhin das
-                Webdevelopment bzw. vor allem das Frontenddevelopment. Durch die rasante Entwicklung in diesen Bereichen
-                gibt es immer etwas neues zu lernen.
+                Meine Leidenschaft fürs Webdevelopment vertiefe ich derzeit im Masterstudium "digitale
+                Medientechnologie"
+                an der FH St. Pölten. Die von mir besuchte Masterklasse "mobiles Internet" ergänzt sich perfekt mit
+                meinen Interessen.
             </p>
-            Falls Sie an einer Zusammenarbeit interessiert sind, freue ich mich, wenn Sie mit mir <a href="kontakt.html"><strong>Kontakt</strong></a>
-            aufnehmen.
+            <p>
+                Durch den Schwerpunkt, der in der Masterklasse gesetzt wird, kann ich sowohl meine bereits vorhandenen
+                Skills im Webdevelopment erweitern, als
+                auch viel Neues dazu lernen. Native Appentwicklung unter Android, IOS und Windows Phone sowohl für
+                Smartphones als auch für Smartwatches stehen hier an der Tagesordnung.
+            </p>
+            <p>Mehr über mich und meine bisherige Laufbahn finden Sie in meinem <a href="files/UlbelSebastian_Lebenslauf.pdf"
+                                                                       title="Lebenslauf"><strong>Lebenslauf</strong></a>.
+            </p>
+            <p>
+                Falls Sie noch mehr über mich wissen wollen, an einer Zusammenarbeit interessiert sind, oder ich Ihnen behilflich sein kann, freue ich mich, wenn Sie mit mir unter
+                <a href="mailto:office@suits.at"><strong>office@suits.at</strong></a> Kontakt aufnehmen.
             </p>
         </div>
     </section>
