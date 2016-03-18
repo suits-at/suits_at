@@ -12,6 +12,7 @@ var gulp = require('gulp'),
     autoprefixer = require('gulp-autoprefixer'),
     nunjucksRender = require('gulp-nunjucks-render'),
     data = require('gulp-data'),
+    critical = require('critical'),
     concat = require('gulp-concat');
 
 var env,
@@ -138,6 +139,18 @@ gulp.task('json', function () {
         .pipe(gulpif(env === 'production', jsonminify()))
         .pipe(gulp.dest(outputDir + 'json'))
         .pipe(connect.reload())
+});
+
+gulp.task('critical', ['build'], function (cb) {
+    critical.generate({
+        inline: true,
+        base: 'dist/',
+        src: 'index.html',
+        dest: 'dist/index-critical.html',
+        minify: true,
+        width: 320,
+        height: 480
+    });
 });
 
 gulp.task('default', ['json', 'js', 'compass', 'images', 'nunjucks', 'html', 'connect', 'watch']);
