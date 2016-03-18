@@ -23,7 +23,7 @@
         </div>
         <!--see more link triangle-->
         <div class="row align-center">
-            <span class="more"></span>
+            <span id="skiptocontent" class="more"></span>
         </div>
     </div>
     <div id="portfolio" class="page portfolio">
@@ -51,7 +51,7 @@
                     <div class="grid__item" data-size="1078x1210">
                         <div data-link="images/portfolio/screenshots/zt_pech.png" title="Screenshot von www.zt-pech.at"
                              class="img-wrap portfolio-items">
-                            <img src="images/portfolio/screenshots/zt_pech.png"
+                            <img src="images/portfolio/thumbnails/zt_pech.png"
                                  alt="Screenshot von www.zt-pech.at"/>
                             <div class="description description--grid">
                                 <h2>Ziviltechniker Pech</h2>
@@ -70,7 +70,7 @@
                     <div class="grid__item" data-size="1079x1422">
                         <div data-link="images/portfolio/screenshots/praxis_arsenal.png" title="Screenshot von www.praxisarsenal.at"
                              class="img-wrap portfolio-items">
-                            <img src="images/portfolio/screenshots/praxis_arsenal.png"
+                            <img src="images/portfolio/thumbnails/praxis_arsenal.png"
                                  alt="Screenshot von www.praxisarsenal.at"/>
                             <div class="description description--grid">
                                 <h2>Praxis Arsenal</h2>
@@ -89,7 +89,7 @@
                     <div class="grid__item" data-size="1233x882">
                         <div data-link="images/portfolio/screenshots/iaaa.png" title="Screenshot von iaaa.fh-hagenberg.at"
                              class="img-wrap portfolio-items">
-                            <img src="images/portfolio/screenshots/iaaa.png"
+                            <img src="images/portfolio/thumbnails/iaaa.png"
                                  alt="Screenshot von iaaa.fh-hagenberg.at"/>
                             <div class="description description--grid">
                                 <h2>IAAA</h2>
@@ -108,7 +108,7 @@
                     <div class="grid__item" data-size="1080x1608">
                         <div data-link="images/portfolio/screenshots/schwertberger_braeu.png" title="Screenshot von www.schwertberger-braeu.at"
                              class="img-wrap portfolio-items">
-                            <img src="images/portfolio/screenshots/schwertberger_braeu.png"
+                            <img src="images/portfolio/thumbnails/schwertberger_braeu.png"
                                  alt="Screenshot von www.schwertberger-braeu.at"/>
                             <div class="description description--grid">
                                 <h2>Schwertberger Bräu</h2>
@@ -127,7 +127,7 @@
                     <div class="grid__item" data-size="1079x1035">
                         <div data-link="images/portfolio/screenshots/windhorse.png" title="Screenshot von www.windhorse.at"
                              class="img-wrap portfolio-items">
-                            <img src="images/portfolio/screenshots/windhorse.png"
+                            <img src="images/portfolio/thumbnails/windhorse.png"
                                  alt="Screenshot von www.windhorse.at"/>
                             <div class="description description--grid">
                                 <h2>Windhorse</h2>
@@ -146,7 +146,7 @@
                     <div class="grid__item" data-size="916x675">
                         <div data-link="images/portfolio/screenshots/judith_stockert-giesinger.png" title="Screenshot von www.judithstockert-giesinger.at"
                              class="img-wrap portfolio-items">
-                            <img src="images/portfolio/screenshots/judith_stockert-giesinger.png"
+                            <img src="images/portfolio/thumbnails/judith_stockert-giesinger.png"
                                  alt="Screenshot von www.judithstockert-giesinger.at"/>
                             <div class="description description--grid">
                                 <h2>Mag. Judith Stockert-Giesinger | Praxis für Psychotherapie</h2>
@@ -165,7 +165,7 @@
                     <div class="grid__item" data-size="1806x963">
                         <div data-link="images/portfolio/screenshots/michael_stockert.png" title="Screenshot von www.michaelstockert.at"
                              class="img-wrap portfolio-items">
-                            <img src="images/portfolio/screenshots/michael_stockert.png"
+                            <img src="images/portfolio/thumbnails/michael_stockert.png"
                                  alt="Screenshot von www.michaelstockert.at"/>
                             <div class="description description--grid">
                                 <h2>Michael Stockert - Psychotherapie, Supervision, Coaching</h2>
@@ -184,7 +184,7 @@
                     <div class="grid__item" data-size="1685x948">
                         <div data-link="images/portfolio/screenshots/doris_mayer.png" title="Screenshot von www.dorismayer.at"
                              class="img-wrap portfolio-items">
-                            <img src="images/portfolio/screenshots/doris_mayer.png"
+                            <img src="images/portfolio/thumbnails/doris_mayer.png"
                                  alt="Screenshot von www.dorismayer.at"/>
                             <div class="description description--grid">
                                 <h2>Doris Mayer - Bildende Künstlerin</h2>
@@ -383,6 +383,15 @@
             }
         });
     });
+
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+                (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-13000597-11', 'auto');
+    ga('send', 'pageview');
+
 </script>
 
 

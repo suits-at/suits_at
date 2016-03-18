@@ -13,7 +13,7 @@
         </div>
         <!--see more link triangle-->
         <div class="row align-center">
-            <span class="more"></span>
+            <span id="skiptocontent" class="more"></span>
         </div>
     </div>
     <div id="portfolio" class="page portfolio">
@@ -39,9 +39,9 @@
             <div class="grid">
                 {% for projekt in projekte %}
                     <div class="grid__item" data-size="{{ projekt.size }}">
-                        <div data-link="images/portfolio/{{ projekt.screenshot }}.png" title="Screenshot von {{ projekt.url }}"
+                        <div data-link="images/portfolio/screenshots/{{ projekt.screenshot }}.png" title="Screenshot von {{ projekt.url }}"
                              class="img-wrap portfolio-items">
-                            <img src="images/portfolio/{{ projekt.screenshot }}.png"
+                            <img src="images/portfolio/thumbnails/{{ projekt.screenshot }}.png"
                                  alt="Screenshot von {{ projekt.url }}"/>
                             <div class="description description--grid">
                                 <h2>{{ projekt.titel }}</h2>
