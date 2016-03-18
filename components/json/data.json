@@ -6,7 +6,7 @@
     "datum":"2015",
     "screenshot":"zt_pech",
     "beschreibung":"Mit Hilfe des CMS Wordpress wurde eine neue Website realisiert.",
-    "size":"1078x1210"
+    "size":"862x968"
   },
   {
     "titel":"Praxis Arsenal",
@@ -15,7 +15,7 @@
     "datum":"2015",
     "screenshot":"praxis_arsenal",
     "beschreibung":"Mit Hilfe von Wordpress wurde eine neue Website realisiert.",
-    "size":"1079x1422"
+    "size":"863x1138"
   },
   {
     "titel":"IAAA",
@@ -24,7 +24,7 @@
     "datum":"2015",
     "screenshot":"iaaa",
     "beschreibung":"Im Rahmen eines Studienprojekts wurde, mit Hilfe des CMS Typo3, eine neue Website realisiert. Ich war dabei für die Installation, Konfiguration und Inbetriebnahme von Typo3 und der Programmierung der Team-Extension zuständig.",
-    "size":"1233x882"
+    "size":"986x706"
   },
   {
     "titel":"Schwertberger Bräu",
@@ -33,7 +33,7 @@
     "datum":"2007",
     "screenshot":"schwertberger_braeu",
     "beschreibung":"Im Rahmen eines Studienprojekts wurde, mit Hilfe des CMS Wordpress, eine neue Website realisiert. Ich war dabei für die Umsetzung der Website zuständig.",
-    "size":"1080x1608"
+    "size":"864x1286"
   },
   {
     "titel":"Windhorse",
@@ -42,7 +42,7 @@
     "datum":"laufende Betreuung",
     "screenshot":"windhorse",
     "beschreibung":"An der Website des Vereins Windhorse werden von mir laufend Änderungen und Aktualisierungen durchgeführt.",
-    "size":"1079x1035"
+    "size":"863x828x"
   },
   {
     "titel":"Mag. Judith Stockert-Giesinger | Praxis für Psychotherapie",
@@ -51,7 +51,7 @@
     "datum":"2014",
     "screenshot":"judith_stockert-giesinger",
     "beschreibung":"Nachdem Vorbild des Screendesigns eines Grafikers wurde eine kleine Website realisiert.",
-    "size":"916x675"
+    "size":"773x540"
   },
   {
     "titel":"Michael Stockert - Psychotherapie, Supervision, Coaching",
@@ -69,6 +69,6 @@
     "datum":"2007",
     "screenshot":"doris_mayer",
     "beschreibung":"Als eines meiner ersten Projekte habe ich bereits im Jahr 2007 die Website für Doris Mayer umgsetzt.",
-    "size":"1685x948"
+    "size":"1348x758"
   }
 ]}

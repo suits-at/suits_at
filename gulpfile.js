@@ -64,7 +64,6 @@ gulp.task('compass', function () {
     return gulp.src(sassSources)
         .pipe(compass({
             //sourcemap: true,
-            //debug: true,
             css: outputDir + 'css',
             sass: 'components/sass',
             style: sassStyle,
@@ -82,7 +81,7 @@ gulp.task('watch', function () {
     gulp.watch(jsSources, ['js']);
     gulp.watch('components/sass/*.scss', ['compass']);
     gulp.watch('builds/development/*.html', ['html']);
-    gulp.watch(['components/pages/*.+(html|nunj)', 'components/templates/**/*.+(html|nunj)', outputDir + 'json/*.json'], ['nunjucks']);
+    gulp.watch(['components/pages/*.+(html|nunj)', 'components/templates/**/*.+(html|nunj)', outputDir + 'json/*.json'], ['critical']);
     gulp.watch(jsonSources, ['json']);
     gulp.watch(imgSources, ['images']);
 });
@@ -146,7 +145,7 @@ gulp.task('critical', ['html'], function () {
         inline: true,
         base: 'builds/production/',
         src: 'index.html',
-        dest: 'builds/production/index-critical.html',
+        dest: 'builds/production/index.html',
         minify: true,
         width: 320,
         height: 480
