@@ -141,16 +141,16 @@ gulp.task('json', function () {
         .pipe(connect.reload())
 });
 
-gulp.task('critical', ['build'], function (cb) {
+gulp.task('critical', ['html'], function () {
     critical.generate({
         inline: true,
-        base: 'dist/',
+        base: 'builds/production/',
         src: 'index.html',
-        dest: 'dist/index-critical.html',
+        dest: 'builds/production/index-critical.html',
         minify: true,
         width: 320,
         height: 480
     });
 });
 
-gulp.task('default', ['json', 'js', 'compass', 'images', 'nunjucks', 'html', 'connect', 'watch']);
+gulp.task('default', ['json', 'js', 'compass', 'images', 'nunjucks', 'html', 'critical', 'connect', 'watch']);
