@@ -33,27 +33,23 @@ if (env === 'development') {
     sassStyle = 'compressed';
 }
 
-//using modernizr-custom2 instead of modernizr-custom now -> may have impacts on others sites
-
+//'components/scripts/modernizr-custom.js',
+//'components/scripts/fullPageScrolling.js',
 jsSources = [
-    'components/scripts/unused_template.js',
     'components/scripts/typed.js',
-    'components/scripts/call_typed.js',
     'components/scripts/menu.js',
     'components/scripts/svgxuse.js',
-    'components/scripts/fullPageScrolling.js',
-    'components/scripts/modernizr-custom2.js',
     'components/scripts/portfolio.js'
 ];
 sassSources = ['components/sass/style.scss'];
 htmlSources = [outputDir + '*.html'];
 jsonSources = ['components/json/*.json'];
-imgSources = ['builds/development/images/**/*.*'];
+imgSources = ['builds/development/images/**/*.+(png|jpg|jpeg)'];
 nunjucksSources = ['components/pages/*.+(html|nunj)'];
 
 gulp.task('js', function () {
     return gulp.src(jsSources)
-        //.pipe(concat('script.js'))
+        .pipe(concat('script.js'))
         .pipe(browserify())
         .pipe(gulpif(env === 'production', uglify()))
         .pipe(gulp.dest(outputDir + 'js'))
@@ -70,7 +66,6 @@ gulp.task('compass', function () {
             //debug: true,
             css: outputDir + 'css',
             sass: 'components/sass',
-            //image: outputDir + 'images',
             style: sassStyle,
             project: __dirname,
             import_path: 'node_modules/foundation-sites/scss'
@@ -128,7 +123,10 @@ gulp.task('images', function () {
     return gulp.src(imgSources)
         .pipe(gulpif(env === 'production', imagemin({
             progressive: true,
-            svgoPlugin: [{removeViewBox: false}],
+            svgoPlugin: [
+                {removeViewBox: false},
+                {cleanupIDs: false}
+            ],
             use: [pngquant()]
         })))
         .pipe(gulpif(env === 'production', gulp.dest(outputDir + 'images')))
@@ -141,6 +139,5 @@ gulp.task('json', function () {
         .pipe(gulp.dest(outputDir + 'json'))
         .pipe(connect.reload())
 });
-
 
 gulp.task('default', ['json', 'js', 'compass', 'images', 'nunjucks', 'html', 'connect', 'watch']);

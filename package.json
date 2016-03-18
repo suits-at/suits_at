@@ -10,12 +10,9 @@
   "author": "Sebastian Ulbel",
   "license": "ISC",
   "devDependencies": {
-    "desandro-classie": "^1.0.1",
-    "foundation-sites": "^6.1.2",
     "gulp": "^3.9.0",
     "gulp-autoprefixer": "^3.1.0",
     "gulp-browserify": "^0.5.1",
-    "gulp-coffee": "^2.3.1",
     "gulp-compass": "^2.1.0",
     "gulp-concat": "^2.6.0",
     "gulp-connect": "^2.3.1",
@@ -25,13 +22,14 @@
     "gulp-imagemin": "^2.4.0",
     "gulp-jsonminify": "^1.0.0",
     "gulp-nunjucks-render": "^2.0.0",
-    "gulp-uglify": "^1.5.1",
+    "gulp-streamify": "^1.0.2",
     "gulp-util": "^3.0.7",
     "imagemin-pngquant": "^4.2.0",
-    "imagesloaded": "^4.1.0",
-    "jquery": "^2.2.0",
+    "jquery": "^2.2.2",
+    "velocity-animate": "^1.2.3",
     "masonry-layout": "^4.0.0",
-    "mustache": "^2.2.1",
-    "velocity-animate": "^1.2.3"
+    "imagesloaded": "^4.1.0",
+    "desandro-classie": "^1.0.1",
+    "foundation-sites": "^6.1.2"
   }
 }

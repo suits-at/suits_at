@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>SUITS</title>
     <link rel="stylesheet" href="css/style.css">
-    <script src="js/modernizr-custom2.js"></script>
+    <script src="js/modernizr-custom.js"></script>
 </head>
 <body>
 
@@ -14,16 +14,21 @@
 
 {% include "partials/footer.nunj" %}
 
-{#<script src="//cdn.jsdelivr.net/velocity/1.2.3/velocity.min.js"></script>#}
-<!--statt script.js-->
-{#<script src="js/modernizr-custom.js"></script>#}
-<script src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
-<script src="js/menu.js"></script>
-<script src="js/svgxuse.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/velocity/1.2.3/velocity.min.js"></script>
+<script src="js/script.js"></script>
 
-<!--<script src="js/script.js"></script>-->
+{#<script src="https://code.jquery.com/jquery-2.2.0.min.js"></script>#}
+{#<script src="js/modernizr-custom.js"></script>#}
+{#<script src="js/menu.js"></script>#}
+{#<script src="js/svgxuse.js"></script>#}
+{#<script src="js/fullPageScrolling.js"></script>#}
+{#<script src="js/typed.js"></script>#}
+{#<script src="js/call_typed.js"></script>#}
+{#<script src="js/portfolio.js"></script>#}
+
 <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.5.18/webfont.js"></script>
-<script type="text/javascript">
+<script>
     WebFontConfig = {
         google: {families: ['Work+Sans:400,700:latin']}
     };
@@ -36,20 +41,31 @@
         var s = document.getElementsByTagName('script')[0];
         s.parentNode.insertBefore(wf, s);
     })();
-</script>
 
-<!--<script src="//cdn.jsdelivr.net/velocity/1.2.3/velocity.min.js"></script>-->
+    //scrolling from "more" triangle
+    $(function() {
 
-<!--<script src="js/script.js"></script>-->
-<!--statt script.js-->
-<script src="js/fullPageScrolling.js"></script>
-<script src="js/typed.js"></script>
-<script src="js/call_typed.js"></script>
+        $(".more").on('click',function() {
+            //maybe try changing animate to velocity
+            $('html, body').animate({
+                scrollTop: $('#portfolio').offset().top
+            }, 500);
+            return false;
+        });
+    });
 
-<script src="js/portfolio.js"></script>
+    $(function() {
 
-<script>
-    (function () {
+        $(".typed").typed({
+            strings: ["WEB DEVELOPER^3000", "FRONTEND DEVELOPER^3000", "JS DEVELOPER^3000", "PHP DEVELOPER^3000", "WORDPRESS DEVELOPER^3000", "TYPO3 DEVELOPER^3000", "METEOR DEVELOPER^3000"],
+            typeSpeed: 100,
+            loop: true,
+            showCursor: true
+        });
+    });
+
+    $(function() {
+
         var support = {transitions: Modernizr.csstransitions},
         // transition end event name
                 transEndEventNames = {
@@ -112,7 +128,16 @@
                 });
             }
         });
-    })();
+    });
+
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+                (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-13000597-11', 'auto');
+    ga('send', 'pageview');
+
 </script>
 
 {% block scripts %} {% endblock %}

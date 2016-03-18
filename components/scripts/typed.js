@@ -1,4 +1,4 @@
-// The MIT License (MIT)
+    // The MIT License (MIT)
 
     // Typed.js | Copyright (c) 2014 Matt Boldt | www.mattboldt.com
 
@@ -20,10 +20,9 @@
     // OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
     // THE SOFTWARE.
 
+//var $ = require('jquery');
 
-
-
-    ! function($) {
+    !function() {
 
         "use strict";
 

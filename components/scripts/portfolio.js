@@ -1,3 +1,4 @@
+//var velocity = require('velocity-animate');
 var classie = require('desandro-classie');
 var Masonry = require('masonry-layout');
 var imagesLoaded = require('imagesloaded');
@@ -12,9 +13,11 @@ var imagesLoaded = require('imagesloaded');
  * Copyright 2015, Codrops
  * http://www.codrops.com
  */
-;(function(window) {
+//!(function(window) {
+    $(function() {
 
-    'use strict';
+
+        'use strict';
 
     var support = { transitions: Modernizr.csstransitions },
     // transition end event name
@@ -364,4 +367,4 @@ var imagesLoaded = require('imagesloaded');
 
     window.GridFx = GridFx;
 
-})(window);
+})

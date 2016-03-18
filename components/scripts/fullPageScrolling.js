@@ -1,14 +1,13 @@
 //scrolling from "more" triangle
-//var velocity = require('velocity-animate');
-$(function() {
-    $(".more").on('click',function() {
-        //maybe try changing animate to velocity
-        $('html, body').animate({
-            scrollTop: $('#portfolio').offset().top
-        }, 500);
-        return false;
-    });
-});
+//$(function() {
+//    $(".more").on('click',function() {
+//        //maybe try changing animate to velocity
+//        $('html, body').animate({
+//            scrollTop: $('#portfolio').offset().top
+//        }, 500);
+//        return false;
+//    });
+//});
 
 //fullPageScrolling
 //var pages = 2;
