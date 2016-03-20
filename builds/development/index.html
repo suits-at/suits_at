@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>SUITS</title>
     <link rel="stylesheet" href="css/style.css">
-    <script src="js/modernizr-custom.js"></script>
+    
 </head>
 <body>
 
@@ -48,7 +48,7 @@
         <section class="row">
             <div class="grid">
                 
-                    <div class="grid__item" data-size="1078x1210">
+                    <div class="grid__item" data-size="862x968">
                         <div data-link="images/portfolio/screenshots/zt_pech.png" title="Screenshot von www.zt-pech.at"
                              class="img-wrap portfolio-items">
                             <img src="images/portfolio/thumbnails/zt_pech.png"
@@ -67,7 +67,7 @@
                         </div>
                     </div>
                 
-                    <div class="grid__item" data-size="1079x1422">
+                    <div class="grid__item" data-size="863x1138">
                         <div data-link="images/portfolio/screenshots/praxis_arsenal.png" title="Screenshot von www.praxisarsenal.at"
                              class="img-wrap portfolio-items">
                             <img src="images/portfolio/thumbnails/praxis_arsenal.png"
@@ -86,7 +86,7 @@
                         </div>
                     </div>
                 
-                    <div class="grid__item" data-size="1233x882">
+                    <div class="grid__item" data-size="986x706">
                         <div data-link="images/portfolio/screenshots/iaaa.png" title="Screenshot von iaaa.fh-hagenberg.at"
                              class="img-wrap portfolio-items">
                             <img src="images/portfolio/thumbnails/iaaa.png"
@@ -105,7 +105,7 @@
                         </div>
                     </div>
                 
-                    <div class="grid__item" data-size="1080x1608">
+                    <div class="grid__item" data-size="864x1286">
                         <div data-link="images/portfolio/screenshots/schwertberger_braeu.png" title="Screenshot von www.schwertberger-braeu.at"
                              class="img-wrap portfolio-items">
                             <img src="images/portfolio/thumbnails/schwertberger_braeu.png"
@@ -124,7 +124,7 @@
                         </div>
                     </div>
                 
-                    <div class="grid__item" data-size="1079x1035">
+                    <div class="grid__item" data-size="863x828x">
                         <div data-link="images/portfolio/screenshots/windhorse.png" title="Screenshot von www.windhorse.at"
                              class="img-wrap portfolio-items">
                             <img src="images/portfolio/thumbnails/windhorse.png"
@@ -143,7 +143,7 @@
                         </div>
                     </div>
                 
-                    <div class="grid__item" data-size="916x675">
+                    <div class="grid__item" data-size="773x540">
                         <div data-link="images/portfolio/screenshots/judith_stockert-giesinger.png" title="Screenshot von www.judithstockert-giesinger.at"
                              class="img-wrap portfolio-items">
                             <img src="images/portfolio/thumbnails/judith_stockert-giesinger.png"
@@ -181,7 +181,7 @@
                         </div>
                     </div>
                 
-                    <div class="grid__item" data-size="1685x948">
+                    <div class="grid__item" data-size="1348x758">
                         <div data-link="images/portfolio/screenshots/doris_mayer.png" title="Screenshot von www.dorismayer.at"
                              class="img-wrap portfolio-items">
                             <img src="images/portfolio/thumbnails/doris_mayer.png"
@@ -268,9 +268,9 @@
     </div>
 </footer>
 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/velocity/1.2.3/velocity.min.js"></script>
-<script src="js/script.js"></script>
+
+
+
 
 
 
@@ -282,117 +282,18 @@
 
 
 <script async src="https://ajax.googleapis.com/ajax/libs/webfont/1.5.18/webfont.js"></script>
+
 <script>
-    //scrolling from "more" triangle
-    $(function() {
-
-        $(".more").on('click',function() {
-            //maybe try changing animate to velocity
-            $('html, body').animate({
-                scrollTop: $('#portfolio').offset().top
-            }, 500);
-            return false;
-        });
-    });
-
-    $(function() {
-
-        $(".typed").typed({
-            strings: ["WEB DEVELOPER^3000", "FRONTEND DEVELOPER^3000", "JS DEVELOPER^3000", "PHP DEVELOPER^3000", "WORDPRESS DEVELOPER^3000", "TYPO3 DEVELOPER^3000", "METEOR DEVELOPER^3000"],
-            typeSpeed: 100,
-            loop: true,
-            showCursor: true
-        });
-    });
-</script>
-<script async>
-    WebFontConfig = {
-        google: {families: ['Work+Sans:400,700:latin']}
-    };
-    (function () {
-        var wf = document.createElement('script');
-        wf.src = ('https:' == document.location.protocol ? 'https' : 'http') +
-                '://ajax.googleapis.com/ajax/libs/webfont/1.5.18/webfont.js';
-        wf.type = 'text/javascript';
-        wf.async = 'true';
-        var s = document.getElementsByTagName('script')[0];
-        s.parentNode.insertBefore(wf, s);
-    })();
-
-    $(function() {
-
-        var support = {transitions: Modernizr.csstransitions},
-        // transition end event name
-                transEndEventNames = {
-                    'WebkitTransition': 'webkitTransitionEnd',
-                    'MozTransition': 'transitionend',
-                    'OTransition': 'oTransitionEnd',
-                    'msTransition': 'MSTransitionEnd',
-                    'transition': 'transitionend'
-                },
-                transEndEventName = transEndEventNames[Modernizr.prefixed('transition')],
-                onEndTransition = function (el, callback) {
-                    var onEndCallbackFn = function (ev) {
-                        if (support.transitions) {
-                            if (ev.target != this) return;
-                            this.removeEventListener(transEndEventName, onEndCallbackFn);
-                        }
-                        if (callback && typeof callback === 'function') {
-                            callback.call(this);
-                        }
-                    };
-                    if (support.transitions) {
-                        el.addEventListener(transEndEventName, onEndCallbackFn);
-                    }
-                    else {
-                        onEndCallbackFn();
-                    }
-                };
-
-        new GridFx(document.querySelector('.grid'), {
-            imgPosition: {
-                x: -0.5,
-                y: 1
-            },
-            onOpenItem: function (instance, item) {
-                instance.items.forEach(function (el) {
-                    if (item != el) {
-                        var delay = Math.floor(Math.random() * 50);
-                        el.style.WebkitTransition = 'opacity .5s ' + delay + 'ms cubic-bezier(.7,0,.3,1), -webkit-transform .5s ' + delay + 'ms cubic-bezier(.7,0,.3,1)';
-                        el.style.transition = 'opacity .5s ' + delay + 'ms cubic-bezier(.7,0,.3,1), transform .5s ' + delay + 'ms cubic-bezier(.7,0,.3,1)';
-                        el.style.WebkitTransform = 'scale3d(0.1,0.1,1)';
-                        el.style.transform = 'scale3d(0.1,0.1,1)';
-                        el.style.opacity = 0;
-                    }
-                });
-            },
-            onCloseItem: function (instance, item) {
-                instance.items.forEach(function (el) {
-                    if (item != el) {
-                        el.style.WebkitTransition = 'opacity .4s, -webkit-transform .4s';
-                        el.style.transition = 'opacity .4s, transform .4s';
-                        el.style.WebkitTransform = 'scale3d(1,1,1)';
-                        el.style.transform = 'scale3d(1,1,1)';
-                        el.style.opacity = 1;
-
-                        onEndTransition(el, function () {
-                            el.style.transition = 'none';
-                            el.style.WebkitTransform = 'none';
-                        });
-                    }
-                });
-            }
-        });
-    });
-
-    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-                (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-    ga('create', 'UA-13000597-11', 'auto');
-    ga('send', 'pageview');
-
+    function downloadJSAtOnload() {
+        var element = document.createElement("script");
+        element.src = "js/index.js";
+        document.body.appendChild(element);
+    }
+    if (window.addEventListener)
+        window.addEventListener("load", downloadJSAtOnload, false);
+    else if (window.attachEvent)
+        window.attachEvent("onload", downloadJSAtOnload);
+    else window.onload = downloadJSAtOnload;
 </script>
 
 

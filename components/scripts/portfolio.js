@@ -1,4 +1,3 @@
-//var velocity = require('velocity-animate');
 var classie = require('desandro-classie');
 var Masonry = require('masonry-layout');
 var imagesLoaded = require('imagesloaded');

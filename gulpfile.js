@@ -34,14 +34,28 @@ if (env === 'development') {
     sassStyle = 'compressed';
 }
 
-//'components/scripts/modernizr-custom.js',
 //'components/scripts/fullPageScrolling.js',
-jsSources = [
+jsSourcesIndex = [
+    'components/scripts/modernizr-custom.js',
+    'components/scripts/jquery.js',
+    'components/scripts/velocity.js',
     'components/scripts/typed.js',
     'components/scripts/menu.js',
-    'components/scripts/svgxuse.js',
-    'components/scripts/portfolio.js'
+    'components/scripts/portfolio.js',
+    'components/scripts/callsOnIndex.js',
+    'components/scripts/google.js',
+    'components/scripts/svgxuse.js'
 ];
+
+jsSources = [
+    'components/scripts/modernizr-custom.js',
+    'components/scripts/jquery.js',
+    'components/scripts/velocity.js',
+    'components/scripts/menu.js',
+    'components/scripts/google.js',
+    'components/scripts/svgxuse.js'
+];
+
 sassSources = ['components/sass/style.scss'];
 htmlSources = [outputDir + '*.html'];
 jsonSources = ['components/json/*.json'];
@@ -51,6 +65,15 @@ nunjucksSources = ['components/pages/*.+(html|nunj)'];
 gulp.task('js', function () {
     return gulp.src(jsSources)
         .pipe(concat('script.js'))
+        .pipe(browserify())
+        .pipe(gulpif(env === 'production', uglify()))
+        .pipe(gulp.dest(outputDir + 'js'))
+        .pipe(connect.reload())
+});
+
+gulp.task('jsIndex', function () {
+    return gulp.src(jsSourcesIndex)
+        .pipe(concat('index.js'))
         .pipe(browserify())
         .pipe(gulpif(env === 'production', uglify()))
         .pipe(gulp.dest(outputDir + 'js'))
@@ -79,6 +102,7 @@ gulp.task('compass', function () {
 
 gulp.task('watch', function () {
     gulp.watch(jsSources, ['js']);
+    gulp.watch(jsSourcesIndex, ['jsIndex']);
     gulp.watch('components/sass/*.scss', ['compass']);
     gulp.watch('builds/development/*.html', ['html']);
     gulp.watch(['components/pages/*.+(html|nunj)', 'components/templates/**/*.+(html|nunj)', outputDir + 'json/*.json'], ['critical']);
@@ -152,4 +176,4 @@ gulp.task('critical', ['html'], function () {
     });
 });
 
-gulp.task('default', ['json', 'js', 'compass', 'images', 'nunjucks', 'html', 'critical', 'connect', 'watch']);
+gulp.task('default', ['json', 'js', 'jsIndex', 'compass', 'images', 'nunjucks', 'html', 'critical', 'connect', 'watch']);

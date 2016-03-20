@@ -1,6 +1,3 @@
-//var $ = require('jquery');
-//var velocity = require('velocity-animate');
-
 $(function() {
     var win = $(window), body = $('body'), menuBtn = $('.menu-toggle'), menu = $('.le-menu'), navMenu = $('.main-navigation'), openMenuClass = ('menu-is-open');
 
