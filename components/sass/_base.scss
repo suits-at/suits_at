@@ -7,6 +7,11 @@ body {
   color: $grey;
 }
 
+//add center for bugged foundation flexbox-grid class
+.align-center{
+  justify-content: center;
+}
+
 section:last-of-type{
   padding-bottom: 3rem;
 }
@@ -22,7 +27,7 @@ header{
   opacity: 0.95;
   background: #fefefe;
   position: fixed;
-  z-index: 9999;
+  //z-index: 9999;
   top: 0;
   left: 0;
   width: 100%;
@@ -238,9 +243,9 @@ footer .icon-envelop.wrapper:hover a{
 //  color:$blue;
 //}
 
-#{headings()} {
-  font-family: $headFont;
-}
+//#{headings()} {
+//  font-family: $headFont;
+//}
 
 //h1 {
 //  font-size: 3.5em;
