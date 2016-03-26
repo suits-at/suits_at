@@ -2275,6 +2275,7 @@ header {
 
 .page {
   min-height: 100vh;
+  position: relative;
 }
 
 .page.portfolio {
@@ -2294,18 +2295,32 @@ header {
   border-color: #49a3df transparent transparent;
   border-top-style: solid;
   border-bottom-width: 0;
+  cursor: pointer;
   position: absolute;
   left: 50%;
   -webkit-transform: translateX(-50%);
       -ms-transform: translateX(-50%);
           transform: translateX(-50%);
-  cursor: pointer;
-  margin-top: 30%;
+}
+
+.more-align {
+  position: absolute;
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+          transform: translateX(-50%);
+  top: 100%;
+  -webkit-transform: translateY(-100%);
+      -ms-transform: translateY(-100%);
+          transform: translateY(-100%);
+  padding-bottom: 5rem;
 }
 
 .teaser-logo {
+  vertical-align: top;
   height: 6rem;
-  margin-top: 50%;
+  margin-top: 10rem;
 }
 
 h1 {
@@ -3026,12 +3041,7 @@ footer .icon-envelop.wrapper:hover a {
 
   .teaser-logo {
     height: 8rem;
-    margin-top: 30%;
-  }
-}
-@media screen and (min-width: 550px) {
-  .more {
-    margin-top: 10%;
+    margin-top: 8rem;
   }
 }
 @media screen and (min-width: 640px) {
@@ -3049,7 +3059,7 @@ footer .icon-envelop.wrapper:hover a {
 @media all and (min-width: 768px) {
   .teaser-logo {
     height: 12rem;
-    margin-top: 20%;
+    margin-top: 10rem;
   }
 
   .typed {
@@ -3059,18 +3069,10 @@ footer .icon-envelop.wrapper:hover a {
   .contact-text {
     margin-bottom: 3rem;
   }
-
-  .more {
-    margin-top: 0;
-  }
 }
 @media all and (min-width: 960px) {
   .teaser-logo {
-    margin-top: 10%;
-  }
-
-  .more {
-    margin-top: 10%;
+    margin-top: 10rem;
   }
 }
 @media all and (min-width: 1200px) {
@@ -3086,10 +3088,6 @@ footer .icon-envelop.wrapper:hover a {
 
   .teaser-logo {
     height: 17rem;
-  }
-
-  .more {
-    margin-top: 3%;
   }
 }
 @media all and (min-width: 1900px) {

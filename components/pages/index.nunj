@@ -12,9 +12,11 @@
             </span>
         </div>
         <!--see more link triangle-->
-        <div class="row align-center">
+        <div class="row align-center more-align">
+        {#<div class="more-align">#}
             <span id="skiptocontent" class="more"></span>
         </div>
+        {#</div>#}
     </div>
     <div id="portfolio" class="page portfolio">
         <header>

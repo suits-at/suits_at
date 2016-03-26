@@ -9,19 +9,13 @@
 }
 
 @media screen and (min-width: 480px) {
-  .typed{
+  .typed {
     font-size: 2rem;
   }
 
-  .teaser-logo{
+  .teaser-logo {
     height: 8rem;
-    margin-top:30%;
-  }
-}
-
-@media screen and (min-width: 550px) {
-  .more{
-    margin-top:10%;
+    margin-top: 8rem;
   }
 }
 
@@ -37,32 +31,22 @@
   }
 }
 
-//@media all and (min-width: 650px) {
-//
-//}
-
 @media all and (min-width: 768px) {
   .teaser-logo {
     height: 12rem;
-    margin-top:20%;
+    margin-top: 10rem;
   }
   .typed {
     font-size: 3rem;
   }
-  .contact-text{
-    margin-bottom:3rem;
-  }
-  .more{
-    margin-top:0;
+  .contact-text {
+    margin-bottom: 3rem;
   }
 }
 
 @media all and (min-width: 960px) {
   .teaser-logo {
-    margin-top:10%;
-  }
-  .more{
-    margin-top:10%;
+    margin-top: 10rem;
   }
 }
 
@@ -79,9 +63,6 @@
   }
   .teaser-logo {
     height: 17rem;
-  }
-  .more{
-    margin-top:3%;
   }
 }
 

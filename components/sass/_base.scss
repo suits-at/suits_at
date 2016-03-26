@@ -1,7 +1,6 @@
 // _base.scss
 // ==============
 body {
-  //background: lighten($beige, 10%);
   font-family: $bodyFont;
   //font-size: 1.1em;
   color: $grey;
@@ -27,7 +26,6 @@ header{
   opacity: 0.95;
   background: #fefefe;
   position: fixed;
-  //z-index: 9999;
   top: 0;
   left: 0;
   width: 100%;
@@ -47,9 +45,9 @@ header{
 }
 
 //fullpage
-.page
-{
+.page {
   min-height: 100vh;
+  position: relative;
   //width: 100vw;
 }
 .page.portfolio{
@@ -63,15 +61,22 @@ header{
 
 .more{
   @include css-triangle(3rem, $blue, 'down');
-  //bottom: 2rem;
-  //position: absolute;
-  @include horizontal-center;
   cursor: pointer;
-  margin-top:30%;
+  @include horizontal-center;
 }
+
+.more-align{
+  position: absolute;
+  @include horizontal-center;
+  top:100%;
+  transform: translateY(-100%);
+  padding-bottom: 5rem;
+}
+
 .teaser-logo{
+  vertical-align: top;
   height: 6rem;
-  margin-top:50%;
+  margin-top:10rem;
 }
 
 h1{
