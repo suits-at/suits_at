@@ -2233,6 +2233,14 @@ body {
   color: #646464;
 }
 
+#skiptocontent {
+  height: 1px;
+  width: 1px;
+  position: absolute;
+  overflow: hidden;
+  top: -10px;
+}
+
 .align-center {
   -webkit-justify-content: center;
       -ms-flex-pack: center;

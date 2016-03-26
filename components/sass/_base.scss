@@ -6,6 +6,14 @@ body {
   color: $grey;
 }
 
+#skiptocontent {
+  height: 1px;
+  width: 1px;
+  position: absolute;
+  overflow: hidden;
+  top: -10px;
+}
+
 //add center for bugged foundation flexbox-grid class
 .align-center{
   justify-content: center;
