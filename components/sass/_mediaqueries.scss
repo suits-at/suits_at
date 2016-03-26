@@ -1,4 +1,8 @@
-@media screen and (max-height: 488px) {
+@media screen and (min-width: 350px) {
+  @include adjustFooterHeight($footer-height: 8rem);
+}
+
+  @media screen and (max-height: 488px) {
   .overlay nav {
     height: 70%;
     font-size: 34px;
@@ -29,6 +33,9 @@
       margin-top: 0;
     }
   }
+  .footer-icons{
+    padding: 0;
+  }
 }
 
 @media all and (min-width: 768px) {
@@ -42,6 +49,10 @@
   .contact-text {
     margin-bottom: 3rem;
   }
+}
+
+@media all and (min-width: 800px) {
+  @include adjustFooterHeight($footer-height: 6rem);
 }
 
 @media all and (min-width: 960px) {

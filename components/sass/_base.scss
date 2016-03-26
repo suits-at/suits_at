@@ -98,24 +98,6 @@ figcaption{
   text-align: center;
 }
 
-footer{
-  background-color: $footer;
-  color: $grey;
-  a, a:active, a:focus{
-    color: $grey;
-  }
-  a:hover{
-    color: $white;
-  }
-  .right{
-    text-align: right;
-  }
-  .center{
-    text-align: center;
-    margin-top: 0.5rem;
-  }
-}
-
 .leistungen .icon{
   margin-bottom: 1rem;
 }
@@ -136,7 +118,7 @@ html {
 }
 
 body {
-  margin: 0 0 5rem; /* bottom = footer height */
+  margin: 0 0 $footer-height; /* bottom = footer height */
 }
 
 footer {
@@ -145,7 +127,23 @@ footer {
   bottom: 0;
   width: 100%;
   padding: 1rem;
-  height: 5rem;
+  height: $footer-height;
+
+  background-color: $footer;
+  color: $grey;
+  a, a:active, a:focus{
+    color: $grey;
+  }
+  a:hover{
+    color: $white;
+  }
+  .right{
+    text-align: right;
+  }
+  .center{
+    text-align: center;
+    margin-top: 0.5rem;
+  }
 }
 
 /*sticky footer end */
@@ -159,8 +157,16 @@ footer {
 }
 
 footer .icon{
-  width: 1.6rem;
-  height: 1.6rem;
+  width: 1.9rem;
+  height: 1.9rem;
+}
+
+.footer-icons{
+  padding: 1rem 0;
+}
+
+.footer-icons .icon{
+  margin: 0 0.5rem;
 }
 
 footer .icon.icon-envelop{

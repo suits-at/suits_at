@@ -32,3 +32,13 @@
     clear: both;
   }
 }
+
+@mixin adjustFooterHeight($footer-height) {
+  body {
+    margin: 0 0 $footer-height; /* bottom = footer height */
+  }
+
+  footer {
+    height: $footer-height;
+  }
+}
