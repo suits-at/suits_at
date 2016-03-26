@@ -9,6 +9,9 @@
     {#<script src="js/modernizr-custom.js"></script>#}
 </head>
 <body>
+<div id="skiptocontent">
+    <a href="#portfolio">skip to main content</a>
+</div>
 
 {% block content %} {% endblock %}
 
