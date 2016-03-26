@@ -13,12 +13,11 @@
 
 //instead of everythin include only needed
 @include foundation-global-styles;
-//@include foundation-grid;
+@include foundation-visibility-classes;
+@include foundation-float-classes;
 @include foundation-typography;
 //@include foundation-button;
 //@include foundation-forms;
-@include foundation-visibility-classes;
-@include foundation-float-classes;
 //@include foundation-accordion;
 //@include foundation-accordion-menu;
 //@include foundation-badge;
@@ -49,6 +48,7 @@
 //@include foundation-top-bar;
 
 //instead of grid
+//@include foundation-grid;
 @include foundation-flex-grid;
 
 //partials

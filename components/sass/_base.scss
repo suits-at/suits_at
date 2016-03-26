@@ -67,10 +67,11 @@ header{
   //position: absolute;
   @include horizontal-center;
   cursor: pointer;
+  margin-top:30%;
 }
 .teaser-logo{
   height: 6rem;
-  margin-top:30%;
+  margin-top:50%;
 }
 
 h1{

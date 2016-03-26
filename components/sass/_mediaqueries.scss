@@ -1,4 +1,4 @@
-@media screen and (max-height: 30.5em) {
+@media screen and (max-height: 488px) {
   .overlay nav {
     height: 70%;
     font-size: 34px;
@@ -8,13 +8,27 @@
   }
 }
 
-@media screen and (min-width: 40em) {
-  h2 {
+@media screen and (min-width: 480px) {
+  .typed{
     font-size: 2rem;
+  }
+
+  .teaser-logo{
+    height: 8rem;
+    margin-top:30%;
   }
 }
 
-@media all and (min-width: 650px) {
+@media screen and (min-width: 550px) {
+  .more{
+    margin-top:10%;
+  }
+}
+
+@media screen and (min-width: 640px) {
+  h2 {
+    font-size: 2rem;
+  }
   footer {
     padding-top: 1.8rem;
     .center {
@@ -23,15 +37,32 @@
   }
 }
 
+//@media all and (min-width: 650px) {
+//
+//}
+
 @media all and (min-width: 768px) {
   .teaser-logo {
     height: 12rem;
+    margin-top:20%;
   }
   .typed {
-    font-size: 4rem;
+    font-size: 3rem;
   }
   .contact-text{
     margin-bottom:3rem;
+  }
+  .more{
+    margin-top:0;
+  }
+}
+
+@media all and (min-width: 960px) {
+  .teaser-logo {
+    margin-top:10%;
+  }
+  .more{
+    margin-top:10%;
   }
 }
 
@@ -48,9 +79,10 @@
   }
   .teaser-logo {
     height: 17rem;
-    margin-top: 5rem;
   }
-
+  .more{
+    margin-top:3%;
+  }
 }
 
 //center landing page logo on HD screens
