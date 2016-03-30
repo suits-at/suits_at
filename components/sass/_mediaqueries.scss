@@ -13,8 +13,12 @@
 }
 
 @media screen and (min-width: 480px) {
-  .typed {
+  .typed{
     font-size: 2rem;
+  }
+
+  .typed-cursor{
+    font-size: 3rem;
   }
 
   .teaser-logo {
@@ -46,6 +50,10 @@
   .typed {
     font-size: 3rem;
   }
+  .typed-cursor{
+    font-size: 4rem;
+  }
+
   .contact-text {
     margin-bottom: 3rem;
   }

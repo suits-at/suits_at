@@ -14,7 +14,6 @@
         <div class="row align-center more-align">
             <span class="more"></span>
         </div>
-        {#</div>#}
     </div>
     <div id="portfolio" class="page portfolio">
         <header>
