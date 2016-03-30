@@ -41,7 +41,7 @@
 @media all and (min-width: 768px) {
   .teaser-logo {
     height: 12rem;
-    margin-top: 10rem;
+    margin-top: 8rem;
   }
   .typed {
     font-size: 3rem;
@@ -55,11 +55,11 @@
   @include adjustFooterHeight($footer-height: 6rem);
 }
 
-@media all and (min-width: 960px) {
-  .teaser-logo {
-    margin-top: 10rem;
-  }
-}
+//@media all and (min-width: 960px) {
+//  .teaser-logo {
+//    margin-top: 8rem;
+//  }
+//}
 
 //center overlay from menu on big screens
 @media all and (min-width: 1200px) {
@@ -72,6 +72,9 @@
     //height: calc(100% / 5);
     min-height: 3rem;
   }
+}
+
+@media all and (min-width: 1300px) {
   .teaser-logo {
     height: 17rem;
   }
