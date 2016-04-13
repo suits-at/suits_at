@@ -611,8 +611,8 @@ button {
 .clearfix::before, .clearfix::after {
   content: ' ';
   display: table;
-  -ms-flex-preferred-size: 0;
-          -webkit-flex-basis: 0;
+  -webkit-flex-basis: 0;
+      -ms-flex-preferred-size: 0;
           flex-basis: 0;
   -webkit-order: 1;
       -ms-flex-order: 1;
@@ -2205,26 +2205,26 @@ p + .stat {
 }
 
 .column.align-top, .align-top.columns {
-  -ms-flex-item-align: start;
-          -webkit-align-self: flex-start;
+  -webkit-align-self: flex-start;
+      -ms-flex-item-align: start;
           align-self: flex-start;
 }
 
 .column.align-bottom, .align-bottom.columns {
-  -ms-flex-item-align: end;
-          -webkit-align-self: flex-end;
+  -webkit-align-self: flex-end;
+      -ms-flex-item-align: end;
           align-self: flex-end;
 }
 
 .column.align-middle, .align-middle.columns {
-  -ms-flex-item-align: center;
-          -webkit-align-self: center;
+  -webkit-align-self: center;
+      -ms-flex-item-align: center;
           align-self: center;
 }
 
 .column.align-stretch, .align-stretch.columns {
-  -ms-flex-item-align: stretch;
-          -webkit-align-self: stretch;
+  -webkit-align-self: stretch;
+      -ms-flex-item-align: stretch;
           align-self: stretch;
 }
 
@@ -2399,6 +2399,10 @@ header {
   vertical-align: top;
   height: 6rem;
   margin-top: 10rem;
+}
+
+.logo {
+  margin-top: -6px;
 }
 
 h1 {
@@ -2876,7 +2880,7 @@ footer .icon-envelop.wrapper:hover a {
   -webkit-justify-content: center;
   justify-content: center;
   -ms-flex-line-pack: center;
-          -webkit-align-content: center;
+  -webkit-align-content: center;
           align-content: center;
   -ms-flex-align: center;
   -webkit-align-items: center;
