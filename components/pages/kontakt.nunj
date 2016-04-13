@@ -88,6 +88,7 @@
                 zoomControl: false,
                 mapTypeControl: false,
                 scrollwheel: false,
+                draggable: false,
                 streetViewControl: false
             });
 
