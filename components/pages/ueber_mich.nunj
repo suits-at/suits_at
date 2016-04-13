@@ -1,5 +1,10 @@
 {% extends "main_layout.nunj" %}
 
+{% block meta %}
+    <meta property="og:url" content="http://www.suits.at/ueber_mich.html"/>
+{% endblock %}
+
+
 {% block content %}
 
     <div class="row content">
