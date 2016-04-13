@@ -5,7 +5,7 @@
     "url":"www.zt-pech.at",
     "datum":"2015",
     "screenshot":"zt_pech",
-    "beschreibung":"Mit Hilfe des CMS Wordpress wurde eine neue Website realisiert.",
+    "beschreibung":"Die Umsetzung der Website erfolgte mit Hilfe des CMS Wordpress. Das Design der Website wurde eigens von dem Kreativkollektiv Werbezirkus konzipiert. Die Website selbst baut auf einem beinahe leeren, auf dem Framework Bootstrap basierenden Theme auf. Dieses Theme wurde mit Hilfe eines Child-Themes erweitert und gemeinsam mit diversen Plugins um zusätzliche Funktionalitäten ergänzt. Mit Hilfe eines Plugins wurden einige 'Custom Post Types' hinzugefügt. Diese Typen sind zum Beispiel 'Angebote', 'Projekte' und 'Team'. Durch die Implemention dieser 'Post Types' kann der Kunde nun im Backend auf einfache Art und Weise neue Inhalte in das System integrieren. Außerdem wurde die Website auch hinsichtlich Performance optimiert. Bildoptimierung, Caching, Komprimierung der Daten und weitere Vorgehensweisen haben gute Performanceergebnisse bei bekannten Tests wie zum Beispiel den PageSpeed Insights von Google zur Folge. Für die Sicherheit der Website wurde ebenfalls gesorgt. Diverse Anpassungen in der '.htaccess' und die Verwendung und Konfiguration eines Sicherheitsplugins sichern das System.",
     "size":"862x968"
   },
   {
@@ -14,7 +14,7 @@
     "url":"www.praxisarsenal.at",
     "datum":"2015",
     "screenshot":"praxis_arsenal",
-    "beschreibung":"Mit Hilfe von Wordpress wurde eine neue Website realisiert.",
+    "beschreibung":"Mit Hilfe von dem CMS Wordpress und einem vorgefertigten Template wurde eine neue Website realisiert.",
     "size":"863x1138"
   },
   {
@@ -30,9 +30,9 @@
     "titel":"Schwertberger Bräu",
     "kunde":" Dipl.-Ing. Karl Kiesenhofer",
     "url":"www.schwertberger-braeu.at",
-    "datum":"2007",
+    "datum":"2014",
     "screenshot":"schwertberger_braeu",
-    "beschreibung":"Im Rahmen eines Studienprojekts wurde, mit Hilfe des CMS Wordpress, eine neue Website realisiert. Ich war dabei für die Umsetzung der Website zuständig.",
+    "beschreibung":"Im Rahmen eines Studienprojektes wurde die Website für das Schwertberger Bräu realisiert. Für die Umsetzung der Website, die ich übernommen habe, wurde das CMS Wordpress verwendet. Damit diese Website auch auf mobilen Endgeräten korrekt angezeigt werden kann, wurde ein Theme verwendet, welches auf das Framework Bootstrap aufbaut. Auch bei allen verwendeten Plugins wurde besonderes Augenmerk darauf gelegt, dass auch die Anzeige auf kleineren Screens, insbesondere auf Smartphones und Tablets, möglich ist.",
     "size":"864x1286"
   },
   {
@@ -68,7 +68,7 @@
     "url":"www.dorismayer.at",
     "datum":"2007",
     "screenshot":"doris_mayer",
-    "beschreibung":"Als eines meiner ersten Projekte habe ich bereits im Jahr 2007 die Website für Doris Mayer umgsetzt.",
+    "beschreibung":"Als eines meiner ersten Projekte habe ich bereits im Jahr 2007 die Website für die bildende Künstlerin Doris Mayer umgesetzt.",
     "size":"1348x758"
   }
 ]}

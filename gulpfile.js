@@ -13,6 +13,7 @@ var gulp = require('gulp'),
     nunjucksRender = require('gulp-nunjucks-render'),
     data = require('gulp-data'),
     critical = require('critical'),
+    fs = require('fs'),
     concat = require('gulp-concat');
 
 var env,
@@ -103,10 +104,9 @@ gulp.task('watch', function () {
     gulp.watch(jsSources, ['js']);
     gulp.watch(jsSourcesIndex, ['jsIndex']);
     gulp.watch('components/sass/*.scss', ['compass']);
-    gulp.watch('builds/development/*.html', ['html']);
-    gulp.watch(['components/pages/*.+(html|nunj)', 'components/templates/**/*.+(html|nunj)', outputDir + 'json/*.json'], ['critical']);
-    gulp.watch(jsonSources, ['json']);
     gulp.watch(imgSources, ['images']);
+    gulp.watch(jsonSources, ['json', 'html']);
+    gulp.watch(['components/pages/*.+(html|nunj)', 'components/templates/**/*.+(html|nunj)'], ['critical']);
 });
 
 gulp.task('connect', function () {
@@ -132,8 +132,8 @@ gulp.task('html', ['nunjucks'], function () {
 
 gulp.task('nunjucks', function() {
     return gulp.src(nunjucksSources)
-        .pipe(data(function() {
-            return require('./components/json/data.json')
+        .pipe(data(function () {
+            return JSON.parse(fs.readFileSync('./components/json/data.json', 'utf8'));
         }))
         .pipe(nunjucksRender({
             path: ['components/templates/']
