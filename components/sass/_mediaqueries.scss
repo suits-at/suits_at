@@ -28,6 +28,9 @@
 }
 
 @media screen and (min-width: 640px) {
+  .contact div {
+    margin-top: 1rem;
+  }
   footer {
     padding-top: 1.8rem;
     .center {
@@ -40,6 +43,9 @@
 }
 
 @media all and (min-width: 768px) {
+  .contact div {
+    margin-top: 0rem;
+  }
   .teaser-logo {
     height: 12rem;
     margin-top: 8rem;
@@ -52,7 +58,7 @@
   }
 
   .contact-text {
-    margin-bottom: 3rem;
+    margin-bottom: 1rem;
   }
 }
 
