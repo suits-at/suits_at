@@ -1,8 +1,25 @@
 // _base.scss
 // ==============
+
+//to prevent scaling p > a two times
+p, li, .leistungen > div > a, footer > div > div > a {
+  @include typi-base();
+}
+
+h1 {
+  @include typi($h1-font-map);
+}
+
+h2 {
+  @include typi($h2-font-map);
+}
+
+h3 {
+  @include typi($h3-font-map);
+}
+
 body {
   font-family: $bodyFont;
-  //font-size: 1.1em;
   color: $grey;
 }
 
@@ -15,22 +32,27 @@ body {
 }
 
 //add center for bugged foundation flexbox-grid class
-.align-center{
+.align-center {
   justify-content: center;
 }
 
-section:last-of-type{
+section:last-of-type {
   padding-bottom: 3rem;
 }
 
-a{
-  color: $grey;
-}
-a:hover{
-  color: $grey;
+.blue {
+  color: $blue;
 }
 
-header{
+a {
+  color: $blue;
+}
+
+a:hover {
+  color: $blue;
+}
+
+header {
   opacity: 0.95;
   background: #fefefe;
   position: fixed;
@@ -43,10 +65,10 @@ header{
 }
 
 .header {
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
 }
 
-.img-responsive{
+.img-responsive {
   display: block;
   max-width: 100%;
   height: auto;
@@ -58,55 +80,55 @@ header{
   position: relative;
   //width: 100vw;
 }
-.page.portfolio{
+
+.page.portfolio {
   min-height: 90vh;
 }
+
 //end fullpage
 
 *:focus {
   outline: none;
 }
 
-.more{
+.more {
   @include css-triangle(3rem, $blue, 'down');
   cursor: pointer;
   @include horizontal-center;
 }
 
-.more-align{
+.more-align {
   position: absolute;
   @include horizontal-center;
-  top:100%;
+  top: 100%;
   transform: translateY(-100%);
   padding-bottom: 5rem;
 }
 
-.teaser-logo{
+.teaser-logo {
   vertical-align: top;
   height: 6rem;
-  margin-top:10rem;
+  margin-top: 10rem;
 }
 
-h1{
-  font-size:2.5rem;
+h1 {
   text-transform: uppercase;
   font-weight: 700;
   color: $grey;
 }
 
-.leistungen{
+.leistungen {
   text-align: center;
-  p{
-    //adjust for other screen sizes -> media queries
-    margin: 0 2rem 4rem 2rem;
+  p {
+    margin: 0 1.5rem 2.5rem 1.5rem;
   }
 }
 
-figcaption{
+figcaption {
   text-align: center;
 }
 
-.leistungen .icon{
+.leistungen .icon {
   margin-bottom: 0.5rem
 }
 
@@ -139,16 +161,16 @@ footer {
 
   background-color: $footer;
   color: $grey;
-  a, a:active, a:focus{
+  a, a:active, a:focus {
     color: $grey;
   }
-  a:hover{
+  a:hover {
     color: $white;
   }
-  .right{
+  .right {
     text-align: right;
   }
-  .center{
+  .center {
     text-align: center;
     margin-top: 0.5rem;
   }
@@ -156,134 +178,88 @@ footer {
 
 /*sticky footer end */
 
-//#content {
-//  font-size: 2em;
-//}
-
-.content{
+.content {
   padding-top: 100px;
 }
 
-footer .icon{
+footer .icon {
   width: 1.9rem;
   height: 1.9rem;
 }
 
-.footer-icons{
+.footer-icons {
   padding: 1rem 0;
 }
 
-.footer-icons .icon{
+.footer-icons .icon {
   margin: 0 0.5rem;
 }
 
-footer .icon.icon-envelop{
+footer .icon.icon-envelop {
   width: 1rem;
   height: 1rem;
   margin-bottom: -0.1rem;
 }
 
-footer .icon-envelop.wrapper:hover .icon.icon-envelop{
+footer .icon-envelop.wrapper:hover .icon.icon-envelop {
   fill: $white;
   transform: scale(1);
 }
-footer .icon-envelop.wrapper:hover a{
-  color:$white;
+
+footer .icon-envelop.wrapper:hover a {
+  color: $white;
 }
 
-
-.icon{
+.icon {
   display: inline-block;
   width: 4rem;
   height: 4rem;
   fill: $grey;
-  //doesn't work in FF
+  //doesn't work in FF ?
   transform-origin: 50% 50%;
   transition: transform .4s ease-out;
 }
-
-//.icon-location2:hover{
-//  transform: scale(1.3);
-//  fill: $blue;
-//}
 
 .leistungen .wrapper:hover .icon {
   fill: $blue;
   transform: scale(1.3);
 }
 
-.leistungen > div.column{
-  margin: 1.5rem 0;
+.leistungen > div.column {
+  //margin: 1.5rem 0;
 }
 
-.icon-twitter:hover{
+.icon-twitter:hover {
   fill: $twitter;
 }
 
-.icon-github:hover{
+.icon-github:hover {
   fill: $github;
 }
 
-.icon-facebook:hover{
+.icon-facebook:hover {
   fill: $facebook;
 }
 
-.icon-stackoverflow:hover{
+.icon-stackoverflow:hover {
   fill: $stackoverflow;
 }
-.xing:hover .xing1{
+
+.xing:hover .xing1 {
   fill: $xing1;
 }
 
-.xing:hover .xing2{
+.xing:hover .xing2 {
   fill: $xing2;
 }
 
-.icon-lock{
+.icon-lock {
   margin-left: 1.2rem;
 }
 
-
-//.icon-envelop.wrapper:hover .icon.icon-envelop{
-//  fill: $blue;
-//  transform: scale(1.3);
-//}
-
-.icon-location2.wrapper:hover{
+.icon-location2.wrapper:hover {
   cursor: pointer;
 }
-
-//.icon-location2.wrapper:hover .icon.icon-location2{
-//  fill: $blue;
-//  transform: scale(1.3);
-//}
-
-//.icon-user-tie.wrapper:hover .icon.icon-user-tie{
-//  fill: $blue;
-//  transform: scale(1.3);
-//}
-
-//.icon-envelop.wrapper:hover a{
-//  color:$blue;
-//}
-
-//#{headings()} {
-//  font-family: $headFont;
-//}
-
-//h1 {
-//  font-size: 3.5em;
-//  margin-bottom: 10px;
-//  color: $green;
-//
-//  @media (max-width: 700px) {
-//    font-size: 2.2em;
-//  }
-//}
-//
-//.artgroup {
-//  @include clearfix;
-//} //artgroup
 
 //#wave {
 //  stroke-dasharray: 0 16 101 16;

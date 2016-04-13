@@ -32,6 +32,7 @@
     "imagesloaded": "^4.1.0",
     "jquery": "^2.2.2",
     "masonry-layout": "^4.0.0",
+    "typi": "^2.1.0",
     "velocity-animate": "^1.2.3"
   }
 }

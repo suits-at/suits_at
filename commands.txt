@@ -57,4 +57,5 @@ npm install --save-dev gulp-jsonminify
 npm install --save-dev gulp-imagemin
 npm install --save-dev imagemin-pngquant
 
-npm install --save foundation-sites
+npm install --save-dev foundation-sites
+npm install typi --save-dev

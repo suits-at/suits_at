@@ -11,6 +11,9 @@
 @import "util/mixins";
 //@include foundation-everything;
 
+//Typi
+@import "typi";
+
 //instead of everythin include only needed
 @include foundation-global-styles;
 @include foundation-visibility-classes;
@@ -54,6 +57,7 @@
 //partials
 @import "variables";
 @import "mixins";
+@import "typiMaps";
 @import "base";
 @import "typed";
 @import "menu";

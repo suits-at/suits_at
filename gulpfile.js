@@ -91,7 +91,7 @@ gulp.task('compass', function () {
             sass: 'components/sass',
             style: sassStyle,
             project: __dirname,
-            import_path: 'node_modules/foundation-sites/scss'
+            import_path: ['node_modules/foundation-sites/scss', 'node_modules/typi/scss']
         }).on('error', gutil.log))
         .pipe(autoprefixer({
             browsers: ['last 2 versions', 'ie >= 9', 'and_chr >= 2.3']
