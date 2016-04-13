@@ -20,7 +20,7 @@
             </p>
         </div>
     </div>
-    <section class="row leistungen">
+    <section class="row text-center contact">
         <div class="small-12 medium-4 column">
             <a href="ueber_mich.html" class="icon-user-tie wrapper">
                 <svg class="icon icon-user-tie">
@@ -34,7 +34,7 @@
             <svg class="icon icon-location2">
                 <use xlink:href="images/symbol-defs.svg#icon-location2"></use>
             </svg>
-            <br/><p class="blue">Schüttaustraße 72-78/1/21<br/>1220 Wien</p>
+            <br/><p>Schüttaustraße 72-78/1/21<br/>1220 Wien</p>
         </span>
         </div>
         <div class="small-12 medium-4 column">
@@ -87,6 +87,7 @@
                 center: myLatLng,
                 zoomControl: false,
                 mapTypeControl: false,
+                scrollwheel: false,
                 streetViewControl: false
             });
 

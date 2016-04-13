@@ -6,6 +6,15 @@ p, li, .leistungen > div > a, footer > div > div > a {
   @include typi-base();
 }
 
+.contact{
+  a{
+    color: $grey;
+  }
+  a:hover{
+    color: $blue;
+  }
+}
+
 h1 {
   @include typi($h1-font-map);
 }
@@ -37,7 +46,12 @@ body {
 }
 
 section:last-of-type {
-  padding-bottom: 3rem;
+  padding-bottom: 1rem;
+}
+
+//for contact
+.contact > div:last-of-type {
+  padding-bottom: 1rem;
 }
 
 .blue {
@@ -122,6 +136,7 @@ h1 {
 }
 
 .leistungen {
+  margin-top: 1rem;
   text-align: center;
   p {
     margin: 0 1.5rem 2.5rem 1.5rem;
@@ -132,8 +147,15 @@ figcaption {
   text-align: center;
 }
 
-.leistungen .icon {
+.leistungen .icon,
+.contact .icon{
   margin-bottom: 0.5rem
+}
+
+.contact{
+  div{
+    margin-top: 2rem;
+  }
 }
 
 //html, body { height: 100%; margin: 0; padding: 0; }
@@ -224,7 +246,8 @@ footer .icon-envelop.wrapper:hover a {
   transition: transform .4s ease-out;
 }
 
-.leistungen .wrapper:hover .icon {
+.leistungen .wrapper:hover .icon,
+.contact .wrapper:hover .icon {
   fill: $blue;
   transform: scale(1.3);
 }
