@@ -51,7 +51,7 @@
     </section>
 
 {% endblock %}
-symbol-defs.svg
+
 {% block scripts %}
 
     {% import 'macros/nav-macro.nunj' as nav %}

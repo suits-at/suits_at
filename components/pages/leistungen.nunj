@@ -91,6 +91,4 @@
     {% import 'macros/nav-macro.nunj' as nav %}
     {{ nav.active('leistungen') }}
 
-    {#<script src="js/svgxuse.js"></script>#}
-
 {% endblock %}

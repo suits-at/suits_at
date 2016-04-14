@@ -1,25 +1,23 @@
 <!doctype html>
 <html class="no-js" lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-
+    
     <meta property="og:title" content="SUITS - Sebastian Ulbel IT-Solutions"/>
+    <meta property="og:image" content="http://www.suits.at/images/suits_logo.png"/>
+    <meta property="og:site_name" content="SUITS - Sebastian Ulbel IT-Solutions"/>
+    <meta property="og:description" content="Portfolio Website von und über den selbständigen Webdeveloper Sebastian Ulbel."/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
     
-    
-
     
     <meta property="og:url" content="http://www.suits.at/kontakt.html"/>
 
 
-    <meta property="og:image" content="http://www.suits.at/images/suits_logo.png"/>
-    <meta property="og:site_name" content="SUITS - Sebastian Ulbel IT-Solutions"/>
-    <meta property="og:description"
-          content="Portfolio Website von und über den selbständigen Webdeveloper Sebastian Ulbel."/>
-
     <title>SUITS</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <link rel="stylesheet" href="css/style.css">
+    
     <link rel="icon" href="data:;base64,iVBORw0KGgo=">
 </head>
 <body>
@@ -55,7 +53,7 @@
             </p>
         </div>
     </div>
-    <section class="row leistungen">
+    <section class="row text-center contact">
         <div class="small-12 medium-4 column">
             <a href="ueber_mich.html" class="icon-user-tie wrapper">
                 <svg class="icon icon-user-tie">
@@ -69,7 +67,7 @@
             <svg class="icon icon-location2">
                 <use xlink:href="images/symbol-defs.svg#icon-location2"></use>
             </svg>
-            <br/><p class="blue">Schüttaustraße 72-78/1/21<br/>1220 Wien</p>
+            <br/><p>Schüttaustraße 72-78/1/21<br/>1220 Wien</p>
         </span>
         </div>
         <div class="small-12 medium-4 column">
@@ -192,7 +190,7 @@
 
 
 
-    <script src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
+    
     <script async defer
             src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDaDYEXiTLtPbesdmgFq50XN6_MbWnRl8w&callback=initMap"></script>
 
@@ -208,6 +206,8 @@
                 center: myLatLng,
                 zoomControl: false,
                 mapTypeControl: false,
+                scrollwheel: false,
+                draggable: false,
                 streetViewControl: false
             });
 
