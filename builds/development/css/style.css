@@ -2228,17 +2228,17 @@ p + .stat {
           align-self: stretch;
 }
 
-p, li, .leistungen > div > a, footer > div > div > a {
+body {
   font-size: 100%;
   line-height: 1.5;
 }
-@media all and (min-width: 600px) {
-  p, li, .leistungen > div > a, footer > div > div > a {
+@media all and (min-width: 37.5em) {
+  body {
     font-size: 112.5%;
   }
 }
-@media all and (min-width: 1025px) {
-  p, li, .leistungen > div > a, footer > div > div > a {
+@media all and (min-width: 64.063em) {
+  body {
     font-size: 125%;
   }
 }
@@ -2251,52 +2251,52 @@ p, li, .leistungen > div > a, footer > div > div > a {
 }
 
 h1 {
-  font-size: 1.6rem;
+  font-size: 1.6em;
   line-height: 1.2;
 }
-@media all and (min-width: 600px) {
+@media all and (min-width: 37.5em) {
   h1 {
-    font-size: 2.1rem;
+    font-size: 1.9em;
     line-height: 1.3;
   }
 }
-@media all and (min-width: 1025px) {
+@media all and (min-width: 64.063em) {
   h1 {
-    font-size: 2.6rem;
+    font-size: 2.2em;
     line-height: 1.4;
   }
 }
 
 h2 {
-  font-size: 1.4rem;
+  font-size: 1.4em;
   line-height: 1.2;
 }
-@media all and (min-width: 600px) {
+@media all and (min-width: 37.5em) {
   h2 {
-    font-size: 1.9rem;
+    font-size: 1.7em;
     line-height: 1.3;
   }
 }
-@media all and (min-width: 1025px) {
+@media all and (min-width: 64.063em) {
   h2 {
-    font-size: 2.4rem;
+    font-size: 2em;
     line-height: 1.4;
   }
 }
 
 h3 {
-  font-size: 1.2rem;
+  font-size: 1.2em;
   line-height: 1.2;
 }
-@media all and (min-width: 600px) {
+@media all and (min-width: 37.5em) {
   h3 {
-    font-size: 1.7rem;
+    font-size: 1.5em;
     line-height: 1.3;
   }
 }
-@media all and (min-width: 1025px) {
+@media all and (min-width: 64.063em) {
   h3 {
-    font-size: 2.2rem;
+    font-size: 1.8em;
     line-height: 1.4;
   }
 }

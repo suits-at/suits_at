@@ -1,8 +1,12 @@
 // _base.scss
 // ==============
 
-//to prevent scaling p > a two times
-p, li, .leistungen > div > a, footer > div > div > a {
+////to prevent scaling p > a two times
+//p, li, .leistungen > div > a, footer > div > div > a {
+//  @include typi-base();
+//}
+
+body {
   @include typi-base();
 }
 
@@ -16,15 +20,15 @@ p, li, .leistungen > div > a, footer > div > div > a {
 }
 
 h1 {
-  @include typi($h1-font-map);
+  @include typi($h1-font-map, $rem: false);
 }
 
 h2 {
-  @include typi($h2-font-map);
+  @include typi($h2-font-map, $rem: false);
 }
 
 h3 {
-  @include typi($h3-font-map);
+  @include typi($h3-font-map, $rem: false);
 }
 
 body {
