@@ -1,11 +1,29 @@
 { "projekte" : [
   {
+    "titel":"+HAGI+",
+    "kunde":"HAGI GmbH",
+    "url":"www.hagi.at",
+    "datum":"2016",
+    "screenshot":"hagi",
+    "beschreibung":"Nachdem die in die Jahre gekommene Firmenwebsite nicht mehr den Anforderungen der HAGI GmbH entsprach, wurde mit Hilfe des CMS Wordpress eine komplett neue Version des Firmenauftritts realisiert. Auch bei diesem Projekt wurde darauf geachtet, dass eine Anpassung der Daten durch den Kunden möglichst einfach durchführbar ist. Außerdem wurde die Website auch hinsichtlich Performance optimiert. Caching, Komprimierung der Daten und Bildoptimierung haben gute Ergebnisse bei Google PageSpeed Insights zur Folge. Zusätzlich sorgen diverse Anpassungen in der '.htaccess' und die Verwendung und Konfiguration eines Sicherheitsplugins für ein gut abgesichertes System.",
+    "size":"870x713"
+  },
+  {
+    "titel":"3-P-Services",
+    "kunde":"3-P-Services GmbH",
+    "url":"www.3-p-services.at",
+    "datum":"laufende Betreuung",
+    "screenshot":"3-p-services",
+    "beschreibung":"Um die Website der Firma 3-P-Services sicher zu halten, werden von mir regelmäßig Updates von Worpdress und allen installierten Plugins vorgenommen. Zusätzlich erwünschte Funktionen werden ebenfalls von mir realisiert.",
+    "size":"727x1157"
+  },
+  {
     "titel":"Ziviltechniker Pech",
     "kunde":"Dr. PECH Ziviltechniker GmbH",
     "url":"www.zt-pech.at",
     "datum":"2015",
     "screenshot":"zt_pech",
-    "beschreibung":"Das Design der Website wurde eigens von dem Kreativkollektiv Werbezirkus konzipiert. Die Website selbst baut auf einem Bootstrap basierenden Wordpress-Theme auf, welches erweitert und mit diversen Plugins um zusätzliche Funktionalitäten ergänzt wurde. Durch die Implementation von mehreren 'Custom Post Types', wie zum Beispiel 'Angebote' und 'Team', kann der Kunde nun im Backend auf einfache Art und Weise neue Inhalte in das System integrieren. Außerdem wurde die Website auch hinsichtlich Performance optimiert. Caching, Komprimierung der Daten und Bildoptimierung haben gute Ergebnisse bei Google PageSpeed Insights zur Folge. Zusätzlich sorgen diverse Anpassungen in der '.htaccess' und die Verwendung und Konfiguration eines Sicherheitsplugins für ein sicheres System.",
+    "beschreibung":"Das Design der Website wurde eigens von dem Kreativkollektiv Werbezirkus konzipiert. Die Website selbst baut auf einem Bootstrap basierenden Wordpress-Theme auf, welches erweitert und mit diversen Plugins um zusätzliche Funktionalitäten ergänzt wurde. Durch die Implementation von mehreren 'Custom Post Types', wie zum Beispiel 'Angebote' und 'Team', kann der Kunde nun im Backend auf einfache Art und Weise neue Inhalte in das System integrieren. Außerdem wurde die Website auch hinsichtlich Performance optimiert. Caching, Komprimierung der Daten und Bildoptimierung haben gute Ergebnisse bei Google PageSpeed Insights zur Folge. Zusätzlich sorgen diverse Anpassungen in der '.htaccess' und die Verwendung und Konfiguration eines Sicherheitsplugins für ein gut abgesichertes System.",
     "size":"862x968"
   },
   {
