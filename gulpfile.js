@@ -1,7 +1,9 @@
 var gulp = require('gulp'),
     gutil = require('gulp-util'),
     browserify = require('gulp-browserify'),
-    compass = require('gulp-compass'),
+    // compass = require('gulp-compass'),
+    sass = require('gulp-sass'),
+    sourcemaps = require('gulp-sourcemaps'),
     connect = require('gulp-connect'),
     gulpif = require('gulp-if'),
     uglify = require('gulp-uglify'),
@@ -63,6 +65,13 @@ jsonSources = ['components/json/*.json'];
 imgSources = ['builds/development/images/**/*.+(png|jpg|jpeg)'];
 nunjucksSources = ['components/pages/*.+(html|nunj)'];
 
+gulp.task('connect', function () {
+    connect.server({
+        root: outputDir,
+        livereload: true
+    });
+});
+
 gulp.task('js', function () {
     return gulp.src(jsSources)
         .pipe(concat('script.js'))
@@ -81,39 +90,25 @@ gulp.task('jsIndex', function () {
         .pipe(connect.reload())
 });
 
-//sourcemap = (environment == :production) ? false : true
-
-gulp.task('compass', function () {
-    return gulp.src(sassSources)
-        .pipe(compass({
-            //sourcemap: true,
-            css: outputDir + 'css',
-            sass: 'components/sass',
-            style: sassStyle,
-            project: __dirname,
-            import_path: ['node_modules/foundation-sites/scss', 'node_modules/typi/scss']
-        }).on('error', gutil.log))
-        .pipe(autoprefixer({
-            browsers: ['last 2 versions', 'ie >= 9', 'and_chr >= 2.3']
-        }).on('error', gutil.log))
-        .pipe(gulp.dest( outputDir + 'css'))
-        .pipe(connect.reload())
+gulp.task('sass', function () {
+  return gulp.src(sassSources)
+    .pipe(sourcemaps.init())
+    .pipe(sass({outputStyle: 'compressed', includePaths: ['node_modules/foundation-sites/scss', 'node_modules/typi/scss']}))
+    .pipe(autoprefixer({
+        browsers: ['last 2 versions', 'ie >= 9', 'and_chr >= 2.3']
+    }).on('error', gutil.log))
+    .pipe(sourcemaps.write())
+    .pipe(gulp.dest(outputDir + 'css'))
+    .pipe(connect.reload())
 });
 
 gulp.task('watch', function () {
     gulp.watch(jsSources, ['js']);
     gulp.watch(jsSourcesIndex, ['jsIndex']);
-    gulp.watch('components/sass/*.scss', ['compass']);
+    gulp.watch('components/sass/*.scss', ['sass']);
     gulp.watch(imgSources, ['images']);
     gulp.watch(jsonSources, ['json', 'html']);
     gulp.watch(['components/pages/*.+(html|nunj)', 'components/templates/**/*.+(html|nunj)'], ['critical']);
-});
-
-gulp.task('connect', function () {
-    connect.server({
-        root: outputDir,
-        livereload: true
-    });
 });
 
 //call html after nunjucks finished
@@ -175,4 +170,4 @@ gulp.task('critical', ['html'], function () {
     });
 });
 
-gulp.task('default', ['json', 'js', 'jsIndex', 'compass', 'images', 'nunjucks', 'html', 'critical', 'connect', 'watch']);
+gulp.task('default', ['json', 'js', 'jsIndex', 'sass', 'images', 'nunjucks', 'html', 'critical', 'connect', 'watch']);

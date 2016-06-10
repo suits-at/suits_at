@@ -36,6 +36,10 @@ body {
   color: $grey;
 }
 
+h1, h2, h3, h4, h5, h6{
+  font-family: $headerFont;
+}
+
 #skiptocontent {
   height: 1px;
   width: 1px;
