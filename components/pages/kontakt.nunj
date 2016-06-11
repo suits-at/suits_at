@@ -95,7 +95,7 @@
             marker = new google.maps.Marker({
                 position: myLatLng,
                 map: map,
-                icon: 'images/suits_marker.png'
+                icon: 'images/suits_marker.svg'
             });
             if ($first) {
                 toggleBounce();
