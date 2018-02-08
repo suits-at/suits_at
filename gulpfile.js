@@ -163,7 +163,7 @@ gulp.task('critical', ['html'], function () {
         inline: true,
         base: 'builds/production/',
         src: 'index.html',
-        dest: 'builds/production/index.html',
+        dest: 'index.html',
         minify: true,
         width: 320,
         height: 480
