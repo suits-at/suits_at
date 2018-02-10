@@ -31,7 +31,7 @@
         </header>
         <div class="row content">
             <div class="column">
-                <h1 class="header">//Portfolio</h1>
+                <h1 class="header">//Referenzen</h1>
             </div>
         </div>
         <section class="row">
@@ -46,11 +46,9 @@
                                 <h2>{{ projekt.titel }}</h2>
                                 <div class="details">
                                     <ul>
-                                        <li><strong>Kunde:</strong> {{ projekt.kunde }}</li>
                                         <li><strong>Website:</strong> <a href="http://{{ projekt.url }}">{{ projekt.url }}</a></li>
                                         <li><strong>Datum:</strong> {{ projekt.datum }}</li>
                                     </ul>
-                                    <p class="beschreibung"><strong>Projekbeschreibung:</strong> {{ projekt.beschreibung }}</p>
                                 </div>
                             </div>
                         </div>
