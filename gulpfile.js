@@ -161,7 +161,7 @@ gulp.task('json', function () {
 gulp.task('critical', ['html'], function () {
     critical.generate({
         inline: true,
-        base: 'builds/production/',
+        base: 'builds/production',
         src: 'index.html',
         dest: 'builds/production/index.html',
         minify: true,
