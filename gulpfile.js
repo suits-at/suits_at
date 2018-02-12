@@ -26,8 +26,8 @@ var env,
     outputDir,
     sassStyle;
 
-// env = 'production';
-env = process.env.NODE_ENV || 'development';
+env = 'production';
+// env = process.env.NODE_ENV || 'development';
 
 if (env === 'development') {
     outputDir = 'builds/development/';
@@ -163,7 +163,7 @@ gulp.task('critical', ['html'], function () {
         inline: true,
         base: 'builds/production/',
         src: 'index.html',
-        dest: 'index.html',
+        dest: 'builds/production/index.html',
         minify: true,
         width: 320,
         height: 480
