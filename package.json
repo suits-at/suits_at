@@ -31,7 +31,7 @@
     "gulp-util": "^3.0.7",
     "imagemin-pngquant": "^4.2.0",
     "imagesloaded": "^4.1.0",
-    "jquery": "^2.2.2",
+    "jquery": "^3.0.0",
     "masonry-layout": "^4.0.0",
     "typi": "^2.1.0",
     "velocity-animate": "^1.2.3"
