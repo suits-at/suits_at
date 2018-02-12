@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="Portfolio Website von und über den selbständigen Webdeveloper Sebastian Ulbel.">
     <title>SUITS</title>
 
@@ -16,9 +16,6 @@
     <meta property="og:type" content="website">
 
     <link rel="stylesheet" href="css/style.css">
-
-    {#prevent error due to no favicon available#}
-    {#<link rel="icon" href="data:;base64,iVBORw0KGgo=">#}
 
     {#favicons#}
     <link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png">
@@ -41,7 +38,7 @@
 </head>
 <body>
 <div id="skiptocontent">
-    <a href="#portfolio">skip to main content</a>
+    <a href="#projekte">skip to main content</a>
 </div>
 
 {% block content %} {% endblock %}
