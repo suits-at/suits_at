@@ -1,7 +1,6 @@
 var gulp = require('gulp'),
     gutil = require('gulp-util'),
     browserify = require('gulp-browserify'),
-    // compass = require('gulp-compass'),
     sass = require('gulp-sass'),
     sourcemaps = require('gulp-sourcemaps'),
     connect = require('gulp-connect'),
@@ -26,8 +25,8 @@ var env,
     outputDir,
     sassStyle;
 
-// env = 'production';
-env = process.env.NODE_ENV || 'development';
+env = 'production';
+// env = 'development';
 
 if (env === 'development') {
     outputDir = 'builds/development/';
@@ -62,7 +61,8 @@ jsSources = [
 sassSources = ['components/sass/style.scss'];
 htmlSources = [outputDir + '*.html'];
 jsonSources = ['components/json/*.json'];
-imgSources = ['builds/development/images/**/*.+(png|jpg|jpeg)'];
+imgSources = ['components/img/**/*.+(png|jpg|jpeg)'];
+svgSources = ['components/img/**/*.+(svg)'];
 nunjucksSources = ['components/pages/*.+(html|nunj)'];
 
 gulp.task('connect', function () {
@@ -139,17 +139,18 @@ gulp.task('nunjucks', function() {
 
 gulp.task('images', function () {
     return gulp.src(imgSources)
-        .pipe(gulpif(env === 'production', imagemin({
-            progressive: true,
-            svgoPlugin: [
-                {removeViewBox: false},
-                {cleanupIDs: false}
-            ],
-            use: [pngquant()]
-        })))
-        .pipe(gulpif(env === 'production', gulp.dest(outputDir + 'images')))
+        .pipe(gulpif(env === 'production', imagemin()))
+        .pipe(gulp.dest(outputDir + 'images'))
         .pipe(connect.reload())
 });
+
+// copy svg files to build
+gulp.task('svg', function () {
+  return gulp.src(svgSources)
+    .pipe(gulp.dest(outputDir + 'images'))
+    .pipe(connect.reload())
+});
+
 
 gulp.task('json', function () {
     return gulp.src(jsonSources)
@@ -165,9 +166,9 @@ gulp.task('critical', ['html'], function () {
         src: 'index.html',
         dest: 'builds/production/index.html',
         minify: true,
-        width: 320,
-        height: 480
+        width: 1300,
+        height: 900
     });
 });
 
-gulp.task('default', ['json', 'js', 'jsIndex', 'sass', 'images', 'nunjucks', 'html', 'critical', 'connect', 'watch']);
+gulp.task('default', ['json', 'js', 'jsIndex', 'sass', 'images', 'svg', 'nunjucks', 'html', 'critical', 'connect', 'watch']);
