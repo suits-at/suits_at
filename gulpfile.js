@@ -159,6 +159,7 @@ gulp.task('json', function () {
         .pipe(connect.reload())
 });
 
+// TODO: only call task if env == production
 gulp.task('critical', ['html'], function () {
     critical.generate({
         inline: true,
