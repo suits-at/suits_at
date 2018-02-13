@@ -91,15 +91,18 @@ gulp.task('jsIndex', function () {
 });
 
 gulp.task('sass', function () {
-  return gulp.src(sassSources)
-    .pipe(sourcemaps.init())
-    .pipe(sass({outputStyle: 'compressed', includePaths: ['node_modules/foundation-sites/scss', 'node_modules/typi/scss']}))
-    .pipe(autoprefixer({
-        browsers: ['last 2 versions', 'ie >= 9', 'and_chr >= 2.3']
-    }).on('error', gutil.log))
-    .pipe(sourcemaps.write())
-    .pipe(gulp.dest(outputDir + 'css'))
-    .pipe(connect.reload())
+    return gulp.src(sassSources)
+        .pipe(sourcemaps.init())
+        .pipe(sass({
+            outputStyle: 'compressed',
+            includePaths: ['node_modules/foundation-sites/scss', 'node_modules/typi/scss']
+        }))
+        .pipe(autoprefixer({
+            browsers: ['last 2 versions', 'ie >= 9', 'and_chr >= 2.3']
+        }).on('error', gutil.log))
+        .pipe(sourcemaps.write())
+        .pipe(gulp.dest(outputDir + 'css'))
+        .pipe(connect.reload())
 });
 
 gulp.task('watch', function () {
@@ -113,7 +116,7 @@ gulp.task('watch', function () {
 
 //call html after nunjucks finished
 gulp.task('html', ['nunjucks'], function () {
-    return gulp.src(outputDir +'*.html')
+    return gulp.src(outputDir + '*.html')
         .pipe(gulpif(env === 'production', htmlmin(
             {
                 collapseWhitespace: true,
@@ -125,7 +128,7 @@ gulp.task('html', ['nunjucks'], function () {
         .pipe(connect.reload())
 });
 
-gulp.task('nunjucks', function() {
+gulp.task('nunjucks', function () {
     return gulp.src(nunjucksSources)
         .pipe(data(function () {
             return JSON.parse(fs.readFileSync('./components/json/data.json', 'utf8'));
@@ -146,9 +149,9 @@ gulp.task('images', function () {
 
 // copy svg files to build
 gulp.task('svg', function () {
-  return gulp.src(svgSources)
-    .pipe(gulp.dest(outputDir + 'images'))
-    .pipe(connect.reload())
+    return gulp.src(svgSources)
+        .pipe(gulp.dest(outputDir + 'images'))
+        .pipe(connect.reload())
 });
 
 
@@ -159,17 +162,19 @@ gulp.task('json', function () {
         .pipe(connect.reload())
 });
 
-// TODO: only call task if env == production
+// generate critical css and inline it
 gulp.task('critical', ['html'], function () {
-    critical.generate({
-        inline: true,
-        base: 'builds/production',
-        src: 'index.html',
-        dest: 'builds/production/index.html',
-        minify: true,
-        width: 1300,
-        height: 900
-    });
+    critical.generate(
+        {
+            inline: true,
+            base: outputDir,
+            src: 'index.html',
+            dest: outputDir + 'index.html',
+            minify: true,
+            width: 1300,
+            height: 900
+        }
+    )
 });
 
-gulp.task('default', ['json', 'js', 'jsIndex', 'sass', 'images', 'svg', 'nunjucks', 'html', 'critical', 'connect', 'watch']);
+gulp.task('default', ['json', 'js', 'jsIndex', 'sass', 'images',  'svg', 'nunjucks', 'html', 'critical', 'connect', 'watch']);
