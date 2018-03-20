@@ -18,6 +18,12 @@
                 </svg>
             </a>
 
+            <a href="https://medium.com/@suits_at">
+                <svg class="icon icon-medium2">
+                    <use xlink:href="images/symbol-defs.svg#icon-medium2"></use>
+                </svg>
+            </a>
+
             <a href="https://www.xing.com/profile/Sebastian_Ulbel">
                 <svg class="icon icon-xing2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024">
                     <g class="xing">
@@ -29,15 +35,15 @@
                 </svg>
             </a>
 
-            <a href="https://stackoverflow.com/users/4668758/suits-at?tab=profile">
-                <svg class="icon icon-stackoverflow">
-                    <use xlink:href="images/symbol-defs.svg#icon-stackoverflow"></use>
+            <a href="https://www.linkedin.com/in/suits-at">
+                <svg class="icon icon-linkedin2">
+                    <use xlink:href="images/symbol-defs.svg#icon-linkedin2"></use>
                 </svg>
             </a>
 
-            <a href="https://www.facebook.com/suits.at">
-                <svg class="icon icon-facebook">
-                    <use xlink:href="images/symbol-defs.svg#icon-facebook"></use>
+            <a href="https://stackoverflow.com/users/4668758/suits-at?tab=profile">
+                <svg class="icon icon-stackoverflow">
+                    <use xlink:href="images/symbol-defs.svg#icon-stackoverflow"></use>
                 </svg>
             </a>
 
