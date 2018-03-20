@@ -23,22 +23,22 @@
             </figure>
 
         </div>
-        <div class="small-12 medium-8 column">
+        <div class="small-12 medium-7 medium-offset-1 column">
             <h2>Sebastian Ulbel</h2>
-            <p>
-                Leidenschaftlicher Webdeveloper & Fußballspieler<br>Gadget- & Musikliebhaber<br>Kickstarterkampagnen-Unterstützer
-            </p>
+            <ul>
+                <li>Leidenschaftlicher Webdeveloper</li>
+                <li>begeisterter Sportler</li>
+                <li>Musikliebhaber</li>
+                <li>Gadgetfan</li>
+                <li><a href="https://tympanus.net/codrops/collective/">Tympanus Codrops Collective</a> Leser</li>
+                <li>Bitcoin Besitzer</li>
+                <li>Kickstarterkampagnen Unterstützer</li>
+            </ul>
             <p>
                 Meine Leidenschaft fürs Webdevelopment vertiefe ich derzeit im Masterstudium "Digitale
                 Medientechnologien"
                 an der FH St. Pölten. Die von mir besuchte Masterklasse "Mobiles Internet" ergänzt sich perfekt mit
                 meinen Interessen.
-            </p>
-            <p>
-                Durch den Schwerpunkt, der in der Masterklasse gesetzt wird, kann ich sowohl meine bereits vorhandenen
-                Skills im Webdevelopment erweitern, als
-                auch viel Neues dazu lernen. Native Appentwicklung unter Android, IOS und Windows Phone, sowohl für
-                Smartphones, als auch für Smartwatches stehen hier an der Tagesordnung.
             </p>
             <p>Mehr über mich und meine bisherige Laufbahn finden Sie in meinem <a href="files/UlbelSebastian_Lebenslauf.pdf"
                                                                        title="Lebenslauf"><strong>Lebenslauf</strong></a>.

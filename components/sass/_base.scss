@@ -291,3 +291,8 @@ footer .icon-envelop.wrapper:hover a {
 .icon-location2.wrapper:hover {
   cursor: pointer;
 }
+
+// set color for selection
+p::selection, h1::selection, h2::selection, h3::selection, h4::selection, a::selection, li::selection, span::selection, img::selection, strong::selection{
+  color: $blue;
+}
