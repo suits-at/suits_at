@@ -3,7 +3,7 @@ $(function() {
     $(".more").on('click',function() {
         //maybe try changing animate to velocity
         $('html, body').animate({
-            scrollTop: $('#portfolio').offset().top
+            scrollTop: $('#referenzen').offset().top
         }, 500);
         return false;
     });

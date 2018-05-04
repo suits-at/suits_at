@@ -179,4 +179,4 @@ gulp.task('critical', ['html'], function () {
     )
 });
 
-gulp.task('default', ['json', 'js', 'jsIndex', 'sass', 'images',  'svg', 'nunjucks', 'html', 'critical', 'connect', 'watch']);
+gulp.task('default', ['json', 'js', 'jsIndex', 'sass', 'images', 'svg', 'nunjucks', 'html', 'critical', 'connect', 'watch']);
