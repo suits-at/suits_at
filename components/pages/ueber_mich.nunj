@@ -17,22 +17,22 @@
         </div>
     </section>
     <section class="row">
-        <div class="small-12 medium-4 column">
-            <figure>
-                <img src="images/sebastian_ulbel.png" alt="Sebastian Ulbel" title="Sebastian Ulbel">
+        <div class="small-12 medium-3 column">
+            <figure id="profile">
+                <img src="images/sebastian-ulbel.jpg" alt="Sebastian Ulbel" title="Sebastian Ulbel">
             </figure>
 
         </div>
-        <div class="small-12 medium-7 medium-offset-1 column">
-            <h2>Sebastian Ulbel</h2>
-            <ul>
-                <li>Leidenschaftlicher Webdeveloper</li>
-                <li>begeisterter Sportler</li>
-                <li>Musikliebhaber</li>
-                <li>Gadgetfan</li>
-                <li><a href="https://tympanus.net/codrops/collective/">Tympanus Codrops Collective</a> Leser</li>
-                <li>Bitcoin Besitzer</li>
-                <li>Kickstarterkampagnen Unterstützer</li>
+        <div class="small-12 medium-8 medium-offset-1 column">
+            <h2>Sebastian Ulbel, BA</h2>
+            <ul id="checklist">
+                <li><i class="far fa-check"></i>&nbsp;leidenschaftlicher Web Developer</li>
+                <li><i class="far fa-check"></i>&nbsp;begeisterter Sportler</li>
+                <li><i class="far fa-check"></i>&nbsp;genussvoller Musikliebhaber</li>
+                <li><i class="far fa-check"></i>&nbsp;innovationsliebender Gadgetfan</li>
+                <li><i class="far fa-check"></i>&nbsp;wissbegieriger <a href="https://tympanus.net/codrops/collective/">Tympanus Codrops Collective</a> Leser</li>
+                <li><i class="far fa-check"></i>&nbsp;überzeugter Bitcoinbesitzer</li>
+                <li><i class="far fa-check"></i>&nbsp;hoffnungsvoller Kickstarterkampagnenunterstützer</li>
             </ul>
             <p>
                 Meine Leidenschaft fürs Webdevelopment vertiefe ich derzeit im Masterstudium "Digitale

@@ -25,8 +25,8 @@ var env,
     outputDir,
     sassStyle;
 
-env = 'production';
-// env = 'development';
+// env = 'production';
+env = 'development';
 
 if (env === 'development') {
     outputDir = 'builds/development/';
@@ -55,7 +55,9 @@ jsSources = [
     'components/scripts/velocity.js',
     'components/scripts/menu.js',
     'components/scripts/google.js',
-    'components/scripts/svgxuse.js'
+    'components/scripts/svgxuse.js',
+    'components/scripts/fontawesome.js',
+    'components/scripts/fa-regular.js'
 ];
 
 sassSources = ['components/sass/style.scss'];

@@ -296,3 +296,12 @@ footer .icon-envelop.wrapper:hover a {
 p::selection, h1::selection, h2::selection, h3::selection, h4::selection, a::selection, li::selection, span::selection, img::selection, strong::selection{
   color: $blue;
 }
+
+#profile{
+  margin: 10%;
+}
+
+#checklist{
+  list-style: none;
+  margin-left: 0;
+}
