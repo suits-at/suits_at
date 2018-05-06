@@ -20,6 +20,7 @@
         <div class="small-12 medium-3 column">
             <figure id="profile">
                 <img src="images/sebastian-ulbel.jpg" alt="Sebastian Ulbel" title="Sebastian Ulbel">
+                <figcaption>© <a href="https://www.facebook.com/FOrnerMedia/">F. Orner Media</a></figcaption>
             </figure>
 
         </div>
