@@ -1,5 +1,12 @@
 { "projekte" :[
   {
+    "titel":"Klostgarten - Land trifft Stadt",
+    "url":"www.kloster-garten.at",
+    "datum":"2018",
+    "screenshot":"klostergarten",
+    "size":"942x3184"
+  },
+  {
     "titel":"Lengel GmbH",
     "url":"www.lengel.at",
     "datum":"laufende Betreeung",

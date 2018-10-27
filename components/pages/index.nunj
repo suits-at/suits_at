@@ -46,7 +46,7 @@
                                 <h2>{{ projekt.titel }}</h2>
                                 <div class="details">
                                     <ul>
-                                        <li><strong>Website:</strong> <a href="http://{{ projekt.url }}">{{ projekt.url }}</a></li>
+                                        <li><strong>Website:</strong> <a href="http://{{ projekt.url }}" target="_blank">{{ projekt.url }}</a></li>
                                         <li><strong>Datum:</strong> {{ projekt.datum }}</li>
                                     </ul>
                                 </div>
