@@ -40,7 +40,7 @@
                     <div class="grid__item" data-size="{{ projekt.size }}">
                         <div data-link="images/portfolio/screenshots/{{ projekt.screenshot }}.png" title="Screenshot von {{ projekt.url }}"
                              class="img-wrap portfolio-items">
-                            <img src="images/portfolio/thumbnails/{{ projekt.screenshot }}.png" width="248"
+                            <img data-src="images/portfolio/thumbnails/{{ projekt.screenshot }}.png" width="248" class='lazyload'
                                  alt="Screenshot von {{ projekt.url }}"/>
                             <div class="description description--grid">
                                 <h2>{{ projekt.titel }}</h2>
