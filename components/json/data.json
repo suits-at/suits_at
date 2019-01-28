@@ -1,5 +1,12 @@
 { "projekte" :[
   {
+    "titel":"Technik Team Killinger",
+    "url":"www.technikteam.at",
+    "datum":"2019",
+    "screenshot":"ttk",
+    "size":"951x1679"
+  },
+  {
     "titel":"Klostgarten - Land trifft Stadt",
     "url":"www.kloster-garten.at",
     "datum":"2018",
