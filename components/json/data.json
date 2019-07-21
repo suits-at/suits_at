@@ -1,5 +1,12 @@
 { "projekte" :[
   {
+    "titel":"Verein für ein Klimavolksbegehren in Österreich",
+    "url":"www.klimavolksbegehren.at",
+    "datum":"2019",
+    "screenshot":"klimavolksbegehren",
+    "size":"768x1605"
+  },
+  {
     "titel":"Technik Team Killinger",
     "url":"www.technikteam.at",
     "datum":"2019",
