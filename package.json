@@ -35,5 +35,8 @@
     "masonry-layout": "^4.2.2",
     "typi": "^2.1.0",
     "velocity-animate": "^1.5.2"
+  },
+  "dependencies": {
+    "buefy": "^0.8.2"
   }
 }
