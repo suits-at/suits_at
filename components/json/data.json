@@ -1,5 +1,12 @@
 { "projekte" :[
   {
+    "titel":"Omar - Eventlocation & Partyraum",
+    "url":"www.omar.at",
+    "datum":"2019",
+    "screenshot":"omar",
+    "size":"768x1972"
+  },
+  {
     "titel":"Verein für ein Klimavolksbegehren in Österreich",
     "url":"www.klimavolksbegehren.at",
     "datum":"2019",
