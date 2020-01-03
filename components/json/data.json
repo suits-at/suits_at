@@ -1,5 +1,19 @@
 { "projekte" :[
   {
+    "titel":"Kinderbetreuung Sonja",
+    "url":"www.kinderbetreuung-sonja.at",
+    "datum":"2019",
+    "screenshot":"kinderbetreuung-sonja",
+    "size":"434x637"
+  },
+  {
+    "titel":"Guntramsdorferstrasse 9 - Projektwebsite",
+    "url":"www.guntramsdorferstrasse9.at",
+    "datum":"2019",
+    "screenshot":"guntramsdorferstrasse9",
+    "size":"1197x2958"
+  },
+  {
     "titel":"Omar - Eventlocation & Partyraum",
     "url":"www.omar.at",
     "datum":"2019",
